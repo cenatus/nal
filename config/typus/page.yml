@@ -1,0 +1,9 @@
+Page:
+  fields:
+    default: name, slug
+    list: name, slug
+    form: name, slug
+  filters:
+  search: name, slug
+  application: Pages
+  description: Pages Administration

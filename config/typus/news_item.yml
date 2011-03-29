@@ -1,0 +1,9 @@
+NewsItem:
+  fields:
+    default: headline, summary, content
+    list: headline, summary, content
+    form: headline, summary, content
+  filters:
+  search: headline, summary, content
+  application: News
+  description: News Administration
