@@ -3,5 +3,6 @@
 %p= @page.sort_order
 
 - for ca in @page.content_areas do
-  %p= ca.content
+  :textile
+    #{ca.content}
 
