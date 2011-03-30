@@ -7,37 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbbae15d-5b71-462f-82f6-77662587ddf7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/grid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/admin/typus_nal_base_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/stylesheets/application.sass" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/stylesheets/ie.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/stylesheets/partials/_base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/stylesheets/partials/_form.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/stylesheets/partials/_page.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/stylesheets/partials/_two_col.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/stylesheets/partials/_two_col_nal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/stylesheets/print.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/stylesheets/screen.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/typus.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/compass.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/compass.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/g" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/nal.iml" afterPath="$PROJECT_DIR$/.idea/nal.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators" afterPath="$PROJECT_DIR$/lib/generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/admin_users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/admin_users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/artists_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/artists_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/content_areas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/content_areas_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/news_items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/news_items_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/pages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/participants_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/participants_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/performers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/performers_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin/speakers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/speakers_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/compass.rb" afterPath="$PROJECT_DIR$/config/compass.rb" />
     </list>
     <ignored path="nal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,10 +44,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="45" selection-start="754" selection-end="754" vertical-scroll-proportion="0.5355372">
+            <state line="27" column="45" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compass.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/compass.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="90" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.07933884">
               <folding />
             </state>
           </provider>
@@ -102,8 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/stylesheets/application.scss" />
-        <option value="$PROJECT_DIR$/app/stylesheets/partials/_two_col_nal.scss" />
         <option value="$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/bundler/gems/typus-0b40362e83ab/app/views/layouts/admin/base.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/base.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/admin/admin_users_controller.rb" />
@@ -118,6 +108,8 @@
         <option value="$PROJECT_DIR$/app/stylesheets/partials/_base.scss" />
         <option value="$PROJECT_DIR$/app/stylesheets/application.sass" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
+        <option value="$PROJECT_DIR$/config/compass.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -562,20 +554,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/bundler/gems/typus-0b40362e83ab/app/controllers/admin/resources_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/bundler/gems/typus-0b40362e83ab/app/controllers/admin/resource_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/bundler/gems/typus-0b40362e83ab/app/views/layouts/admin/base.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="1439" selection-end="1439" vertical-scroll-proportion="-18.285715">
@@ -669,7 +647,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="45" selection-start="754" selection-end="754" vertical-scroll-proportion="0.5355372">
+        <state line="27" column="45" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/compass.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="90" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.07933884">
           <folding />
         </state>
       </provider>
