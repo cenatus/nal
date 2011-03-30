@@ -3,7 +3,7 @@ Performer:
     default: name, biography, homepage, twitter_name
     list: name, biography, homepage, twitter_name
     form: name, biography, homepage, twitter_name
-  filters:
+  filters: name
   relationships:
   search: name, biography, homepage, twitter_name
   application: Participants
@@ -14,7 +14,7 @@ Artist:
     default: name, biography, homepage, twitter_name
     list: name, biography, homepage, twitter_name
     form: name, biography, homepage, twitter_name
-  filters:
+  filters: name
   relationships:
   search: name, biography, homepage, twitter_name
   application: Participants
@@ -25,7 +25,7 @@ Speaker:
     default: name, biography, homepage, twitter_name
     list: name, biography, homepage, twitter_name
     form: name, biography, homepage, twitter_name
-  filters:
+  filters: name
   relationships:
   search: name, biography, homepage, twitter_name
   application: Participants

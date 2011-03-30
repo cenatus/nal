@@ -11,7 +11,7 @@ AdminUser:
       selectors: role, locale
       booleans:
         status: Active, Inactive
-  filters: status, role
+  filters: locale, status, role
   search: first_name, last_name, email
   application: Admin
   description: Users Administration
