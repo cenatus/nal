@@ -6,4 +6,4 @@ NewsItem:
   filters:
   search: headline, summary, content
   application: News
-  description: News Administration
+  description: News Admin

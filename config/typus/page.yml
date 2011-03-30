@@ -6,4 +6,4 @@ Page:
   filters:
   search: name, slug
   application: Pages
-  description: Pages Administration
+  description: Pages Admin
