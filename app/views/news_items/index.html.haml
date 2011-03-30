@@ -1,0 +1,9 @@
+%h1 NewsItems
+
+- for news_item in @news_items do
+  %p= news_item.created_at
+  %p= link_to news_item.headline, news_item
+  %p= news_item.summary
+
+
+= link_to "View Participants", participants_path

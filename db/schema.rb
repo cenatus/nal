@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110329191041) do
+ActiveRecord::Schema.define(:version => 20110330124940) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "first_name",       :default => "",    :null => false
@@ -49,6 +49,17 @@ ActiveRecord::Schema.define(:version => 20110329191041) do
     t.string   "name"
     t.string   "slug"
     t.integer  "sort_order"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "participants", :force => true do |t|
+    t.string   "name"
+    t.text     "biography"
+    t.string   "homepage"
+    t.string   "twitter_name"
+    t.integer  "event_id"
+    t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

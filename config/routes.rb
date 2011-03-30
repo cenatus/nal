@@ -1,4 +1,50 @@
 Nal::Application.routes.draw do
+
+  root :to => "news_items#index"
+
+  match "news" => "news_items#index"
+  match "news/:id" => "news_items#show", :as => :news_item
+
+  match "participants" => "participants#index"
+  match "participant/:id" => "participants#show"
+
+  #replicated from Typus. just to give higher precedence than below
+  scope "admin", :module => :admin, :as => "admin" do
+    match "/" => "dashboard#show", :as => "dashboard"
+    match "user_guide" => "base#user_guide"
+  end
+
+#  scope "admin", :module => :admin, :as => "admin" do
+#
+#    match "/" => "dashboard#show", :as => "dashboard"
+#    match "user_guide" => "base#user_guide"
+#
+#    if Typus.authentication == :session
+#      resource :session, :only => [:new, :create], :controller => :session do
+#        get :destroy, :as => "destroy"
+#      end
+#
+#      resources :account, :only => [:new, :create, :show, :forgot_password] do
+#        collection do
+#          get :forgot_password
+#          post :send_password
+#        end
+#      end
+#    end
+#
+#    Typus.models.map { |i| i.to_resource }.each do |resource|
+#      match "#{resource}(/:action(/:id(.:format)))", :controller => resource
+#    end
+#
+#    Typus.resources.map { |i| i.underscore }.each do |resource|
+#      match "#{resource}(/:action(/:id(.:format)))", :controller => resource
+#    end
+#
+#  end
+
+  #keep as lowest precedence
+  match "/:slug" => "pages#dynamic", :as => :pages
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

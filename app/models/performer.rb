@@ -1,0 +1,3 @@
+class Performer < Participant
+  
+end

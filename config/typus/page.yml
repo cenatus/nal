@@ -4,6 +4,7 @@ Page:
     list: name, slug
     form: name, slug
   filters:
+  relationships: content_areas
   search: name, slug
   application: Pages
   description: Pages Admin

@@ -1,0 +1,9 @@
+%h1 Participants
+
+- for participant in @participants do
+  %h3= link_to participant.name, "/participant/#{participant.id}"
+  %p= participant.type
+  %p= participant.created_at
+  %p= participant.biography
+  %p= participant.homepage
+  %p= participant.twitter_name

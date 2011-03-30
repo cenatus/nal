@@ -1,0 +1,7 @@
+%h1= @page.name
+%p= @page.slug
+%p= @page.sort_order
+
+- for ca in @page.content_areas do
+  %p= ca.content
+

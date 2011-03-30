@@ -1,0 +1,3 @@
+class Speaker < Participant
+
+end

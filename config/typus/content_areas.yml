@@ -1,0 +1,9 @@
+ContentArea:
+  fields:
+    default: name, content
+    list: name, content
+    form: name, content
+  filters:
+  search: name, content
+  application: Pages
+  description: Content Areas Admin
