@@ -1,2 +1,2 @@
-class Admin::ParticipantsController < Admin::ResourcesController
+class Admin::ParticipantsController < Admin::TypusNalBaseController
 end

@@ -1,2 +1,2 @@
-class Admin::NewsItemsController < Admin::ResourcesController
+class Admin::NewsItemsController < Admin::TypusNalBaseController
 end

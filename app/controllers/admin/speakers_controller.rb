@@ -1,2 +1,2 @@
-class Admin::SpeakersController < Admin::ResourcesController
+class Admin::SpeakersController < Admin::TypusNalBaseController
 end

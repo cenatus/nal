@@ -13,6 +13,7 @@ gem 'ruby_parser'
 gem 'RedCloth'
 gem 'heroku'
 gem 'typus', :git => 'https://github.com/fesplugas/typus.git'
+gem 'compass'
 
 # Use unicorn as the web server
 # gem 'unicorn'

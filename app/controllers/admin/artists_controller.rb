@@ -1,2 +1,2 @@
-class Admin::ArtistsController < Admin::ResourcesController
+class Admin::ArtistsController < Admin::TypusNalBaseController
 end

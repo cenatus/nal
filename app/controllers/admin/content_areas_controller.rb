@@ -1,2 +1,2 @@
-class Admin::ContentAreasController < Admin::ResourcesController
+class Admin::ContentAreasController < Admin::TypusNalBaseController
 end

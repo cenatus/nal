@@ -1,2 +1,2 @@
-class Admin::PagesController < Admin::ResourcesController
+class Admin::PagesController < Admin::TypusNalBaseController
 end

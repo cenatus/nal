@@ -1,2 +1,2 @@
-class Admin::PerformersController < Admin::ResourcesController
+class Admin::PerformersController < Admin::TypusNalBaseController
 end
