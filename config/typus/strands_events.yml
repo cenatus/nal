@@ -1,0 +1,21 @@
+Strand:
+  fields:
+    default: name, sort_order, summary, detail, year
+    list: name, sort_order, summary, detail, year
+    form: name, sort_order, summary, detail, year
+  filters: year
+  relationships: events
+  search: name, sort_order, summary, detail, year
+  application: Strands
+  description: Strands/Events Admin
+
+Event:
+  fields:
+    default: name, venue, date, summary, detail, year
+    list: name, venue, date, summary, detail, year
+    form: name, venue, date, summary, detail, year
+  filters: year
+  relationships:
+  search: name, venue, date, summary, detail, year
+  application: Strands
+  description: Strands/Events Admin

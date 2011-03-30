@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110330124940) do
+ActiveRecord::Schema.define(:version => 20110330221609) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "first_name",       :default => "",    :null => false
@@ -37,6 +37,18 @@ ActiveRecord::Schema.define(:version => 20110330124940) do
     t.datetime "updated_at"
   end
 
+  create_table "events", :force => true do |t|
+    t.string   "name"
+    t.string   "venue"
+    t.date     "date"
+    t.text     "summary"
+    t.text     "detail"
+    t.string   "year"
+    t.integer  "strand_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "news_items", :force => true do |t|
     t.string   "headline"
     t.text     "summary"
@@ -51,6 +63,7 @@ ActiveRecord::Schema.define(:version => 20110330124940) do
     t.integer  "sort_order"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "year"
   end
 
   create_table "participants", :force => true do |t|
@@ -60,6 +73,17 @@ ActiveRecord::Schema.define(:version => 20110330124940) do
     t.string   "twitter_name"
     t.integer  "event_id"
     t.string   "type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "year"
+  end
+
+  create_table "strands", :force => true do |t|
+    t.string   "name"
+    t.text     "summary"
+    t.text     "detail"
+    t.string   "year"
+    t.integer  "sort_order"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

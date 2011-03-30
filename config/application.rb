@@ -40,9 +40,13 @@ module Nal
     config.filter_parameters += [:password]
 
     # MSP
+
+    CURRENT_YEAR = 2011
+    
     config.generators do |g|
      g.template_engine :haml
     end
 
   end
+
 end

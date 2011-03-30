@@ -1,6 +1,6 @@
 %h1 NewsItems
 
-- for news_item in @news_items do
+- for news_item in @strands do
   %p= news_item.created_at
   %p= link_to news_item.headline, news_item
   :textile
@@ -8,4 +8,4 @@
 
 
 
-= link_to "View Participants", participants_path
+= link_to "View Participants", "#{Nal::Application::CURRENT_YEAR}/participants"

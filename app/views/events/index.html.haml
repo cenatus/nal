@@ -1,0 +1,6 @@
+%h1 Events
+
+- for event in @events do
+  %p= link_to event_path, event
+  :textile
+    #{event.summary}

@@ -1,0 +1,8 @@
+%h1= @strand.name
+:textile
+  #{@strand.detail}
+
+%h2 Related Events
+- for event in @strand.events do
+  %p= link_to "#{event.name} - #{event.date} @ #{event.venue}", event_path
+

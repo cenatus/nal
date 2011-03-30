@@ -1,0 +1,6 @@
+%h1 Strands
+
+- for strand in @strands do
+  %p= link_to strand.name, "/#{Nal::Application::CURRENT_YEAR}/strand/#{strand.id}"
+  :textile
+    #{strand.summary}

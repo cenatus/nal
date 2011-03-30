@@ -1,4 +1,5 @@
 module ApplicationHelper
+
   def nav_link(name, options = {}, html_options = {}, &block)
     if current_page?(options)
       html_options[:class] ? html_options[:class] << " active" :

@@ -1,9 +1,9 @@
 Page:
   fields:
-    default: name, slug
-    list: name, slug
-    form: name, slug
-  filters:
+    default: name, slug, year
+    list: name, slug, year
+    form: name, slug, year
+  filters: year
   relationships: content_areas
   search: name, slug
   application: Pages

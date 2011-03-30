@@ -1,6 +1,6 @@
-class NewsItemsController < ApplicationController
+class StrandsController < ApplicationController
   def index
-    @strands = NewsItem.order("created_at DESC")
+    @strands = Strand.order("sort_order DESC")
 
     respond_to do |format|
       format.html # index.haml
@@ -9,10 +9,10 @@ class NewsItemsController < ApplicationController
   end
 
   def show
-    @news_item = NewsItem.find(params[:id])
+    @strand = Strand.find(params[:id])
     respond_to do |format|
       format.html # show.haml
-      format.xml  { render :xml => @news_item.to_xml }
+      format.xml  { render :xml => @strand.to_xml }
     end
   end
 
