@@ -5,15 +5,6 @@ Nal::Application.routes.draw do
   match "news" => "news_items#index"
   match "news/:id" => "news_items#show", :as => :news_item
 
-  match ":year/participants" => "participants#index", :as => :participants
-  match ":year/participant/:id" => "participants#show", :as => :participant
-
-  match ":year/strands" => "strands#index"
-  match ":year/strand/:id" => "strands#show", :as => :strand
-
-  match ":year/events" => "events#index"
-  match ":year/event/:id" => "events#show", :as => :event
-
   #replicated from Typus. just to give higher precedence than below
   scope "admin", :module => :admin, :as => "admin" do
     match "/" => "dashboard#show", :as => "dashboard"
@@ -41,6 +32,15 @@ Nal::Application.routes.draw do
     end
 
   end
+
+  match ":year/participants" => "participants#index", :as => :participants
+  match ":year/participant/:id" => "participants#show", :as => :participant
+
+  match ":year/strands" => "strands#index"
+  match ":year/strand/:id" => "strands#show", :as => :strand
+
+  match ":year/events" => "events#index"
+  match ":year/event/:id" => "events#show", :as => :event
 
   #keep as lowest precedence
   match ":year/:slug" => "pages#dynamic", :as => :pages
