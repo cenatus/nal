@@ -1,0 +1,9 @@
+Asset:
+  fields:
+    default: name, asset,  asset_file_name, asset_file_size
+    list: name, asset,  asset_file_name, asset_file_size
+    form: name, asset, description
+  filters: name
+  search: name, description
+  application: Assets
+  description: Site Assets

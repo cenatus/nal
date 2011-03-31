@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110331105435) do
+ActiveRecord::Schema.define(:version => 20110331113457) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "first_name",       :default => "",    :null => false
@@ -27,6 +27,22 @@ ActiveRecord::Schema.define(:version => 20110331105435) do
   end
 
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
+
+  create_table "assets", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "asset_file_name"
+    t.string   "asset_content_type"
+    t.integer  "asset_file_size"
+    t.datetime "asset_updated_at"
+    t.integer  "page_id"
+    t.integer  "participant_id"
+    t.integer  "strand_id"
+    t.integer  "event_id"
+    t.string   "style"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "events", :force => true do |t|
     t.string   "name"

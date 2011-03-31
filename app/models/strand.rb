@@ -3,4 +3,6 @@ class Strand < ActiveRecord::Base
   validates_presence_of :name, :summary, :detail, :year
 
   has_many :events
+  has_many :assets
+
 end

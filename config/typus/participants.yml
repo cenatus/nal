@@ -4,7 +4,7 @@ Performer:
     list: name, year, sort_order
     form: name, biography, homepage, twitter_name, year, sort_order
   filters: event, name, year
-  relationships:
+  relationships: assets
   search: name, biography, homepage, twitter_name, year, sort_order
   order_by: sort_order
   application: Participants
@@ -16,7 +16,7 @@ Artist:
     list: name, year, sort_order
     form: name, biography, homepage, twitter_name, year, sort_order
   filters: event, name, year
-  relationships:
+  relationships: assets
   search: name, biography, homepage, twitter_name, year, sort_order
   order_by: sort_order
   application: Participants
@@ -28,7 +28,7 @@ Speaker:
     list: name, year, sort_order
     form: name, biography, homepage, twitter_name, year, sort_order
   filters: event, name, year
-  relationships:
+  relationships: assets
   search: name, biography, homepage, twitter_name, year, sort_order
   order_by: sort_order
   application: Participants

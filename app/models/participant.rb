@@ -3,5 +3,5 @@ class Participant < ActiveRecord::Base
   validates :year, :presence => true
 
   belongs_to :event
-
+  has_many :assets
 end

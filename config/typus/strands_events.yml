@@ -1,21 +1,21 @@
 Strand:
   fields:
-    default: name, sort_order, summary, detail, year
-    list: name, sort_order, summary, detail, year
+    default: name, sort_order, summary, year
+    list: name, sort_order, summary, year
     form: name, sort_order, summary, detail, year
   filters: year
-  relationships: events
+  relationships: events, assets
   search: name, sort_order, summary, detail, year
   application: Strands
   description: Strands/Events Admin
 
 Event:
   fields:
-    default: name, venue, date, summary, detail, year
-    list: name, venue, date, summary, detail, year
+    default: name, venue, date, summary, year
+    list: name, venue, date, summary, year
     form: name, venue, date, summary, detail, year
   filters: year
-  relationships: performers, artists, speakers
+  relationships: performers, artists, speakers, assets
   search: name, venue, date, summary, detail, year
-  application: Strands
+  application: Events
   description: Strands/Events Admin

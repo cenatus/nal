@@ -19,4 +19,14 @@ module ApplicationHelper
     return textiled
   end
 
+
+  def article_image(klass)
+    return "" if (!klass.respond_to?(:assets) || klass.assets.blank?)
+
+    haml_tag "IMG.article_image", :src => klass.assets.first.asset.url
+
+#    url = klass.assets.first.asset.url
+#    image_tag url, :class => "article_image"
+  end
+
 end

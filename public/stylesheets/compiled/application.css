@@ -466,3 +466,15 @@ form.inline p {
 #footer {
   background-color: #ffebcd;
 }
+
+/* line 23, ../../../app/stylesheets/application.sass */
+.article_image {
+  width: 620px;
+  height: 382px;
+}
+
+/* line 26, ../../../app/stylesheets/application.sass */
+.thumbnail_image {
+  width: 300px;
+  height: 200px;
+}
