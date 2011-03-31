@@ -136,6 +136,12 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] activeresource (v3.0.3, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/activeresource-3.0.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rest-client (v1.6.1, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/rest-client-1.6.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v2.0.9, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/arel-2.0.9)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] aws-s3 (v0.6.2, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/aws-s3-0.6.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] compass (v0.10.6, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] taps (v0.3.21, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/taps-0.3.21)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sinatra (v1.0, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/sinatra-1.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sequel (v3.20.0, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/sequel-3.20.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] xml-simple (v1.0.15, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/xml-simple-1.0.15)" level="application" />
   </component>
 </module>
 

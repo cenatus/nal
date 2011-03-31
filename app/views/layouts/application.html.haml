@@ -18,22 +18,41 @@
     #container
 
       #header
-
-        %ul.menu_main
-          %li=nav_link("Home", "/")
-          %li=nav_link("News", "/news")
-          %li=nav_link("Participants", "/#{Nal::Application::CURRENT_YEAR}/participants")
-          %li=nav_link("Strands", "/#{Nal::Application::CURRENT_YEAR}/strands")
+        %hr
+        %ul.menu
+          %li=nav_link("Home_", "/")
+          %li=nav_link("News_", "/news")
+          %li=nav_link("Participants_", "/#{Nal::Application::CURRENT_YEAR}/participants")
+          %li=nav_link("Strands_", "/#{Nal::Application::CURRENT_YEAR}/strands")
           - for page in Page.where("year = '#{Nal::Application::CURRENT_YEAR}'").order("name DESC") do
-            %li=nav_link(page.name, "/#{Nal::Application::CURRENT_YEAR}/#{page.slug}")
+            %li=nav_link("#{page.name}_", "/#{Nal::Application::CURRENT_YEAR}/#{page.slug}")
+
+        %ul.social
+          %li= link_to "Facebook", "http://facebook.com/netaudioldn"
+          %li= link_to "Last FM", "http://www.last.fm/group/Netaudio+London"
+          %li= link_to "Twitter", "http://twitter.com/netaudioldn"
+          %li= link_to "RSS", "http://feeds.feedburner.com/netaudiolondon-blog"
+          %li= link_to "Newsletter", ""
+
+
+        #logo
+          %p#date
+            13-15th MAY
+          %p#heading
+            NETAUDIO
+        #mpu
+          MPU 310 x 184px
+
 
 
 
 
       #content
+        %hr.divider
         = yield
 
       #sidebar
+        %hr.divider
         %p sidebar
         %p sidebar
         %p sidebar

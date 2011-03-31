@@ -1,7 +1,7 @@
 NewsItem:
   fields:
     default: headline, summary, content
-    list: headline, summary, content, created_at
+    list: headline, summary, created_at
     form: headline, summary, content, created_at
   filters:
   search: headline, summary, content

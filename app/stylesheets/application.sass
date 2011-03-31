@@ -4,15 +4,75 @@
 
 // blueprint mixins
 
-+link-icons
+//+link-icons
 +blueprint-typography
 +blueprint-scaffolding
 
 
+// colors
+$dark_blue = #3d66ac
+$sky_blue =  #90b3df
+
+
 // layout
 #header
-  height: 348px
-  background-color: #ffebcd
+  //height: 338px
+  height: 310px
+  //background-color: #ffebcd
+  color: $dark_blue
+  hr
+    background-color: $dark_blue
+    height: 3px
+    margin-top: 32px
+
+  .menu_base
+    +inline-block-list-container
+    font-weight: bold
+    li
+      +inline-block-list-item
+      a
+        +hover-link
+        +link-colors($dark_blue, $sky_blue, $dark_blue, $dark_blue, $dark_blue)
+
+  .menu
+    @extend .menu_base
+    font-size: 13px
+    width: 60%
+    float: left
+    li
+      margin-right: 20px
+
+  .social
+    @extend .menu_base
+    font-size: 9px
+    float: right
+    width 35%
+    li
+      margin-left: 15px
+
+  #logo
+    float: left
+    clear: both
+    margin-top: 120px
+    p#date
+      font-size: 20px
+      font-weight: bold
+      margin-bottom: 0px
+    p#heading
+      font-weight: bold
+      font-size: 60px
+      margin-bottom: 40px
+      line-height: 40px
+
+  #mpu
+    float: right
+    width: 310px
+    height: 184px
+    text-align: center
+    vertical-align: middle
+    background-color: #fff
+    margin-top: 6px
+
 #container
   +showgrid
 #footer
@@ -26,6 +86,11 @@
 .thumbnail_image
   width: 300px
   height: 200px
+
+// common
+.divider
+  background-color: $dark_blue
+  height: 10px
 
 
 
