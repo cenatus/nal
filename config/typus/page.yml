@@ -2,9 +2,9 @@ Page:
   fields:
     default: name, slug, year
     list: name, slug, year
-    form: name, slug, year
+    form: name, slug, year, content
   filters: year
   relationships: content_areas
-  search: name, slug
+  search: name, slug, content
   application: Pages
   description: Pages Admin
