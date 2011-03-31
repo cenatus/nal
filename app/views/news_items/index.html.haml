@@ -3,7 +3,7 @@
 - for news_item in @strands do
   %p= news_item.created_at
   %p= link_to news_item.headline, news_item
-  :textile
+  :preserve
     #{news_item.summary}
 
 

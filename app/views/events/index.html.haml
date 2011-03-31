@@ -2,5 +2,5 @@
 
 - for event in @events do
   %p= link_to event.name, "/#{Nal::Application::CURRENT_YEAR}/event/#{event.id}"
-  :textile
+  :preserve
     #{event.summary}

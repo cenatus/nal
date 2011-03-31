@@ -1,32 +1,35 @@
 Performer:
   fields:
-    default: name, biography, homepage, twitter_name, year
-    list: name, biography, homepage, twitter_name, year
-    form: name, biography, homepage, twitter_name, year
-  filters: name, year
+    default: name, year, sort_order
+    list: name, year, sort_order
+    form: name, biography, homepage, twitter_name, year, sort_order
+  filters: event, name, year
   relationships:
-  search: name, biography, homepage, twitter_name, year
+  search: name, biography, homepage, twitter_name, year, sort_order
+  order_by: sort_order
   application: Participants
   description: Artist/Performers/Speakers Admin
 
 Artist:
   fields:
-    default: name, biography, homepage, twitter_name, year
-    list: name, biography, homepage, twitter_name, year
-    form: name, biography, homepage, twitter_name, year
-  filters: name, year
+    default: name, year, sort_order
+    list: name, year, sort_order
+    form: name, biography, homepage, twitter_name, year, sort_order
+  filters: event, name, year
   relationships:
-  search: name, biography, homepage, twitter_name, year
+  search: name, biography, homepage, twitter_name, year, sort_order
+  order_by: sort_order
   application: Participants
   description: Artist/Performers/Speakers Admin
 
 Speaker:
   fields:
-    default: name, biography, homepage, twitter_name, year
-    list: name, biography, homepage, twitter_name, year
-    form: name, biography, homepage, twitter_name, year
-  filters: name, year
+    default: name, year, sort_order
+    list: name, year, sort_order
+    form: name, biography, homepage, twitter_name, year, sort_order
+  filters: event, name, year
   relationships:
-  search: name, biography, homepage, twitter_name, year
+  search: name, biography, homepage, twitter_name, year, sort_order
+  order_by: sort_order
   application: Participants
   description: Artist/Performers/Speakers Admin

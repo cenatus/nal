@@ -1,4 +1,11 @@
 %h1= "Event: #{@event.name}"
-:textile
+:preserve
   #{@event.detail}
+
+%h2 Related Artists
+= comma = ""
+- for artist in @event.artists do
+  = comma
+  = link_to(artist.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{artist.id}")
+  - comma = "|"
   

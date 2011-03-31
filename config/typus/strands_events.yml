@@ -15,7 +15,7 @@ Event:
     list: name, venue, date, summary, detail, year
     form: name, venue, date, summary, detail, year
   filters: year
-  relationships:
+  relationships: performers, artists, speakers
   search: name, venue, date, summary, detail, year
   application: Strands
   description: Strands/Events Admin
