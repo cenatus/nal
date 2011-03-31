@@ -2,7 +2,7 @@
 
 This is an example of a **Typus** enabled model with all available options.
 You can use this example to customize your YAML files which only have set the
-most common settings.
+most common settings..
 
     Post:
       fields:
