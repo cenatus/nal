@@ -24,7 +24,7 @@
           %li=nav_link("News", "/news")
           %li=nav_link("Participants", "/#{Nal::Application::CURRENT_YEAR}/participants")
           %li=nav_link("Strands", "/#{Nal::Application::CURRENT_YEAR}/strands")
-          - for page in Page.where("year = #{Nal::Application::CURRENT_YEAR}").order("name DESC") do
+          - for page in Page.where("year = '#{Nal::Application::CURRENT_YEAR}'").order("name DESC") do
             %li=nav_link(page.name, "/#{Nal::Application::CURRENT_YEAR}/#{page.slug}")
 
 
