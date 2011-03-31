@@ -4,6 +4,7 @@
   %h3= link_to participant.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{participant.id}"
   %p= participant.type
   %p= participant.created_at
-  %p= participant.biography
+  :preserve
+    #{participant.biography}
   %p= participant.homepage
   %p= participant.twitter_name

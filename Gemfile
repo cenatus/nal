@@ -14,6 +14,7 @@ gem 'RedCloth'
 gem 'heroku'
 gem 'typus', :git => 'https://github.com/fesplugas/typus.git'
 gem 'compass'
+gem 'aws-s3'
 
 # Use unicorn as the web server
 # gem 'unicorn'

@@ -6,5 +6,5 @@
 
 %h2 Related Events
 - for event in @strand.events do
-  %p= link_to "#{event.name} - #{event.date} @ #{event.venue}", event_path
+  %p= link_to "#{event.name} - #{event.date} @ #{event.venue}", "/#{Nal::Application::CURRENT_YEAR}/event/#{event.id}"
 
