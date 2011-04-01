@@ -13,6 +13,18 @@
 $dark_blue = #3d66ac
 $sky_blue =  #90b3df
 
+$font-color = #000
+$header-color = $dark_blue
+
+// dimensions
+
+$content_width = 620px
+
+// HTML
+
+h1, h2, h3, h4, h5, h6
+  +header-text
+  text-transform: uppercase
 
 // layout
 #header
@@ -91,6 +103,27 @@ $sky_blue =  #90b3df
 .divider
   background-color: $dark_blue
   height: 10px
+
+#content
+  .divider
+    width: $content_width
+
+// news
+
+.news_item
+  height: 360px
+  width: 300px
+  float: left
+  border-bottom: 3px solid $dark_blue
+  margin-bottom: 25px
+
+  .date
+    margin-bottom: 0px
+    float: right
+    +clearfix
+
+.news_item.even
+  margin-left: 20px
 
 
 

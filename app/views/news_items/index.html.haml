@@ -1,11 +1,26 @@
 %h1 News
 
-- for news_item in @strands do
-  %p= news_item.created_at
-  %p= link_to news_item.headline, news_item
-  :preserve
-    #{news_item.summary}
+- i = 0
+- for news_item in @news_items do
 
 
+  - if i == 0
+    .news_item_featured
 
-= link_to "View Participants", "#{Nal::Application::CURRENT_YEAR}/participants"
+      - article_image news_item
+      %h3= link_to news_item.headline, news_item
+      :preserve
+        #{news_item.summary}
+
+  - else
+
+    - cell = i % 2 == 0 ? "even" : "odd"
+
+    .news_item{:class => cell}
+
+      - article_thumb news_item
+      %h3= link_to news_item.headline, news_item
+      :preserve
+        #{news_item.summary}
+
+  - i += 1

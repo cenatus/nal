@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110331113457) do
+ActiveRecord::Schema.define(:version => 20110331232252) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "first_name",       :default => "",    :null => false
@@ -42,6 +42,11 @@ ActiveRecord::Schema.define(:version => 20110331113457) do
     t.string   "style"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "thumb_file_name"
+    t.string   "thumb_content_type"
+    t.integer  "thumb_file_size"
+    t.datetime "thumb_updated_at"
+    t.integer  "news_item_id"
   end
 
   create_table "events", :force => true do |t|

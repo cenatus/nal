@@ -22,11 +22,16 @@ module ApplicationHelper
 
   def article_image(klass)
     return "" if (!klass.respond_to?(:assets) || klass.assets.blank?)
-
     haml_tag "IMG.article_image", :src => klass.assets.first.asset.url
+  end
 
-#    url = klass.assets.first.asset.url
-#    image_tag url, :class => "article_image"
+  def article_thumb(klass)
+    return "" if (!klass.respond_to?(:assets) || klass.assets.blank?)
+    haml_tag "IMG.thumb_image", :src => klass.assets.first.thumb.url
+  end
+
+  def formatted(date)
+    date.strftime("%d-%m-%Y")
   end
 
 end

@@ -394,18 +394,25 @@ form.inline p {
   margin-bottom: 0;
 }
 
-/* line 18, ../../../app/stylesheets/application.sass */
+/* line 25, ../../../app/stylesheets/application.sass */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #3d66ac;
+  text-transform: uppercase;
+}
+
+/* line 30, ../../../app/stylesheets/application.sass */
 #header {
   height: 310px;
   color: #3d66ac;
 }
-/* line 23, ../../../app/stylesheets/application.sass */
+/* line 35, ../../../app/stylesheets/application.sass */
 #header hr {
   background-color: #3d66ac;
   height: 3px;
   margin-top: 32px;
 }
-/* line 28, ../../../app/stylesheets/application.sass */
+/* line 40, ../../../app/stylesheets/application.sass */
 #header .menu_base, #header .menu, #header .social {
   margin: 0;
   padding: 0;
@@ -415,7 +422,7 @@ form.inline p {
   *zoom: 1;
   font-weight: bold;
 }
-/* line 31, ../../../app/stylesheets/application.sass */
+/* line 43, ../../../app/stylesheets/application.sass */
 #header .menu_base li, #header .menu li, #header .social li {
   list-style-image: none;
   list-style-type: none;
@@ -431,7 +438,7 @@ form.inline p {
 #header .menu_base li, #header .menu li, #header .social li {
   *display: inline;
 }
-/* line 33, ../../../app/stylesheets/application.sass */
+/* line 45, ../../../app/stylesheets/application.sass */
 #header .menu_base li a, #header .menu li a, #header .social li a {
   text-decoration: none;
   color: #3d66ac;
@@ -456,45 +463,45 @@ form.inline p {
 #header .menu_base li a:active, #header .menu li a:active, #header .social li a:active {
   color: #3d66ac;
 }
-/* line 37, ../../../app/stylesheets/application.sass */
+/* line 49, ../../../app/stylesheets/application.sass */
 #header .menu {
   font-size: 13px;
   width: 60%;
   float: left;
 }
-/* line 42, ../../../app/stylesheets/application.sass */
+/* line 54, ../../../app/stylesheets/application.sass */
 #header .menu li {
   margin-right: 20px;
 }
-/* line 45, ../../../app/stylesheets/application.sass */
+/* line 57, ../../../app/stylesheets/application.sass */
 #header .social {
   font-size: 9px;
   float: right;
 }
-/* line 50, ../../../app/stylesheets/application.sass */
+/* line 62, ../../../app/stylesheets/application.sass */
 #header .social li {
   margin-left: 15px;
 }
-/* line 53, ../../../app/stylesheets/application.sass */
+/* line 65, ../../../app/stylesheets/application.sass */
 #header #logo {
   float: left;
   clear: both;
   margin-top: 120px;
 }
-/* line 57, ../../../app/stylesheets/application.sass */
+/* line 69, ../../../app/stylesheets/application.sass */
 #header #logo p#date {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 0px;
 }
-/* line 61, ../../../app/stylesheets/application.sass */
+/* line 73, ../../../app/stylesheets/application.sass */
 #header #logo p#heading {
   font-weight: bold;
   font-size: 60px;
   margin-bottom: 40px;
   line-height: 40px;
 }
-/* line 67, ../../../app/stylesheets/application.sass */
+/* line 79, ../../../app/stylesheets/application.sass */
 #header #mpu {
   float: right;
   width: 310px;
@@ -505,30 +512,56 @@ form.inline p {
   margin-top: 6px;
 }
 
-/* line 76, ../../../app/stylesheets/application.sass */
+/* line 88, ../../../app/stylesheets/application.sass */
 #container {
   background: url('/images/grid.png?1301508934');
 }
 
-/* line 78, ../../../app/stylesheets/application.sass */
+/* line 90, ../../../app/stylesheets/application.sass */
 #footer {
   background-color: #ffebcd;
 }
 
-/* line 83, ../../../app/stylesheets/application.sass */
+/* line 95, ../../../app/stylesheets/application.sass */
 .article_image {
   width: 620px;
   height: 382px;
 }
 
-/* line 86, ../../../app/stylesheets/application.sass */
+/* line 98, ../../../app/stylesheets/application.sass */
 .thumbnail_image {
   width: 300px;
   height: 200px;
 }
 
-/* line 91, ../../../app/stylesheets/application.sass */
+/* line 103, ../../../app/stylesheets/application.sass */
 .divider {
   background-color: #3d66ac;
   height: 10px;
+}
+
+/* line 108, ../../../app/stylesheets/application.sass */
+#content .divider {
+  width: 620px;
+}
+
+/* line 113, ../../../app/stylesheets/application.sass */
+.news_item {
+  height: 360px;
+  width: 300px;
+  float: left;
+  border-bottom: 3px solid #3d66ac;
+  margin-bottom: 25px;
+}
+/* line 120, ../../../app/stylesheets/application.sass */
+.news_item .date {
+  margin-bottom: 0px;
+  float: right;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 125, ../../../app/stylesheets/application.sass */
+.news_item.even {
+  margin-left: 20px;
 }

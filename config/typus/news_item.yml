@@ -4,6 +4,7 @@ NewsItem:
     list: headline, summary, created_at
     form: headline, summary, content, created_at
   filters:
+  relationships: assets
   search: headline, summary, content
   application: News
   description: News Admin

@@ -1,3 +1,7 @@
 %h1= @news_item.headline
+- article_image @news_item
+
+%p= formatted @news_item.created_at
+
 :preserve
   #{@news_item.content}
