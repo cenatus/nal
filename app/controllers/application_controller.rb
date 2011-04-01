@@ -7,8 +7,8 @@ class ApplicationController < ActionController::Base
     require "twitter"
     begin
       @tweets = Twitter.user_timeline("netaudioldn", {:count => 5})
-    rescue
-#      yum yum
+    rescue Exception => e
+      logger.error("MSP error fetch tweets: #{e}")
     end
   end
 end
