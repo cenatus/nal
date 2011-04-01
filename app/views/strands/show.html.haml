@@ -4,7 +4,32 @@
 :preserve
   #{@strand.detail}
 
-%h2 Related Events
-- for event in @strand.events do
-  %p= link_to "#{event.name} - #{event.date} @ #{event.venue}", "/#{Nal::Application::CURRENT_YEAR}/event/#{event.id}"
+- if @strand.events.length > 0
+
+  %h2 Related Events
+  - i = 0
+  - for event in @strand.events do
+
+    - if @strand.events.length == 1
+      .news_item_featured
+
+        %h3= link_to(event.name, "/#{Nal::Application::CURRENT_YEAR}/event/#{event.id}")
+
+        :preserve
+          #{event.summary}
+
+    - else
+
+      - cell = i % 2 == 0 ? "odd" : "even"
+
+      .news_item{:class => cell}
+
+        - article_thumb event
+
+        %h3= link_to(event.name, "/#{Nal::Application::CURRENT_YEAR}/event/#{event.id}")
+
+        :preserve
+          #{event.summary}
+
+    - i += 1
 

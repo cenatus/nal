@@ -9,4 +9,12 @@ class Event < ActiveRecord::Base
   has_many :speakers
   has_and_belongs_to_many :assets
 
+  def strapline
+    "#{self.name} - #{formatted self.date} @ #{self.venue}"
+  end
+
+  def formatted
+    date.strftime("%d-%m-%Y")
+  end
+
 end
