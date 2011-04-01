@@ -15,6 +15,7 @@ $sky_blue =  #90b3df
 
 $font-color = #000
 $header-color = $dark_blue
+$twitter_grey = #636466
 
 // dimensions
 
@@ -109,7 +110,6 @@ h1, h2, h3, h4, h5, h6
     width: $content_width
 
 // news
-
 .news_item
   height: 360px
   width: 300px
@@ -125,5 +125,22 @@ h1, h2, h3, h4, h5, h6
 .news_item.even
   margin-left: 20px
 
+// twitter
+.tweet
+  border-bottom: 1px solid $dark_blue
+  font-size: 11px
+  font-weight: bold
+  color: $twitter_grey
+  padding-top: 15px
+  padding-bottom: 10px
+  p
+    margin-bottom: 5px
+  a
+    +hover-link
+    +link-colors($twitter_grey, $sky_blue, twitter_grey, twitter_grey, twitter_grey)
+  .source
+    color: #ccc
+    a
+      +link-colors(#ccc, $sky_blue, #ccc, #ccc, #ccc)
 
 

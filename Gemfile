@@ -15,6 +15,7 @@ gem 'heroku'
 gem 'typus', :git => 'https://github.com/fesplugas/typus.git'
 gem 'compass'
 gem 'aws-s3'
+gem 'twitter'
 
 # Use unicorn as the web server
 # gem 'unicorn'

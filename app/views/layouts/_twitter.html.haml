@@ -1,0 +1,10 @@
+- if !@tweets.blank?
+  - for tweet in @tweets
+    .tweet
+      %p= auto_link tweet.text
+      %span.source
+        = time_ago_in_words tweet.created_at
+        ago from
+        = auto_link tweet.source
+- else
+  %p Wot no Tweets! Looks like Twitter is down..
