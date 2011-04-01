@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110331232252) do
+ActiveRecord::Schema.define(:version => 20110401140933) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "first_name",       :default => "",    :null => false
@@ -35,10 +35,6 @@ ActiveRecord::Schema.define(:version => 20110331232252) do
     t.string   "asset_content_type"
     t.integer  "asset_file_size"
     t.datetime "asset_updated_at"
-    t.integer  "page_id"
-    t.integer  "participant_id"
-    t.integer  "strand_id"
-    t.integer  "event_id"
     t.string   "style"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -46,7 +42,35 @@ ActiveRecord::Schema.define(:version => 20110331232252) do
     t.string   "thumb_content_type"
     t.integer  "thumb_file_size"
     t.datetime "thumb_updated_at"
+    t.integer  "participant_id"
+  end
+
+  create_table "assets_events", :id => false, :force => true do |t|
+    t.integer  "asset_id"
+    t.integer  "event_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "assets_news_items", :id => false, :force => true do |t|
+    t.integer  "asset_id"
     t.integer  "news_item_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "assets_pages", :id => false, :force => true do |t|
+    t.integer  "asset_id"
+    t.integer  "page_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "assets_strands", :id => false, :force => true do |t|
+    t.integer  "asset_id"
+    t.integer  "strand_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "events", :force => true do |t|

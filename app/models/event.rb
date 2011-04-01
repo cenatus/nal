@@ -7,6 +7,6 @@ class Event < ActiveRecord::Base
   has_many :performers
   has_many :artists
   has_many :speakers
-  has_many :assets
+  has_and_belongs_to_many :assets
 
 end

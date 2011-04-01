@@ -4,6 +4,7 @@ Asset:
     list: name, asset,  thumb, asset_file_name, asset_file_size
     form: name, asset, thumb, description
   filters: name
+  relationship: pages, participants, strands, events, news_items
   search: name, description
   application: Assets
   description: Site Assets
