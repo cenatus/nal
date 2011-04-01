@@ -9,12 +9,8 @@
     <list default="true" id="bbbae15d-5b71-462f-82f6-77662587ddf7" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/g" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators" afterPath="$PROJECT_DIR$/lib/generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/stylesheets/application.sass" afterPath="$PROJECT_DIR$/app/stylesheets/application.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/stylesheets/partials/_base.scss" afterPath="$PROJECT_DIR$/app/stylesheets/partials/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/strands/index.html.haml" afterPath="$PROJECT_DIR$/app/views/strands/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/compiled/application.css" afterPath="$PROJECT_DIR$/public/stylesheets/compiled/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/asset.rb" afterPath="$PROJECT_DIR$/app/models/asset.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/participant.rb" afterPath="$PROJECT_DIR$/app/models/participant.rb" />
     </list>
     <ignored path="nal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +34,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.sass" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.sass" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/stylesheets/application.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="10" selection-start="2593" selection-end="2593" vertical-scroll-proportion="0.47766322">
+            <state line="141" column="14" selection-start="2197" selection-end="2197" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="asset.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/asset.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="19" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="participant.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/participant.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="5" selection-start="119" selection-end="119" vertical-scroll-proportion="0.05498282">
               <folding />
             </state>
           </provider>
@@ -91,12 +105,10 @@
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/layouts/_twitter.html.haml" />
-        <option value="$PROJECT_DIR$/app/models/participant.rb" />
         <option value="$PROJECT_DIR$/app/models/strand.rb" />
         <option value="$PROJECT_DIR$/app/models/event.rb" />
         <option value="$PROJECT_DIR$/app/models/news_item.rb" />
         <option value="$PROJECT_DIR$/app/models/page.rb" />
-        <option value="$PROJECT_DIR$/app/models/asset.rb" />
         <option value="$PROJECT_DIR$/config/typus/asset.yml" />
         <option value="$PROJECT_DIR$/db/migrate/20110401140933_assets_habtm.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
@@ -104,6 +116,8 @@
         <option value="$PROJECT_DIR$/app/stylesheets/partials/_base.scss" />
         <option value="$PROJECT_DIR$/app/views/strands/index.html.haml" />
         <option value="$PROJECT_DIR$/app/stylesheets/application.sass" />
+        <option value="$PROJECT_DIR$/app/models/asset.rb" />
+        <option value="$PROJECT_DIR$/app/models/participant.rb" />
       </list>
     </option>
   </component>
@@ -666,13 +680,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_twitter.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="0.13745704">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="7" selection-start="301" selection-end="301" vertical-scroll-proportion="0.15120275">
@@ -683,13 +690,6 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20110401140933_assets_habtm.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="36" selection-start="212" selection-end="212" vertical-scroll-proportion="0.082474224">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/asset.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="640" selection-end="640" vertical-scroll-proportion="0.11162791">
           <folding />
         </state>
       </provider>
@@ -773,7 +773,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/stylesheets/application.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="10" selection-start="2593" selection-end="2593" vertical-scroll-proportion="0.47766322">
+        <state line="141" column="14" selection-start="2197" selection-end="2197" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/asset.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/participant.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="5" selection-start="119" selection-end="119" vertical-scroll-proportion="0.05498282">
           <folding />
         </state>
       </provider>

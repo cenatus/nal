@@ -7,11 +7,11 @@ class Asset < ActiveRecord::Base
 #  :typus_preview and :typus_thumbnail
 
   has_and_belongs_to_many :pages
-  has_and_belongs_to_many :participants
   has_and_belongs_to_many :strands
   has_and_belongs_to_many :events
   has_and_belongs_to_many :news_items
 
+  belongs_to :participant
 
 
 end
