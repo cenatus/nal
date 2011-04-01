@@ -72,4 +72,6 @@
         = render :partial => "/layouts/twitter"
 
       #footer
-        %p footer
+        - a = Asset.find(25)
+        - if !a.blank?
+          =image_tag a.asset.url

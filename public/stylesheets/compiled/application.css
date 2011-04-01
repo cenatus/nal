@@ -517,35 +517,30 @@ h1, h2, h3, h4, h5, h6 {
   background: url('/images/grid.png?1301508934');
 }
 
-/* line 91, ../../../app/stylesheets/application.sass */
-#footer {
-  background-color: #ffebcd;
-}
-
-/* line 96, ../../../app/stylesheets/application.sass */
+/* line 95, ../../../app/stylesheets/application.sass */
 .article_image {
   width: 620px;
   height: 382px;
 }
 
-/* line 99, ../../../app/stylesheets/application.sass */
+/* line 98, ../../../app/stylesheets/application.sass */
 .thumbnail_image {
   width: 300px;
   height: 185px;
 }
 
-/* line 104, ../../../app/stylesheets/application.sass */
+/* line 103, ../../../app/stylesheets/application.sass */
 .divider {
   background-color: #3d66ac;
   height: 10px;
 }
 
-/* line 109, ../../../app/stylesheets/application.sass */
+/* line 108, ../../../app/stylesheets/application.sass */
 #content .divider {
   width: 620px;
 }
 
-/* line 113, ../../../app/stylesheets/application.sass */
+/* line 112, ../../../app/stylesheets/application.sass */
 .news_item {
   height: 360px;
   width: 300px;
@@ -553,7 +548,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 3px solid #3d66ac;
   margin-bottom: 25px;
 }
-/* line 120, ../../../app/stylesheets/application.sass */
+/* line 119, ../../../app/stylesheets/application.sass */
 .news_item .date {
   margin-bottom: 0px;
   float: right;
@@ -561,19 +556,19 @@ h1, h2, h3, h4, h5, h6 {
   *zoom: 1;
 }
 
-/* line 125, ../../../app/stylesheets/application.sass */
+/* line 124, ../../../app/stylesheets/application.sass */
 .news_item.even {
   margin-left: 20px;
 }
 
-/* line 131, ../../../app/stylesheets/application.sass */
+/* line 130, ../../../app/stylesheets/application.sass */
 .mosaic_block, .strand {
   border: 1px solid white;
   overflow: hidden;
   position: relative;
 }
 
-/* line 137, ../../../app/stylesheets/application.sass */
+/* line 136, ../../../app/stylesheets/application.sass */
 .mosaic-backdrop {
   display: none;
   position: absolute;
@@ -582,7 +577,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 300px;
 }
 
-/* line 146, ../../../app/stylesheets/application.sass */
+/* line 145, ../../../app/stylesheets/application.sass */
 .mosaic-overlay {
   display: none;
   z-index: 5;
@@ -594,7 +589,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
 }
-/* line 154, ../../../app/stylesheets/application.sass */
+/* line 153, ../../../app/stylesheets/application.sass */
 .mosaic-overlay a {
   color: inherit;
   text-decoration: inherit;
@@ -622,18 +617,18 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-/* line 159, ../../../app/stylesheets/application.sass */
+/* line 158, ../../../app/stylesheets/application.sass */
 .strand .mosaic-overlay {
   top: -230px;
   height: 300px;
 }
 
-/* line 164, ../../../app/stylesheets/application.sass */
+/* line 163, ../../../app/stylesheets/application.sass */
 .strand .mosaic-overlay:hover {
   cursor: hand;
 }
 
-/* line 168, ../../../app/stylesheets/application.sass */
+/* line 167, ../../../app/stylesheets/application.sass */
 .strand {
   color: white;
   height: 300px;
@@ -641,19 +636,19 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   margin-bottom: 20px;
 }
-/* line 176, ../../../app/stylesheets/application.sass */
+/* line 175, ../../../app/stylesheets/application.sass */
 .strand h3 {
   position: absolute;
   bottom: 0px;
   color: white;
   margin-left: 5px;
 }
-/* line 182, ../../../app/stylesheets/application.sass */
+/* line 181, ../../../app/stylesheets/application.sass */
 .strand p {
   margin: 5px;
   color: white;
 }
-/* line 186, ../../../app/stylesheets/application.sass */
+/* line 185, ../../../app/stylesheets/application.sass */
 .strand a {
   color: inherit;
   text-decoration: inherit;
@@ -681,12 +676,12 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-/* line 192, ../../../app/stylesheets/application.sass */
+/* line 191, ../../../app/stylesheets/application.sass */
 .strand.even {
   margin-left: 20px;
 }
 
-/* line 196, ../../../app/stylesheets/application.sass */
+/* line 195, ../../../app/stylesheets/application.sass */
 .tweet {
   border-bottom: 1px solid #3d66ac;
   font-size: 11px;
@@ -695,11 +690,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 15px;
   padding-bottom: 10px;
 }
-/* line 203, ../../../app/stylesheets/application.sass */
+/* line 202, ../../../app/stylesheets/application.sass */
 .tweet p {
   margin-bottom: 5px;
 }
-/* line 205, ../../../app/stylesheets/application.sass */
+/* line 204, ../../../app/stylesheets/application.sass */
 .tweet a {
   text-decoration: none;
   color: #636466;
@@ -724,11 +719,11 @@ h1, h2, h3, h4, h5, h6 {
 .tweet a:active {
   color: twitter_grey;
 }
-/* line 208, ../../../app/stylesheets/application.sass */
+/* line 207, ../../../app/stylesheets/application.sass */
 .tweet .source {
   color: #cccccc;
 }
-/* line 210, ../../../app/stylesheets/application.sass */
+/* line 209, ../../../app/stylesheets/application.sass */
 .tweet .source a {
   color: #cccccc;
 }
