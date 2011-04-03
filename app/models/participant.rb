@@ -4,4 +4,6 @@ class Participant < ActiveRecord::Base
 
   has_many :assets
   belongs_to :event
+
+  has_friendly_id :name, :use_slug => true
 end

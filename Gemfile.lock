@@ -53,6 +53,7 @@ GEM
       builder
       mime-types
       xml-simple
+    babosa (0.3.2)
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
     compass (0.10.6)
@@ -67,6 +68,8 @@ GEM
     faraday_middleware (0.3.2)
       faraday (~> 0.5.4)
     fastercsv (1.5.4)
+    friendly_id (3.2.1.1)
+      babosa (~> 0.3.0)
     haml (3.0.25)
     hashie (1.0.0)
     heroku (1.19.1)
@@ -87,6 +90,7 @@ GEM
     multi_json (0.0.5)
     multi_xml (0.2.2)
     multipart-post (1.1.0)
+    mysql2 (0.2.7)
     polyglot (0.3.1)
     rack (1.2.2)
     rack-mount (0.6.14)
@@ -149,9 +153,11 @@ DEPENDENCIES
   RedCloth
   aws-s3
   compass
+  friendly_id (~> 3.2.1)
   haml
   heroku
   hpricot
+  mysql2
   paperclip!
   rails (= 3.0.3)
   ruby_parser

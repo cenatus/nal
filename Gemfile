@@ -16,6 +16,7 @@ gem 'typus', :git => 'https://github.com/fesplugas/typus.git'
 gem 'compass'
 gem 'aws-s3'
 gem 'twitter'
+gem "friendly_id", "~> 3.2.1"
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -39,5 +40,6 @@ gem 'twitter'
 group :development, :test do
   gem 'taps'
   gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'mysql2'
 #  gem 'webrat'
 end

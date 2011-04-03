@@ -2,10 +2,10 @@
 
 - article_image @participant
 
-%p= @participant.created_at
+%p= formatted @participant.created_at
 %p= @participant.name
 
 :preserve
   #{@participant.biography}
-%p= @participant.homepage
+%p= auto_link @participant.homepage
 %p= @participant.twitter_name

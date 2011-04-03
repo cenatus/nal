@@ -1,7 +1,7 @@
 Page:
   fields:
     default: name, slug, year
-    list: name, slug, year
+    list: name, slug, year,  created_at
     form: name, slug, year, content
   filters: year
   relationships: content_areas, assets

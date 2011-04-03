@@ -512,11 +512,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 6px;
 }
 
-/* line 89, ../../../app/stylesheets/application.sass */
-#container {
-  background: url('/images/grid.png?1301508934');
-}
-
 /* line 95, ../../../app/stylesheets/application.sass */
 .article_image {
   width: 620px;

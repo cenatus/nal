@@ -7,7 +7,7 @@
   - cell = i % 2 == 0 ? "odd" : "even"
   .strand{:class => "msp#{i} "+cell}
 
-    %a.mosaic-overlay{:href => "/#{Nal::Application::CURRENT_YEAR}/strand/#{strand.id}"}
+    %a.mosaic-overlay{:href => "/#{Nal::Application::CURRENT_YEAR}/strand/#{strand.friendly_id}"}
       .details
         %p
           :preserve

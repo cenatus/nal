@@ -4,4 +4,5 @@ class Page < ActiveRecord::Base
   validates_presence_of :name, :slug, :year
   has_many :content_areas
   has_and_belongs_to_many :assets
+
 end

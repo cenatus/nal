@@ -13,7 +13,7 @@
     - if @strand.events.length == 1
       .news_item_featured
 
-        %h3= link_to(event.name, "/#{Nal::Application::CURRENT_YEAR}/event/#{event.id}")
+        %h3= link_to(event.name, "/#{Nal::Application::CURRENT_YEAR}/event/#{event.friendly_id}")
 
         :preserve
           #{event.summary}
@@ -26,7 +26,7 @@
 
         - article_thumb event
 
-        %h3= link_to(event.name, "/#{Nal::Application::CURRENT_YEAR}/event/#{event.id}")
+        %h3= link_to(event.name, "/#{Nal::Application::CURRENT_YEAR}/event/#{event.friendly_id}")
 
         :preserve
           #{event.summary}

@@ -9,6 +9,8 @@ class Event < ActiveRecord::Base
   has_many :speakers
   has_and_belongs_to_many :assets
 
+  has_friendly_id :name, :use_slug => true
+
   def strapline
     "#{self.name} - #{formatted self.date} @ #{self.venue}"
   end

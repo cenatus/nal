@@ -10,6 +10,6 @@
   = comma = ""
   - for performer in @event.performers do
     = comma
-    = link_to(performer.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{performer.id}")
+    = link_to(performer.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{performer.friendly_id}")
     - comma = "|"
 

@@ -1,10 +1,10 @@
 %h1 All Participants
 
 - for participant in @participants do
-  %h3= link_to participant.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{participant.id}"
+  %h3= link_to participant.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{participant.friendly_id}"
   %p= participant.type
-  %p= participant.created_at
+  %p= formatted participant.created_at
   :preserve
     #{participant.biography}
-  %p= participant.homepage
+  %p= auto_link participant.homepage
   %p= participant.twitter_name
