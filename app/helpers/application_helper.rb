@@ -22,12 +22,21 @@ module ApplicationHelper
 
   def article_image(klass)
     return "" if (!klass.respond_to?(:assets) || klass.assets.blank?)
-    haml_tag "IMG.article_image", :src => klass.assets.first.asset.url
+    class_slug = klass.class.to_s == "NewsItem" ? "News" : klass.class.to_s
+    year = klass.class.to_s == "NewsItem" ? "" : "#{Nal::Application::CURRENT_YEAR}/"
+
+    haml_tag "a", {:href => "/#{year}#{class_slug.downcase}/#{klass.friendly_id}"} do
+      haml_tag "IMG.article_image", :src => klass.assets.first.asset.url
+    end
   end
 
   def article_thumb(klass)
     return "" if (!klass.respond_to?(:assets) || klass.assets.blank?)
-    haml_tag "IMG.thumb_image", :src => klass.assets.first.thumb.url
+    class_slug = klass.class.to_s == "NewsItem" ? "News" : klass.class.to_s
+    year = klass.class.to_s == "NewsItem" ? "" : "#{Nal::Application::CURRENT_YEAR}/"
+    haml_tag "a", {:href => "/#{year}#{class_slug.downcase}/#{klass.friendly_id}"} do
+      haml_tag "IMG.thumb_image", :src => klass.assets.first.thumb.url
+    end
   end
 
   def formatted(date)
