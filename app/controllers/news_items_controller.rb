@@ -11,6 +11,8 @@ class NewsItemsController < ApplicationController
 
   def show
     @news_item = NewsItem.find(params[:id])
+    @tags = NewsItem.tag_counts_on(:tags)
+    
     respond_to do |format|
       format.html # show.haml
       format.xml  { render :xml => @news_item.to_xml }
