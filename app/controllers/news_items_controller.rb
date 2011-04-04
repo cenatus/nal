@@ -14,7 +14,14 @@ class NewsItemsController < ApplicationController
   end
 
   def show
-    @news_item = NewsItem.find(params[:id])
+
+    if params[:old_id].blank?
+      @news_item = NewsItem.find(params[:id])
+    else
+      # blog/195/listen-to-and-vote-for-the-submissions
+      @news_item = NewsItem.find_by_old_id(params[:old_id])
+    end
+    
     @tags = NewsItem.tag_counts_on(:tags)
     
     respond_to do |format|

@@ -1,4 +1,4 @@
-%h1= "#{@event.name}"
+%h2= "#{@event.name}"
 
 - article_image @event
 
@@ -6,7 +6,7 @@
   #{@event.detail}
 
 - if @event.performers.length > 0
-  %h2 Related Performers
+  %h3 Related Performers
   = comma = ""
   - for performer in @event.performers do
     = comma

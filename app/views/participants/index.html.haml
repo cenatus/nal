@@ -1,10 +1,16 @@
-%h1 All Participants
+%h2 All Participants_
 
-- for participant in @participants do
-  %h3= link_to participant.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{participant.friendly_id}"
-  %p= participant.type
-  %p= formatted participant.created_at
-  :preserve
-    #{participant.biography}
-  %p= auto_link participant.homepage
-  %p= participant.twitter_name
+
+%h3 Performers
+- for performer in @performers do
+  = render :partial => "participant", :locals => {:participant => performer}
+
+%hr
+%h3 Artists
+- for artist in @artists do
+  = render :partial => "participant", :locals => {:participant => artist}
+
+%hr
+%h3 Speakers
+- for speaker in @speakers do
+  = render :partial => "participant", :locals => {:participant => speaker}

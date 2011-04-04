@@ -8,6 +8,10 @@ Nal::Application.routes.draw do
   match "news" => "news_items#index"
   match "news/:id" => "news_items#show", :as => :news_item
 
+  # old blog redirects
+  #  e.g. blog/195/listen-to-and-vote-for-the-submissions
+  match "/blog/:old_id/:old_slug" => "news_items#show"
+
   match "tag/:id" => "news_items#tagged_with"
 
 

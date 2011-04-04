@@ -568,37 +568,42 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 6px;
 }
 
-/* line 110, ../../../app/stylesheets/application.sass */
+/* line 106, ../../../app/stylesheets/application.sass */
+#footer {
+  margin-top: 40px;
+}
+
+/* line 111, ../../../app/stylesheets/application.sass */
 .article_image {
   width: 620px;
   height: 382px;
 }
 
-/* line 113, ../../../app/stylesheets/application.sass */
+/* line 114, ../../../app/stylesheets/application.sass */
 .thumbnail_image {
   width: 300px;
   height: 185px;
 }
 
-/* line 118, ../../../app/stylesheets/application.sass */
+/* line 119, ../../../app/stylesheets/application.sass */
 .divider {
   background-color: #3d66ac;
   height: 10px;
 }
 
-/* line 122, ../../../app/stylesheets/application.sass */
+/* line 123, ../../../app/stylesheets/application.sass */
 #content {
   min-height: 500px;
   height: auto !important;
   height: 500px;
   position: relative;
 }
-/* line 123, ../../../app/stylesheets/application.sass */
+/* line 124, ../../../app/stylesheets/application.sass */
 #content .divider {
   width: 620px;
 }
 
-/* line 129, ../../../app/stylesheets/application.sass */
+/* line 130, ../../../app/stylesheets/application.sass */
 .news_item {
   height: 360px;
   width: 300px;
@@ -606,7 +611,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 3px solid #3d66ac;
   margin-bottom: 25px;
 }
-/* line 136, ../../../app/stylesheets/application.sass */
+/* line 137, ../../../app/stylesheets/application.sass */
 .news_item .date {
   margin-bottom: 0px;
   float: right;
@@ -614,19 +619,19 @@ h1, h2, h3, h4, h5, h6 {
   *zoom: 1;
 }
 
-/* line 141, ../../../app/stylesheets/application.sass */
+/* line 142, ../../../app/stylesheets/application.sass */
 .news_item.even {
   margin-left: 20px;
 }
 
-/* line 147, ../../../app/stylesheets/application.sass */
+/* line 148, ../../../app/stylesheets/application.sass */
 .mosaic_block, .strand {
   border: 1px solid white;
   overflow: hidden;
   position: relative;
 }
 
-/* line 153, ../../../app/stylesheets/application.sass */
+/* line 154, ../../../app/stylesheets/application.sass */
 .mosaic-backdrop {
   display: none;
   position: absolute;
@@ -635,7 +640,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 300px;
 }
 
-/* line 162, ../../../app/stylesheets/application.sass */
+/* line 163, ../../../app/stylesheets/application.sass */
 .mosaic-overlay {
   display: none;
   z-index: 5;
@@ -647,7 +652,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
 }
-/* line 170, ../../../app/stylesheets/application.sass */
+/* line 171, ../../../app/stylesheets/application.sass */
 .mosaic-overlay a {
   color: inherit;
   text-decoration: inherit;
@@ -675,18 +680,18 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-/* line 175, ../../../app/stylesheets/application.sass */
+/* line 176, ../../../app/stylesheets/application.sass */
 .strand .mosaic-overlay {
   top: -230px;
   height: 300px;
 }
 
-/* line 180, ../../../app/stylesheets/application.sass */
+/* line 181, ../../../app/stylesheets/application.sass */
 .strand .mosaic-overlay:hover {
   cursor: hand;
 }
 
-/* line 184, ../../../app/stylesheets/application.sass */
+/* line 185, ../../../app/stylesheets/application.sass */
 .strand {
   color: white;
   height: 300px;
@@ -694,19 +699,19 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   margin-bottom: 20px;
 }
-/* line 192, ../../../app/stylesheets/application.sass */
+/* line 193, ../../../app/stylesheets/application.sass */
 .strand h3 {
   position: absolute;
   bottom: 0px;
   color: white;
   margin-left: 5px;
 }
-/* line 198, ../../../app/stylesheets/application.sass */
+/* line 199, ../../../app/stylesheets/application.sass */
 .strand p {
   margin: 5px;
   color: white;
 }
-/* line 202, ../../../app/stylesheets/application.sass */
+/* line 203, ../../../app/stylesheets/application.sass */
 .strand a {
   color: inherit;
   text-decoration: inherit;
@@ -734,12 +739,12 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-/* line 208, ../../../app/stylesheets/application.sass */
+/* line 209, ../../../app/stylesheets/application.sass */
 .strand.even {
   margin-left: 20px;
 }
 
-/* line 212, ../../../app/stylesheets/application.sass */
+/* line 213, ../../../app/stylesheets/application.sass */
 .tweet {
   border-bottom: 1px solid #3d66ac;
   font-size: 11px;
@@ -748,11 +753,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 15px;
   padding-bottom: 10px;
 }
-/* line 219, ../../../app/stylesheets/application.sass */
+/* line 220, ../../../app/stylesheets/application.sass */
 .tweet p {
   margin-bottom: 5px;
 }
-/* line 221, ../../../app/stylesheets/application.sass */
+/* line 222, ../../../app/stylesheets/application.sass */
 .tweet a {
   text-decoration: none;
   color: #636466;
@@ -777,11 +782,11 @@ h1, h2, h3, h4, h5, h6 {
 .tweet a:active {
   color: twitter_grey;
 }
-/* line 224, ../../../app/stylesheets/application.sass */
+/* line 225, ../../../app/stylesheets/application.sass */
 .tweet .source {
   color: #cccccc;
 }
-/* line 226, ../../../app/stylesheets/application.sass */
+/* line 227, ../../../app/stylesheets/application.sass */
 .tweet .source a {
   color: #cccccc;
 }
@@ -802,12 +807,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #cccccc;
 }
 
-/* line 230, ../../../app/stylesheets/application.sass */
+/* line 231, ../../../app/stylesheets/application.sass */
 .tags {
   margin-bottom: 10px;
 }
 
-/* line 233, ../../../app/stylesheets/application.sass */
+/* line 234, ../../../app/stylesheets/application.sass */
 .pagination {
   clear: both;
   background: white;
@@ -817,37 +822,37 @@ h1, h2, h3, h4, h5, h6 {
   left: 0px;
   /* self-clearing method: */
 }
-/* line 240, ../../../app/stylesheets/application.sass */
+/* line 241, ../../../app/stylesheets/application.sass */
 .pagination a, .pagination span, .pagination em {
   padding: 0em 0.3em;
   display: block;
   float: left;
   margin-right: 1px;
 }
-/* line 245, ../../../app/stylesheets/application.sass */
+/* line 246, ../../../app/stylesheets/application.sass */
 .pagination span.disabled {
   color: #999999;
   border: 1px solid #dddddd;
 }
-/* line 248, ../../../app/stylesheets/application.sass */
+/* line 249, ../../../app/stylesheets/application.sass */
 .pagination em {
   font-weight: bold;
   background: #3d66ac;
   color: white;
   border: 1px solid #3d66ac;
 }
-/* line 253, ../../../app/stylesheets/application.sass */
+/* line 254, ../../../app/stylesheets/application.sass */
 .pagination a {
   text-decoration: none;
   color: #105cb6;
   border: 1px solid #90b3df;
 }
-/* line 257, ../../../app/stylesheets/application.sass */
+/* line 258, ../../../app/stylesheets/application.sass */
 .pagination a:hover, .pagination a:focus {
   color: #000033;
   border-color: #000033;
 }
-/* line 260, ../../../app/stylesheets/application.sass */
+/* line 261, ../../../app/stylesheets/application.sass */
 .pagination .page_info {
   background: #3d66ac;
   color: white;
@@ -856,13 +861,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.3em;
   text-align: center;
 }
-/* line 267, ../../../app/stylesheets/application.sass */
+/* line 268, ../../../app/stylesheets/application.sass */
 .pagination .page_info b {
   color: #000033;
   background: #79a2e8;
   padding: 0.1em 0.25em;
 }
-/* line 273, ../../../app/stylesheets/application.sass */
+/* line 274, ../../../app/stylesheets/application.sass */
 .pagination:after {
   content: ".";
   display: block;
@@ -870,11 +875,11 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
   visibility: hidden;
 }
-/* line 279, ../../../app/stylesheets/application.sass */
+/* line 280, ../../../app/stylesheets/application.sass */
 * html .pagination {
   height: 1%;
 }
-/* line 281, ../../../app/stylesheets/application.sass */
+/* line 282, ../../../app/stylesheets/application.sass */
 *:first-child + html .pagination {
   overflow: hidden;
 }

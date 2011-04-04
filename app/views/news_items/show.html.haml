@@ -1,7 +1,10 @@
-%h1= @news_item.headline
-- article_image @news_item
+- if !@news_item.blank?
+  %h2= @news_item.headline
+  - article_image @news_item
 
-%p= formatted @news_item.created_at
+  %p= formatted @news_item.created_at
 
-:preserve
-  #{@news_item.content}
+  :preserve
+    #{@news_item.content}
+- else
+  %p Sorry, we were unable to find that news item. Please try searching instead.

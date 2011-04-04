@@ -13,10 +13,19 @@
     = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"
     = javascript_include_tag "/javascripts/mosaic/js/mosaic.1.0.1.min.js"
 
+    = javascript_include_tag "cufon-yui.js"
+    = javascript_include_tag "BM_bug_400.font"
+
     :javascript
+
+      Cufon.replace('#date'); // Works without a selector engine
+      Cufon.replace('#heading'); // Works without a selector engine
+      Cufon.replace('h1'); // Works without a selector engine
+      Cufon.replace('h2'); // Works without a selector engine
+      Cufon.replace('h3'); // Works without a selector engine
+      //Cufon.replace('#sub1'); // Requires a selector engine for IE 6-7, see above
+
       jQuery(function($){
-
-
 
         $('.strand').mosaic({
             animation	:	'slide'		//fade or slide

@@ -8,11 +8,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbbae15d-5b71-462f-82f6-77662587ddf7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/news_items/index.rss.builder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/participants/_participant.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20110404155348_add_old_id_to_news_item.rb" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/g" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators" afterPath="$PROJECT_DIR$/lib/generators" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/news_items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/news_items_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/participants_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/participants_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/stylesheets/application.sass" afterPath="$PROJECT_DIR$/app/stylesheets/application.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/events/index.html.haml" afterPath="$PROJECT_DIR$/app/views/events/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/events/show.html.haml" afterPath="$PROJECT_DIR$/app/views/events/show.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/news_items/index.html.haml" afterPath="$PROJECT_DIR$/app/views/news_items/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/news_items/show.html.haml" afterPath="$PROJECT_DIR$/app/views/news_items/show.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/dynamic.html.haml" afterPath="$PROJECT_DIR$/app/views/pages/dynamic.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/participants/index.html.haml" afterPath="$PROJECT_DIR$/app/views/participants/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/participants/show.html.haml" afterPath="$PROJECT_DIR$/app/views/participants/show.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/strands/index.html.haml" afterPath="$PROJECT_DIR$/app/views/strands/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/strands/show.html.haml" afterPath="$PROJECT_DIR$/app/views/strands/show.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/typus/news_item.yml" afterPath="$PROJECT_DIR$/config/typus/news_item.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="nal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,19 +52,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="news_items_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/news_items_controller.rb">
+      <file leaf-file-name="dynamic.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/pages/dynamic.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="64" selection-start="402" selection-end="402" vertical-scroll-proportion="0.19424461">
+            <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.rss.builder" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/news_items/index.rss.builder">
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/participants/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="9" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+            <state line="12" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/participants/show.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/strands/index.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/strands/show.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="11" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.sass" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/stylesheets/application.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="106" column="14" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.95683455">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/events/show.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="5" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -57,52 +118,25 @@
       <file leaf-file-name="_news_items.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/news_items/_news_items.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="27" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/news_items/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="52" selection-start="3004" selection-end="3004" vertical-scroll-proportion="0.0">
+            <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.sass" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/stylesheets/application.sass">
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/news_items/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="237" column="12" selection-start="3842" selection-end="3842" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_tag_cloud.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/news_items/_tag_cloud.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="18" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="16" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="14" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
+            <state line="1" column="5" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,22 +156,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/helpers/news_item_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/news_items/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/news_items/tagged_with.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/news_items/_news_items.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_twitter.html.haml" />
-        <option value="$PROJECT_DIR$/app/stylesheets/application.sass" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/news_items/_tag_cloud.html.haml" />
+        <option value="$PROJECT_DIR$/db/migrate/20110404155348_add_old_id_to_news_item.rb" />
+        <option value="$PROJECT_DIR$/config/typus/news_item.yml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/sitemap/sitemap.xml" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/sitemap_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/sitemap/sitemap.rxml" />
-        <option value="$PROJECT_DIR$/app/views/news_items/index.rss.builder" />
-        <option value="$PROJECT_DIR$/app/controllers/news_items_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/strands/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/strands/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/events/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/pages/dynamic.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/participants_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/participants/_participant.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/participants/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/participants/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/events/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/news_items/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/news_items/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/stylesheets/application.sass" />
       </list>
     </option>
   </component>
@@ -294,6 +328,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -331,6 +397,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strands" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,7 +444,91 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="participants" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="news_items" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -695,114 +849,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/helpers/news_item_helper.rb">
+    <entry file="file://$PROJECT_DIR$/config/typus/news_item.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="38" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/gems/acts-as-taggable-on-2.0.6/lib/acts_as_taggable_on/tags_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="267" selection-end="292" vertical-scroll-proportion="0.19424461">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/news_items/tagged_with.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_twitter.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/stylesheets/application.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="237" column="12" selection-start="3842" selection-end="3842" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/news_items/_news_items.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="27" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="52" selection-start="3004" selection-end="3004" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="14" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/events_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="403" selection-end="403" vertical-scroll-proportion="0.41007194">
+        <state line="10" column="25" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
+        <state line="12" column="28" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="5" selection-start="1560" selection-end="1560" vertical-scroll-proportion="0.95683455">
+        <state line="24" column="23" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitemap/sitemap.rxml">
+    <entry file="file://$PROJECT_DIR$/app/views/events/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="52" selection-start="1423" selection-end="1423" vertical-scroll-proportion="1.1223022">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sitemap_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/participants_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="5" selection-start="395" selection-end="395" vertical-scroll-proportion="0.19424461">
+        <state line="1" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/news_items/_tag_cloud.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/participants/_participant.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+        <state line="1" column="3" selection-start="110" selection-end="110" vertical-scroll-proportion="0.021582734">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/news_items/index.rss.builder">
+    <entry file="file://$PROJECT_DIR$/app/views/events/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="9" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+        <state line="8" column="5" selection-start="116" selection-end="116" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/news_items_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/news_items/_news_items.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="64" selection-start="402" selection-end="402" vertical-scroll-proportion="0.19424461">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/news_items/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/news_items/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="5" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/dynamic.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/participants/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/participants/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/strands/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/strands/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="11" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/stylesheets/application.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="14" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.95683455">
           <folding />
         </state>
       </provider>

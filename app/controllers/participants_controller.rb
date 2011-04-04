@@ -1,6 +1,8 @@
 class ParticipantsController < ApplicationController
   def index
-    @participants = Participant.order("created_at DESC")
+    @performers = Performer.order("created_at DESC")
+    @artists = Artist.order("created_at DESC")
+    @speakers = Speaker.order("created_at DESC")
 
     respond_to do |format|
       format.html # index.haml
