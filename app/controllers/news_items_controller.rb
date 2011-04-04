@@ -6,6 +6,10 @@ class NewsItemsController < ApplicationController
     respond_to do |format|
       format.html # index.haml
       format.xml { render :xml => @news_items.to_xml }
+      format.rss {
+        @news_items = NewsItem.order("created_at DESC").limit(20)
+        render :layout => false
+      }
     end
   end
 

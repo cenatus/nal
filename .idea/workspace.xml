@@ -8,14 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbbae15d-5b71-462f-82f6-77662587ddf7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/matt.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/sitemap_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sitemap/sitemap.rxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/news_items/index.rss.builder" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/g" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators" afterPath="$PROJECT_DIR$/lib/generators" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/news_items_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/news_items_controller.rb" />
     </list>
     <ignored path="nal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,10 +36,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="news_items_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="news_items_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/news_items_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+            <state line="9" column="64" selection-start="402" selection-end="402" vertical-scroll-proportion="0.19424461">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.rss.builder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/news_items/index.rss.builder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="9" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,24 +90,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sitemap_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/sitemap_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="5" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sitemap.rxml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/sitemap/sitemap.rxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="52" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.6978417">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -134,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/typus/news_item.yml" />
         <option value="$PROJECT_DIR$/app/helpers/news_item_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/news_items/index.html.haml" />
@@ -142,7 +129,6 @@
         <option value="$PROJECT_DIR$/app/views/news_items/_news_items.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/_twitter.html.haml" />
         <option value="$PROJECT_DIR$/app/stylesheets/application.sass" />
-        <option value="$PROJECT_DIR$/app/controllers/news_items_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/news_items/_tag_cloud.html.haml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -150,6 +136,8 @@
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/sitemap_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/sitemap/sitemap.rxml" />
+        <option value="$PROJECT_DIR$/app/views/news_items/index.rss.builder" />
+        <option value="$PROJECT_DIR$/app/controllers/news_items_controller.rb" />
       </list>
     </option>
   </component>
@@ -365,6 +353,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sitemap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news_items" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -685,13 +695,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/news_items/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="33" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/news_item_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="38" selection-start="60" selection-end="60" vertical-scroll-proportion="0.0">
@@ -727,13 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/news_items_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/news_items/_news_items.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="27" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
@@ -751,13 +747,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="14" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/news_items/_tag_cloud.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -783,16 +772,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sitemap_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/sitemap/sitemap.rxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="5" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+        <state line="52" column="52" selection-start="1423" selection-end="1423" vertical-scroll-proportion="1.1223022">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sitemap/sitemap.rxml">
+    <entry file="file://$PROJECT_DIR$/app/controllers/sitemap_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="52" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.6978417">
+        <state line="9" column="5" selection-start="395" selection-end="395" vertical-scroll-proportion="0.19424461">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/news_items/_tag_cloud.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="18" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/news_items/index.rss.builder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="9" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/news_items_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="64" selection-start="402" selection-end="402" vertical-scroll-proportion="0.19424461">
           <folding />
         </state>
       </provider>
