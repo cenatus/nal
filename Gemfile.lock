@@ -47,6 +47,7 @@ GEM
       activemodel (= 3.0.3)
       activesupport (= 3.0.3)
     activesupport (3.0.3)
+    acts-as-taggable-on (2.0.6)
     addressable (2.2.4)
     arel (2.0.9)
     aws-s3 (0.6.2)
@@ -151,6 +152,7 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth
+  acts-as-taggable-on
   aws-s3
   compass
   friendly_id (~> 3.2.1)

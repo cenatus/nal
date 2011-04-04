@@ -1,0 +1,7 @@
+%h1 News
+
+- if !@news_items.blank? && @news_items.length > 0
+  %h4= "Tagged with \"#{params[:id]}\" "
+  = render :partial => 'news_items'
+- else
+  %h4= "No News items tagged with \"#{params[:id]}\" "

@@ -1,26 +1,2 @@
 %h1 News
-
-- i = 0
-- for news_item in @news_items do
-
-
-  - if i == 0
-    .news_item_featured
-
-      - article_image news_item
-      %h3= link_to news_item.headline, news_item
-      :preserve
-        #{news_item.summary}
-
-  - else
-
-    - cell = i % 2 == 0 ? "even" : "odd"
-
-    .news_item{:class => cell}
-
-      - article_thumb news_item
-      %h3= link_to news_item.headline, news_item
-      :preserve
-        #{news_item.summary}
-
-  - i += 1
+= render :partial => 'news_items'

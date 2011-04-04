@@ -8,6 +8,9 @@ Nal::Application.routes.draw do
   match "news" => "news_items#index"
   match "news/:id" => "news_items#show", :as => :news_item
 
+  match "tag/:id" => "news_items#tagged_with"
+
+
   #replicated from Typus. just to give higher precedence than below
   scope "admin", :module => :admin, :as => "admin" do
     match "/" => "dashboard#show", :as => "dashboard"

@@ -86,7 +86,10 @@
 
       #sidebar
         %hr.divider
+        = render :partial => "/news_items/tag_cloud"
         = render :partial => "/layouts/twitter"
+
+
 
       #footer
         - a = Asset.find(25)
