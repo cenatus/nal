@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  before_filter :twitter, :tags
+  before_filter :twitter, :tags, :section
 
   def twitter
     require "twitter"
@@ -14,5 +14,9 @@ class ApplicationController < ActionController::Base
 
   def tags
     @tags = []
+  end
+
+  def section
+    @section = ""
   end
 end

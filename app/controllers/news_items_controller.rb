@@ -2,6 +2,7 @@ class NewsItemsController < ApplicationController
   def index
     @news_items = NewsItem.order("created_at DESC").paginate(:page => params[:page], :per_page => 5)
     @tags = NewsItem.tag_counts_on(:tags)
+    @section = "blog"
 
     respond_to do |format|
       format.html # index.haml
@@ -23,6 +24,7 @@ class NewsItemsController < ApplicationController
     end
     
     @tags = NewsItem.tag_counts_on(:tags)
+    @section = "blog"
     
     respond_to do |format|
       format.html # show.haml
@@ -35,6 +37,7 @@ class NewsItemsController < ApplicationController
     @news_items = NewsItem.tagged_with(params[:id]).paginate(:page => params[:page], :per_page => 5)
 
     @tags = NewsItem.tag_counts_on(:tags)
+    @section = "blog"
 
     respond_to do |format|
       format.html # index.haml

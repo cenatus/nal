@@ -1,6 +1,7 @@
 class StrandsController < ApplicationController
   def index
     @strands = Strand.order("sort_order DESC")
+    @section = "festival"
 
     respond_to do |format|
       format.html # index.haml
@@ -10,6 +11,8 @@ class StrandsController < ApplicationController
 
   def show
     @strand = Strand.find(params[:id])
+    @section = "festival"
+    
     respond_to do |format|
       format.html # show.haml
       format.xml  { render :xml => @strand.to_xml }

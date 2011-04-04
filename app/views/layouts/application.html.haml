@@ -75,17 +75,18 @@
 
 
         #sub_menu_wrapper
-          %ul.sub_menu
-            %li=nav_link("Live Music_", "/#{Nal::Application::CURRENT_YEAR}/strand/live-music")
-            %li=nav_link("Conference_", "/#{Nal::Application::CURRENT_YEAR}/strand/conference")
-            %li=nav_link("Sound Art_", "/#{Nal::Application::CURRENT_YEAR}/strand/sound-art")
-            %li=nav_link("Broadcast_", "/#{Nal::Application::CURRENT_YEAR}/strand/broadcast")
-          %ul.sub_menu{:style => "margin-top: 5px;"}
-            %li=nav_link("Programme_", "/#{Nal::Application::CURRENT_YEAR}/programme")
-            %li=nav_link("Artists_", "/#{Nal::Application::CURRENT_YEAR}/participants")
-            %li=nav_link("Press_", "/#{Nal::Application::CURRENT_YEAR}/press")
-            %li=nav_link("Tickets_", "/#{Nal::Application::CURRENT_YEAR}/tickets")
-            %li=nav_link("Venues_", "/#{Nal::Application::CURRENT_YEAR}/venues")
+          - if @section.downcase == "festival"
+            %ul.sub_menu
+              %li=nav_link("Live Music_", "/#{Nal::Application::CURRENT_YEAR}/strand/live-music")
+              %li=nav_link("Conference_", "/#{Nal::Application::CURRENT_YEAR}/strand/conference")
+              %li=nav_link("Sound Art_", "/#{Nal::Application::CURRENT_YEAR}/strand/sound-art")
+              %li=nav_link("Broadcast_", "/#{Nal::Application::CURRENT_YEAR}/strand/broadcast")
+            %ul.sub_menu{:style => "margin-top: 5px;"}
+              %li=nav_link("Programme_", "/#{Nal::Application::CURRENT_YEAR}/programme")
+              %li=nav_link("Artists_", "/#{Nal::Application::CURRENT_YEAR}/participants")
+              %li=nav_link("Press_", "/#{Nal::Application::CURRENT_YEAR}/press")
+              %li=nav_link("Tickets_", "/#{Nal::Application::CURRENT_YEAR}/tickets")
+              %li=nav_link("Venues_", "/#{Nal::Application::CURRENT_YEAR}/venues")
 
 
         #mpu

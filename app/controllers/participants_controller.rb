@@ -3,6 +3,7 @@ class ParticipantsController < ApplicationController
     @performers = Performer.order("created_at DESC")
     @artists = Artist.order("created_at DESC")
     @speakers = Speaker.order("created_at DESC")
+    @section = "festival"
 
     respond_to do |format|
       format.html # index.haml
@@ -12,6 +13,8 @@ class ParticipantsController < ApplicationController
 
   def show
     @participant = Participant.find(params[:id])
+    @section = "festival"
+    
     respond_to do |format|
       format.html # show.haml
       format.xml  { render :xml => @participant.to_xml }

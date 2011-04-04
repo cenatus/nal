@@ -1,16 +1,16 @@
 class PagesController < ApplicationController
   def dynamic
 
-    slug = params[:slug].blank? ? "home" : params[:slug]
-    @menu = "hidden" if slug == "home" 
+    slug = params[:slug].blank? ? "festival" : params[:slug]
 
     @page = Page.where(:slug => slug, :year => params[:year]).limit(1).first
+    @section = @page.section if !@page.blank?
 
     if @page.blank?
       raise ActiveRecord::RecordNotFound
     end
 
-    layout_name = @page.blank? ? "home" : @page.name.downcase
+#    layout_name = @page.blank? ? "home" : @page.name.downcase
 #    @layout = CategoryLayout.get_layout(layout_name)
 
   end
