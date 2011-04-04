@@ -48,6 +48,8 @@ Nal::Application.routes.draw do
   match ":year/events" => "events#index"
   match ":year/event/:id" => "events#show", :as => :event
 
+  match "sitemap.xml" => "sitemap#sitemap"
+
   #keep as lowest precedence
   match ":year/:slug" => "pages#dynamic", :as => :pages
 
