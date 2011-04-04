@@ -32,7 +32,9 @@ h1, h2, h3, h4, h5, h6
 #header
   //height: 338px
   height: 310px
-  //background-color: #ffebcd
+  background: url("/images/NetAudio_backdrop.png") no-repeat right top
+  background-repeat: none
+  background-position
   color: $dark_blue
   hr
     background-color: $dark_blue
@@ -135,6 +137,9 @@ h1, h2, h3, h4, h5, h6
   border-bottom: 3px solid $dark_blue
   margin-bottom: 25px
 
+  h3
+    a
+      +unstyled-link
   .date
     margin-bottom: 0px
     float: right
@@ -142,6 +147,11 @@ h1, h2, h3, h4, h5, h6
 
 .news_item.even
   margin-left: 20px
+
+.news_item_featured
+  h3
+    a
+      +unstyled-link
 
 
 // festival

@@ -404,15 +404,17 @@ h1, h2, h3, h4, h5, h6 {
 /* line 32, ../../../app/stylesheets/application.sass */
 #header {
   height: 310px;
+  background: url("/images/NetAudio_backdrop.png") no-repeat right top;
+  background-repeat: none;
   color: #3d66ac;
 }
-/* line 37, ../../../app/stylesheets/application.sass */
+/* line 39, ../../../app/stylesheets/application.sass */
 #header hr {
   background-color: #3d66ac;
   height: 3px;
   margin-top: 32px;
 }
-/* line 42, ../../../app/stylesheets/application.sass */
+/* line 44, ../../../app/stylesheets/application.sass */
 #header .menu_base, #header .menu, #header .social {
   margin: 0;
   padding: 0;
@@ -422,7 +424,7 @@ h1, h2, h3, h4, h5, h6 {
   *zoom: 1;
   font-weight: bold;
 }
-/* line 45, ../../../app/stylesheets/application.sass */
+/* line 47, ../../../app/stylesheets/application.sass */
 #header .menu_base li, #header .menu li, #header .social li {
   list-style-image: none;
   list-style-type: none;
@@ -438,7 +440,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .menu_base li, #header .menu li, #header .social li {
   *display: inline;
 }
-/* line 47, ../../../app/stylesheets/application.sass */
+/* line 49, ../../../app/stylesheets/application.sass */
 #header .menu_base li a, #header .menu li a, #header .social li a {
   text-decoration: none;
   color: #3d66ac;
@@ -463,33 +465,33 @@ h1, h2, h3, h4, h5, h6 {
 #header .menu_base li a:active, #header .menu li a:active, #header .social li a:active {
   color: #3d66ac;
 }
-/* line 51, ../../../app/stylesheets/application.sass */
+/* line 53, ../../../app/stylesheets/application.sass */
 #header .menu {
   font-size: 13px;
   width: 60%;
   float: left;
   margin-bottom: 10px;
 }
-/* line 57, ../../../app/stylesheets/application.sass */
+/* line 59, ../../../app/stylesheets/application.sass */
 #header .menu li {
   margin-right: 20px;
 }
-/* line 60, ../../../app/stylesheets/application.sass */
+/* line 62, ../../../app/stylesheets/application.sass */
 #header .social {
   font-size: 9px;
   float: right;
 }
-/* line 65, ../../../app/stylesheets/application.sass */
+/* line 67, ../../../app/stylesheets/application.sass */
 #header .social li {
   margin-left: 15px;
 }
-/* line 68, ../../../app/stylesheets/application.sass */
+/* line 70, ../../../app/stylesheets/application.sass */
 #header #sub_menu_wrapper {
   clear: both;
   float: left;
   width: 60%;
 }
-/* line 73, ../../../app/stylesheets/application.sass */
+/* line 75, ../../../app/stylesheets/application.sass */
 #header .sub_menu {
   margin: 0;
   padding: 0;
@@ -500,7 +502,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin-left: 65px;
 }
-/* line 77, ../../../app/stylesheets/application.sass */
+/* line 79, ../../../app/stylesheets/application.sass */
 #header .sub_menu li {
   list-style-image: none;
   list-style-type: none;
@@ -517,7 +519,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .sub_menu li {
   *display: inline;
 }
-/* line 80, ../../../app/stylesheets/application.sass */
+/* line 82, ../../../app/stylesheets/application.sass */
 #header .sub_menu li a {
   text-decoration: none;
   color: #636466;
@@ -542,26 +544,26 @@ h1, h2, h3, h4, h5, h6 {
 #header .sub_menu li a:active {
   color: #636466;
 }
-/* line 84, ../../../app/stylesheets/application.sass */
+/* line 86, ../../../app/stylesheets/application.sass */
 #header #logo {
   float: left;
   clear: both;
   margin-top: -81px;
 }
-/* line 88, ../../../app/stylesheets/application.sass */
+/* line 90, ../../../app/stylesheets/application.sass */
 #header #logo p#date {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 0px;
 }
-/* line 92, ../../../app/stylesheets/application.sass */
+/* line 94, ../../../app/stylesheets/application.sass */
 #header #logo p#heading {
   font-weight: bold;
   font-size: 60px;
   margin-bottom: 40px;
   line-height: 40px;
 }
-/* line 98, ../../../app/stylesheets/application.sass */
+/* line 100, ../../../app/stylesheets/application.sass */
 #header #mpu {
   float: right;
   width: 310px;
@@ -569,42 +571,42 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
 }
 
-/* line 107, ../../../app/stylesheets/application.sass */
+/* line 109, ../../../app/stylesheets/application.sass */
 #footer {
   margin-top: 40px;
 }
 
-/* line 112, ../../../app/stylesheets/application.sass */
+/* line 114, ../../../app/stylesheets/application.sass */
 .article_image {
   width: 620px;
   height: 382px;
 }
 
-/* line 115, ../../../app/stylesheets/application.sass */
+/* line 117, ../../../app/stylesheets/application.sass */
 .thumbnail_image {
   width: 300px;
   height: 185px;
 }
 
-/* line 120, ../../../app/stylesheets/application.sass */
+/* line 122, ../../../app/stylesheets/application.sass */
 .divider {
   background-color: #3d66ac;
   height: 10px;
 }
 
-/* line 124, ../../../app/stylesheets/application.sass */
+/* line 126, ../../../app/stylesheets/application.sass */
 #content {
   min-height: 500px;
   height: auto !important;
   height: 500px;
   position: relative;
 }
-/* line 125, ../../../app/stylesheets/application.sass */
+/* line 127, ../../../app/stylesheets/application.sass */
 #content .divider {
   width: 620px;
 }
 
-/* line 131, ../../../app/stylesheets/application.sass */
+/* line 133, ../../../app/stylesheets/application.sass */
 .news_item {
   height: 360px;
   width: 300px;
@@ -612,7 +614,17 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 3px solid #3d66ac;
   margin-bottom: 25px;
 }
-/* line 138, ../../../app/stylesheets/application.sass */
+/* line 141, ../../../app/stylesheets/application.sass */
+.news_item h3 a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_unstyled-link.scss */
+.news_item h3 a:active, .news_item h3 a:focus {
+  outline: none;
+}
+/* line 143, ../../../app/stylesheets/application.sass */
 .news_item .date {
   margin-bottom: 0px;
   float: right;
@@ -620,19 +632,30 @@ h1, h2, h3, h4, h5, h6 {
   *zoom: 1;
 }
 
-/* line 143, ../../../app/stylesheets/application.sass */
+/* line 148, ../../../app/stylesheets/application.sass */
 .news_item.even {
   margin-left: 20px;
 }
 
-/* line 149, ../../../app/stylesheets/application.sass */
+/* line 153, ../../../app/stylesheets/application.sass */
+.news_item_featured h3 a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+/* line 6, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_unstyled-link.scss */
+.news_item_featured h3 a:active, .news_item_featured h3 a:focus {
+  outline: none;
+}
+
+/* line 159, ../../../app/stylesheets/application.sass */
 .mosaic_block, .strand {
   border: 1px solid white;
   overflow: hidden;
   position: relative;
 }
 
-/* line 155, ../../../app/stylesheets/application.sass */
+/* line 165, ../../../app/stylesheets/application.sass */
 .mosaic-backdrop {
   display: none;
   position: absolute;
@@ -641,7 +664,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 300px;
 }
 
-/* line 164, ../../../app/stylesheets/application.sass */
+/* line 174, ../../../app/stylesheets/application.sass */
 .mosaic-overlay {
   display: none;
   z-index: 5;
@@ -653,7 +676,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
 }
-/* line 172, ../../../app/stylesheets/application.sass */
+/* line 182, ../../../app/stylesheets/application.sass */
 .mosaic-overlay a {
   color: inherit;
   text-decoration: inherit;
@@ -681,18 +704,18 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-/* line 177, ../../../app/stylesheets/application.sass */
+/* line 187, ../../../app/stylesheets/application.sass */
 .strand .mosaic-overlay {
   top: -230px;
   height: 300px;
 }
 
-/* line 182, ../../../app/stylesheets/application.sass */
+/* line 192, ../../../app/stylesheets/application.sass */
 .strand .mosaic-overlay:hover {
   cursor: hand;
 }
 
-/* line 186, ../../../app/stylesheets/application.sass */
+/* line 196, ../../../app/stylesheets/application.sass */
 .strand {
   color: white;
   height: 300px;
@@ -700,19 +723,19 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
   margin-bottom: 20px;
 }
-/* line 194, ../../../app/stylesheets/application.sass */
+/* line 204, ../../../app/stylesheets/application.sass */
 .strand h3 {
   position: absolute;
   bottom: 0px;
   color: white;
   margin-left: 5px;
 }
-/* line 200, ../../../app/stylesheets/application.sass */
+/* line 210, ../../../app/stylesheets/application.sass */
 .strand p {
   margin: 5px;
   color: white;
 }
-/* line 204, ../../../app/stylesheets/application.sass */
+/* line 214, ../../../app/stylesheets/application.sass */
 .strand a {
   color: inherit;
   text-decoration: inherit;
@@ -740,12 +763,12 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-/* line 210, ../../../app/stylesheets/application.sass */
+/* line 220, ../../../app/stylesheets/application.sass */
 .strand.even {
   margin-left: 20px;
 }
 
-/* line 214, ../../../app/stylesheets/application.sass */
+/* line 224, ../../../app/stylesheets/application.sass */
 .tweet {
   border-bottom: 1px solid #3d66ac;
   font-size: 11px;
@@ -754,11 +777,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 15px;
   padding-bottom: 10px;
 }
-/* line 221, ../../../app/stylesheets/application.sass */
+/* line 231, ../../../app/stylesheets/application.sass */
 .tweet p {
   margin-bottom: 5px;
 }
-/* line 223, ../../../app/stylesheets/application.sass */
+/* line 233, ../../../app/stylesheets/application.sass */
 .tweet a {
   text-decoration: none;
   color: #636466;
@@ -783,11 +806,11 @@ h1, h2, h3, h4, h5, h6 {
 .tweet a:active {
   color: twitter_grey;
 }
-/* line 226, ../../../app/stylesheets/application.sass */
+/* line 236, ../../../app/stylesheets/application.sass */
 .tweet .source {
   color: #cccccc;
 }
-/* line 228, ../../../app/stylesheets/application.sass */
+/* line 238, ../../../app/stylesheets/application.sass */
 .tweet .source a {
   color: #cccccc;
 }
@@ -808,12 +831,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #cccccc;
 }
 
-/* line 232, ../../../app/stylesheets/application.sass */
+/* line 242, ../../../app/stylesheets/application.sass */
 .tags {
   margin-bottom: 10px;
 }
 
-/* line 235, ../../../app/stylesheets/application.sass */
+/* line 245, ../../../app/stylesheets/application.sass */
 .pagination {
   clear: both;
   background: white;
@@ -823,37 +846,37 @@ h1, h2, h3, h4, h5, h6 {
   left: 0px;
   /* self-clearing method: */
 }
-/* line 242, ../../../app/stylesheets/application.sass */
+/* line 252, ../../../app/stylesheets/application.sass */
 .pagination a, .pagination span, .pagination em {
   padding: 0em 0.3em;
   display: block;
   float: left;
   margin-right: 1px;
 }
-/* line 247, ../../../app/stylesheets/application.sass */
+/* line 257, ../../../app/stylesheets/application.sass */
 .pagination span.disabled {
   color: #999999;
   border: 1px solid #dddddd;
 }
-/* line 250, ../../../app/stylesheets/application.sass */
+/* line 260, ../../../app/stylesheets/application.sass */
 .pagination em {
   font-weight: bold;
   background: #3d66ac;
   color: white;
   border: 1px solid #3d66ac;
 }
-/* line 255, ../../../app/stylesheets/application.sass */
+/* line 265, ../../../app/stylesheets/application.sass */
 .pagination a {
   text-decoration: none;
   color: #105cb6;
   border: 1px solid #90b3df;
 }
-/* line 259, ../../../app/stylesheets/application.sass */
+/* line 269, ../../../app/stylesheets/application.sass */
 .pagination a:hover, .pagination a:focus {
   color: #000033;
   border-color: #000033;
 }
-/* line 262, ../../../app/stylesheets/application.sass */
+/* line 272, ../../../app/stylesheets/application.sass */
 .pagination .page_info {
   background: #3d66ac;
   color: white;
@@ -862,13 +885,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.3em;
   text-align: center;
 }
-/* line 269, ../../../app/stylesheets/application.sass */
+/* line 279, ../../../app/stylesheets/application.sass */
 .pagination .page_info b {
   color: #000033;
   background: #79a2e8;
   padding: 0.1em 0.25em;
 }
-/* line 275, ../../../app/stylesheets/application.sass */
+/* line 285, ../../../app/stylesheets/application.sass */
 .pagination:after {
   content: ".";
   display: block;
@@ -876,11 +899,11 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
   visibility: hidden;
 }
-/* line 281, ../../../app/stylesheets/application.sass */
+/* line 291, ../../../app/stylesheets/application.sass */
 * html .pagination {
   height: 1%;
 }
-/* line 283, ../../../app/stylesheets/application.sass */
+/* line 293, ../../../app/stylesheets/application.sass */
 *:first-child + html .pagination {
   overflow: hidden;
 }
