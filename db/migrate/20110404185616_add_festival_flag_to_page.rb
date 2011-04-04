@@ -1,6 +1,6 @@
 class AddFestivalFlagToPage < ActiveRecord::Migration
   def self.up
-    add_column :pages, :section, :string, :default => "festival"
+    add_column :pages, :section, :string
   end
 
   def self.down
