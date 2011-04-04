@@ -33,7 +33,17 @@
         });
 
 
+        $('#show_grid').click(function(){
+          $('#container').css("background", "url('/images/grid.png?1301508934')");
+        });
+
+          $('#hide_grid').click(function(){
+          $('#container').css("background", "white");
+        });
+
       });
+
+
 
 
     = csrf_meta_tag
@@ -53,7 +63,6 @@
           %li=nav_link("Contact_", "/#{Nal::Application::CURRENT_YEAR}/contact")
           %li=nav_link("Archive_", "/#{Nal::Application::CURRENT_YEAR}/archive")  
           -#%li=nav_link("Participants_", "/#{Nal::Application::CURRENT_YEAR}/participants")
-
           -#- for page in Page.where("year = '#{Nal::Application::CURRENT_YEAR}'").order("name DESC") do
           -#  %li=nav_link("#{page.name}_", "/#{Nal::Application::CURRENT_YEAR}/#{page.slug}")
 
@@ -64,28 +73,30 @@
           %li= link_to "RSS", "http://feeds.feedburner.com/netaudiolondon-blog"
           %li= link_to "Newsletter", ""
 
-        %ul.sub_menu
-          %li=nav_link("Live Music_", "/#{Nal::Application::CURRENT_YEAR}/strand/live-music")
-          %li=nav_link("Conference_", "/#{Nal::Application::CURRENT_YEAR}/strand/conference")
-          %li=nav_link("Sound Art_", "/#{Nal::Application::CURRENT_YEAR}/strand/sound-art")
-          %li=nav_link("Broadcast_", "/#{Nal::Application::CURRENT_YEAR}/strand/broadcast")
-        %ul.sub_menu{:style => "margin-top: 5px;"}
-          %li=nav_link("Programme_", "/#{Nal::Application::CURRENT_YEAR}/programme")
-          %li=nav_link("Artists_", "/#{Nal::Application::CURRENT_YEAR}/participants")
-          %li=nav_link("Press_", "/#{Nal::Application::CURRENT_YEAR}/press")
-          %li=nav_link("Tickets_", "/#{Nal::Application::CURRENT_YEAR}/tickets")
-          %li=nav_link("Venues_", "/#{Nal::Application::CURRENT_YEAR}/venues")
+
+        #sub_menu_wrapper
+          %ul.sub_menu
+            %li=nav_link("Live Music_", "/#{Nal::Application::CURRENT_YEAR}/strand/live-music")
+            %li=nav_link("Conference_", "/#{Nal::Application::CURRENT_YEAR}/strand/conference")
+            %li=nav_link("Sound Art_", "/#{Nal::Application::CURRENT_YEAR}/strand/sound-art")
+            %li=nav_link("Broadcast_", "/#{Nal::Application::CURRENT_YEAR}/strand/broadcast")
+          %ul.sub_menu{:style => "margin-top: 5px;"}
+            %li=nav_link("Programme_", "/#{Nal::Application::CURRENT_YEAR}/programme")
+            %li=nav_link("Artists_", "/#{Nal::Application::CURRENT_YEAR}/participants")
+            %li=nav_link("Press_", "/#{Nal::Application::CURRENT_YEAR}/press")
+            %li=nav_link("Tickets_", "/#{Nal::Application::CURRENT_YEAR}/tickets")
+            %li=nav_link("Venues_", "/#{Nal::Application::CURRENT_YEAR}/venues")
 
 
+        #mpu
+          - a = Asset.find(30)
+          - if !a.blank?
+            =link_to image_tag(a.asset.url), :controller => :pages, :action => :dynamic, :slug => "tickets", :year => Nal::Application::CURRENT_YEAR
         #logo
           %p#date
             13-15TH MAY
           %p#heading
             NETAUDIO
-        #mpu
-          MPU 310 x 184px
-
-
 
 
 
@@ -99,8 +110,14 @@
         = render :partial => "/layouts/twitter"
 
 
-
       #footer
+        #grid_debug{:style => "float:right"}
+          %a#show_grid
+            Show Grid
+          |
+          %a#hide_grid
+            Hide Grid
+
         - a = Asset.find(25)
         - if !a.blank?
           =image_tag a.asset.url
