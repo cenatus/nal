@@ -11,11 +11,11 @@ Strand:
 
 Event:
   fields:
-    default: name, venue, date, summary, year
-    list: name, venue, date, summary, year
-    form: name, venue, date, summary, detail, year
+    default: name, venue, summary, year
+    list: name, venue, start_time, summary, year
+    form: name, venue, start_time, end_time, summary, detail, year
   filters: year
   relationships: performers, artists, speakers, assets
-  search: name, venue, date, summary, detail, year
+  search: name, venue, summary, detail, year
   application: Events
   description: Strands/Events Admin

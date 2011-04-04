@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   def index
-    @events = Event.order("created_at DESC")
+    @events = Event.order("start_time ASC")
 
     respond_to do |format|
       format.html # index.haml

@@ -1,6 +1,9 @@
-%h1 Events
+%h1 Programme
 
 - for event in @events do
-  %p= link_to event.name, "/#{Nal::Application::CURRENT_YEAR}/event/#{event.id}"
+  %p= event.strapline
+  %h4= link_to event.name, "/#{Nal::Application::CURRENT_YEAR}/event/#{event.friendly_id}"
   :preserve
     #{event.summary}
+
+  %hr

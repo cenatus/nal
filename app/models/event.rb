@@ -1,6 +1,6 @@
 class Event < ActiveRecord::Base
   YEAR = Event.all.map{|a| a.year }.uniq.sort
-  validates_presence_of :name, :summary, :detail, :year, :date
+  validates_presence_of :name, :summary, :detail, :year
 
   belongs_to :strand
 
@@ -12,11 +12,15 @@ class Event < ActiveRecord::Base
   has_friendly_id :name, :use_slug => true
 
   def strapline
-    "#{self.name} - #{formatted self.date} @ #{self.venue}"
+    "#{self.timing} @ #{self.venue}"
   end
 
-  def formatted
-    date.strftime("%d-%m-%Y")
+  def formatted(date)
+    date.strftime("%A %d %b %Y, %H:%M")
+  end
+
+  def timing
+    !self.start_time.blank? ? "#{formatted(self.start_time)}" : ""
   end
 
 end
