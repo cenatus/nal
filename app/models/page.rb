@@ -1,6 +1,6 @@
 class Page < ActiveRecord::Base
   YEAR = Page.all.map{|a| a.year }.uniq.sort
-  SECTION = Page.all.map{|a| !a.section.blank? ? a.section : "" }.uniq.sort
+#  SECTION = Page.all.map{|a| !a.section.blank? ? a.section : "" }.uniq.sort
 
   validates_presence_of :name, :slug, :year
   has_many :content_areas

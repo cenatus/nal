@@ -3,7 +3,7 @@ Page:
     default: name, slug, year, section
     list: name, slug, year,  created_at, section
     form: name, slug, year, content, section
-  filters: year, section
+  filters: year
   relationships: content_areas, assets
   search: name, slug, content
   application: Pages
