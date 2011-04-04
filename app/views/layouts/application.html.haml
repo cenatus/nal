@@ -36,12 +36,17 @@
       #header
         %hr
         %ul.menu
-          %li=nav_link("Home_", "/")
           %li=nav_link("News_", "/news")
-          %li=nav_link("Participants_", "/#{Nal::Application::CURRENT_YEAR}/participants")
-          %li=nav_link("Festival_", "/#{Nal::Application::CURRENT_YEAR}/strands")
-          - for page in Page.where("year = '#{Nal::Application::CURRENT_YEAR}'").order("name DESC") do
-            %li=nav_link("#{page.name}_", "/#{Nal::Application::CURRENT_YEAR}/#{page.slug}")
+          %li=nav_link("Festival_", "/#{Nal::Application::CURRENT_YEAR}/festival")
+
+
+          %li=nav_link("About_", "/#{Nal::Application::CURRENT_YEAR}/about")
+          %li=nav_link("Contact_", "/#{Nal::Application::CURRENT_YEAR}/contact")
+          %li=nav_link("Archive_", "/#{Nal::Application::CURRENT_YEAR}/archive")  
+          -#%li=nav_link("Participants_", "/#{Nal::Application::CURRENT_YEAR}/participants")
+
+          -#- for page in Page.where("year = '#{Nal::Application::CURRENT_YEAR}'").order("name DESC") do
+          -#  %li=nav_link("#{page.name}_", "/#{Nal::Application::CURRENT_YEAR}/#{page.slug}")
 
         %ul.social
           %li= link_to "Facebook", "http://facebook.com/netaudioldn"
@@ -49,6 +54,18 @@
           %li= link_to "Twitter", "http://twitter.com/netaudioldn"
           %li= link_to "RSS", "http://feeds.feedburner.com/netaudiolondon-blog"
           %li= link_to "Newsletter", ""
+
+        %ul.sub_menu
+          %li=nav_link("Live Music_", "/#{Nal::Application::CURRENT_YEAR}/strand/live-music")
+          %li=nav_link("Conference_", "/#{Nal::Application::CURRENT_YEAR}/strand/conference")
+          %li=nav_link("Sound Art_", "/#{Nal::Application::CURRENT_YEAR}/strand/sound-art")
+          %li=nav_link("Broadcast_", "/#{Nal::Application::CURRENT_YEAR}/strand/broadcast")
+        %ul.sub_menu{:style => "margin-top: 5px;"}
+          %li=nav_link("Programme_", "/#{Nal::Application::CURRENT_YEAR}/programme")
+          %li=nav_link("Artists_", "/#{Nal::Application::CURRENT_YEAR}/participants")
+          %li=nav_link("Press_", "/#{Nal::Application::CURRENT_YEAR}/press")
+          %li=nav_link("Tickets_", "/#{Nal::Application::CURRENT_YEAR}/tickets")
+          %li=nav_link("Venues_", "/#{Nal::Application::CURRENT_YEAR}/venues")
 
 
         #logo

@@ -52,6 +52,7 @@ h1, h2, h3, h4, h5, h6
     font-size: 13px
     width: 60%
     float: left
+    margin-bottom: 10px
     li
       margin-right: 20px
 
@@ -63,10 +64,23 @@ h1, h2, h3, h4, h5, h6
     li
       margin-left: 15px
 
+  .sub_menu
+    +inline-block-list-container
+    font-weight: bold
+    clear: both
+    margin-top: 20px
+    margin-left: 64px
+    li
+      +inline-block-list-item
+      margin-right: 20px
+      a
+        +hover-link
+        +link-colors($twitter_grey, $sky_blue, $twitter_grey, $twitter_grey, $twitter_grey)
+
   #logo
     float: left
     clear: both
-    margin-top: 120px
+    margin-top: 70px
     p#date
       font-size: 20px
       font-weight: bold
