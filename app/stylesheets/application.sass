@@ -15,7 +15,8 @@ $sky_blue =  #90b3df
 
 $font-color = #000
 $header-color = $dark_blue
-$twitter_grey = #636466
+$dark_grey = #A7A9AC
+$light_grey = #CCC
 
 // dimensions
 
@@ -24,9 +25,19 @@ $content_height = 500px
 
 // HTML
 
-h1, h2, h3, h4, h5, h6
+body
+  color: $dark_blue
+  a
+    text-decoration: underline
+    +link-colors($dark_blue, $sky_blue, $dark_blue, $dark_blue, $dark_blue)
+
+h1, h2, h3, h4, h5
   +header-text
   text-transform: uppercase
+
+h6
+  +header-text
+
 
 // layout
 #header
@@ -81,7 +92,7 @@ h1, h2, h3, h4, h5, h6
       margin-right: 20px
       a
         +hover-link
-        +link-colors($twitter_grey, $sky_blue, $twitter_grey, $twitter_grey, $twitter_grey)
+        +link-colors($dark_grey, $sky_blue, $dark_grey, $dark_grey, $dark_grey)
 
   #logo
     float: left
@@ -107,7 +118,14 @@ h1, h2, h3, h4, h5, h6
 #container
   //+showgrid
 #footer
-  margin-top: 40px
+  margin-top: 20px
+  hr
+    background-color: $dark_blue
+    height: 1px
+
+#sidebar
+  h6
+    font-weight: bold
 
 
 // images
@@ -136,6 +154,7 @@ h1, h2, h3, h4, h5, h6
   float: left
   border-bottom: 3px solid $dark_blue
   margin-bottom: 25px
+  position: relative
 
   h3
     a
@@ -144,14 +163,34 @@ h1, h2, h3, h4, h5, h6
     margin-bottom: 0px
     float: right
     +clearfix
+  p
+    margin-bottom: 5px
+
+  .read_more
+    +unstyled-link
+    +link-colors($dark_grey, $sky_blue, $dark_grey, $dark_grey, $dark_grey)
+    position: absolute
+    bottom: 0px
+    left: 0px
+
+
 
 .news_item.even
   margin-left: 20px
 
 .news_item_featured
+  border-bottom: 3px solid $dark_blue
+  margin-bottom: 25px
+
   h3
     a
       +unstyled-link
+
+  .read_more
+    +unstyled-link
+    +link-colors($dark_grey, $sky_blue, $dark_grey, $dark_grey, $dark_grey)
+
+    
 
 
 // festival
@@ -221,74 +260,109 @@ h1, h2, h3, h4, h5, h6
   margin-left: 20px
 
 // twitter
-.tweet
-  border-bottom: 1px solid $dark_blue
-  font-size: 11px
-  font-weight: bold
-  color: $twitter_grey
-  padding-top: 15px
-  padding-bottom: 10px
-  p
-    margin-bottom: 5px
-  a
-    +hover-link
-    +link-colors($twitter_grey, $sky_blue, twitter_grey, twitter_grey, twitter_grey)
-  .source
-    color: #ccc
+#twitter
+  .tweet
+    clear: both
+    border-bottom: 1px solid $dark_blue
+    font-size: 11px
+    font-weight: bold
+    color: $dark_grey
+    padding-top: 15px
+    padding-bottom: 10px
+    p
+      margin-bottom: 5px
     a
-      +link-colors(#ccc, $sky_blue, #ccc, #ccc, #ccc)
+      +hover-link
+      +link-colors($dark_grey, $sky_blue, $dark_grey, $dark_grey, $dark_grey)
+    .source
+      color: #ccc
+      a
+        +link-colors($light_grey, $sky_blue, $light_grey, $light_grey, $light_grey)
 
+#twitter
+  .divider
+    margin-bottom: 5px
+  .follow
+    vertical-align: super
+    margin-top: 3px
+    margin-right: 10px
+    color: $dark_grey
+    font-weight: bold
+  h6
+    +float-left
+    width: 40%
+    margin-top: 8px
+  #logo
+    +float-right
+    img
+      width: 30px
+      height: 30px
 
 .tags
+  margin-top: 15px
   margin-bottom: 10px
+  a
+    +unstyled-link
+    +link-colors($dark_grey, $sky_blue, $dark_grey, $dark_grey, $dark_grey)
+    font-weight: bold
+    
+    
 
 .pagination
   clear: both
-  background: white
-  font-size: 12px
-  position: absolute
-  bottom: -10px
-  left: 0px
-  a, span, em
-    :padding .0em .3em
-    :display block
-    :float left
-    :margin-right 1px
-  span.disabled
-    :color #999
-    :border 1px solid #DDD
-  em
-    :font-weight bold
-    :background $dark_blue
-    :color white
-    :border 1px solid $dark_blue
+  color: $dark_blue
   a
-    :text-decoration none
-    :color #105CB6
-    :border 1px solid $sky_blue
-    &:hover, &:focus
-      :color #003
-      :border-color #003
-  .page_info
-    :background $dark_blue
-    :color white
-    :padding .4em .6em
-    :width 22em
-    :margin-bottom .3em
-    :text-align center
-    b
-      :color #003
-      :background = $dark_blue + 60
-      :padding .1em .25em
+    +unstyled-link
+    +link-colors($dark_grey, $sky_blue, $dark_grey, $dark_grey, $dark_grey)
 
-  /* self-clearing method:
-  &:after
-    :content "."
-    :display block
-    :height 0
-    :clear both
-    :visibility hidden
-  * html &
-    :height 1%
-  *:first-child+html &
-    :overflow hidden
+  .previous_page
+    color: $dark_grey
+
+  //background: white
+  //font-size: 12px
+  //position: absolute
+  //bottom: -10px
+  //left: 0px
+  //a, span, em
+  //  :padding .0em .3em
+  //  :display block
+  //  :float left
+  //  :margin-right 1px
+  //span.disabled
+  //  :color #999
+  //  :border 1px solid #DDD
+  //em
+  //  :font-weight bold
+  //  :background $dark_blue
+  //  :color white
+  //  :border 1px solid $dark_blue
+  //a
+  //  :text-decoration none
+  //  :color #105CB6
+  //  :border 1px solid $sky_blue
+  //  &:hover, &:focus
+  //    :color #003
+  //    :border-color #003
+  //.page_info
+  //  :background $dark_blue
+  //  :color white
+  //  :padding .4em .6em
+  //  :width 22em
+  //  :margin-bottom .3em
+  //  :text-align center
+  //  b
+  //    :color #003
+  //    :background = $dark_blue + 60
+  //    :padding .1em .25em
+  //
+  ///* self-clearing method:
+  //&:after
+  //  :content "."
+  //  :display block
+  //  :height 0
+  //  :clear both
+  //  :visibility hidden
+  //* html &
+  //  :height 1%
+  //*:first-child+html &
+  //  :overflow hidden

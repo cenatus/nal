@@ -20,7 +20,6 @@
       <requirement>
         <dependency name="acts-as-taggable-on" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
-      <source manual="true" />
       <source from="Gemfile" />
     </requirement>
     <requirement>
@@ -176,6 +175,10 @@
     <orderEntry type="library" name="[gem] activesupport (v2.3.8, null)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] sqlite3-ruby (v1.3.3, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/sqlite3-ruby-1.3.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] sqlite3 (v1.3.3, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/sqlite3-1.3.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] friendly_id (v3.2.1.1, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/friendly_id-3.2.1.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mysql2 (v0.2.7, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/mysql2-0.2.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] twitter (v1.1.2, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/twitter-1.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] babosa (v0.3.2, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/babosa-0.3.2)" level="application" />
   </component>
 </module>
 

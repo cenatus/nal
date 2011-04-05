@@ -10,6 +10,8 @@
       :preserve
         #{news_item.summary}
 
+      =link_to "Read more_", news_item, :class => "read_more"
+      
   - else
 
     - cell = i % 2 == 0 ? "even" : "odd"
@@ -20,6 +22,8 @@
       %h3= link_to news_item.headline, news_item
       :preserve
         #{news_item.summary}
+
+      =link_to "Read more_", news_item, :class => "read_more"
 
   - i += 1
 
