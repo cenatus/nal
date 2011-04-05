@@ -12,8 +12,8 @@
       .tweet
         %p= auto_link tweet.text
         %span.source
-          = time_ago_in_words tweet.created_at
-          ago from
+          = link_to "#{time_ago_in_words(tweet.created_at)} ago", "http://twitter.com/netaudioldn/status/#{tweet.id_str}"
+          from
           = auto_link tweet.source
   - else
     %p{:style =>"clear:both"} Wot no Tweets! Looks like Twitter is down or something blew up in the grid..
