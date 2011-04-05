@@ -10,8 +10,11 @@
     <list default="true" id="bbbae15d-5b71-462f-82f6-77662587ddf7" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/g" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators" afterPath="$PROJECT_DIR$/lib/generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/compass.rb" afterPath="$PROJECT_DIR$/config/compass.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/compass.rb" afterPath="$PROJECT_DIR$/config/initializers/compass.rb" />
     </list>
     <ignored path="nal.iws" />
@@ -57,7 +60,16 @@
       <file leaf-file-name="compass.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/compass.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="41" selection-start="645" selection-end="645" vertical-scroll-proportion="0.4064171">
+            <state line="18" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.39926064">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="28" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,7 +78,7 @@
       <file leaf-file-name="compass.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/initializers/compass.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="39" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
+            <state line="5" column="42" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,7 +87,7 @@
       <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="24" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
+            <state line="9" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/participants_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/strands_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
@@ -144,9 +155,10 @@
         <option value="$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/gems/multi_json-0.0.5/lib/multi_json.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_twitter.html.haml" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-        <option value="$PROJECT_DIR$/config/initializers/compass.rb" />
         <option value="$PROJECT_DIR$/config/compass.rb" />
+        <option value="$PROJECT_DIR$/config/initializers/compass.rb" />
       </list>
     </option>
   </component>
@@ -847,13 +859,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/gems/faraday_middleware-0.3.2/lib/faraday/parse_json.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="30" selection-start="504" selection-end="510" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/gems/multi_json-0.0.5/lib/multi_json.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="6" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0">
@@ -931,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="88" selection-end="88" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/lib/compass/app_integration/rails.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="38" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.7116451">
@@ -945,16 +943,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="28" selection-start="1781" selection-end="1781" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/compass.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
+        <state line="5" column="42" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/compass.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="41" selection-start="645" selection-end="645" vertical-scroll-proportion="0.4064171">
+        <state line="18" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.39926064">
           <folding />
         </state>
       </provider>
