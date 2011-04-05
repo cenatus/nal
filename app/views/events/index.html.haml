@@ -1,5 +1,6 @@
 %h2 Programme_
-
+%h3.divider_medium
+  
 - for event in @events do
   %p= event.strapline
   %h4= link_to event.name, "/#{Nal::Application::CURRENT_YEAR}/event/#{event.friendly_id}"

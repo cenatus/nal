@@ -1,8 +1,8 @@
 class ParticipantsController < ApplicationController
   def index
-    @performers = Performer.order("created_at DESC")
-    @artists = Artist.order("created_at DESC")
-    @speakers = Speaker.order("created_at DESC")
+    @performers = Performer.order("name ASC")
+    @artists = Artist.order("name ASC")
+    @speakers = Speaker.order("name ASC")
     @section = "festival"
 
     respond_to do |format|

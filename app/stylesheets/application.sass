@@ -127,6 +127,9 @@ h6
   h6
     font-weight: bold
 
+  #search
+    height: 60px
+
 
 // images
 .article_image
@@ -141,8 +144,14 @@ h6
   background-color: $dark_blue
   height: 10px
 
+.divider_medium
+  background-color: $dark_blue
+  height: 2px
+
 #content
   .divider
+    width: $content_width
+  .divider_medium
     width: $content_width
   +min-height($content_height)
   position: relative
@@ -269,6 +278,7 @@ h6
     color: $dark_grey
     padding-top: 15px
     padding-bottom: 10px
+    margin-bottom: 10px
     p
       margin-bottom: 5px
     a
@@ -298,13 +308,54 @@ h6
       width: 30px
       height: 30px
 
+#lastfm
+  .track
+    clear: both
+    border-bottom: 1px solid $dark_blue
+    font-size: 11px
+    font-weight: bold
+    color: $dark_grey
+    padding-top: 12px
+    padding-bottom: 7px
+    p
+      margin-bottom: 5px
+    a
+      +hover-link
+      +link-colors($dark_grey, $sky_blue, $dark_grey, $dark_grey, $dark_grey)
+    .source
+      color: #ccc
+      a
+        +link-colors($light_grey, $sky_blue, $light_grey, $light_grey, $light_grey)
+
+#lastfm
+  .divider_medium
+    margin-bottom: 5px
+  .follow
+    vertical-align: super
+    margin-top: 3px
+    margin-right: 10px
+    color: $dark_grey
+    font-weight: bold
+  h6
+    +float-left
+    width: 40%
+    margin-top: 8px
+  #logo
+    +float-right
+    img
+      width: 30px
+      height: 30px
+
 .tags
-  margin-top: 15px
   margin-bottom: 10px
+  border-top: $dark_blue 2px solid
+
   a
     +unstyled-link
     +link-colors($dark_grey, $sky_blue, $dark_grey, $dark_grey, $dark_grey)
     font-weight: bold
+  h6
+    margin-bottom: 15px
     
     
 

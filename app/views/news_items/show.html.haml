@@ -1,5 +1,7 @@
 - if !@news_item.blank?
   %h2= @news_item.headline
+  %h3.divider_medium
+    
   - article_image @news_item
 
   %p= formatted @news_item.created_at

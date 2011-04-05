@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  before_filter :twitter, :tags, :section
+  before_filter :twitter, :tags, :section, :lastfm
 
   def twitter
     require "twitter"
@@ -18,5 +18,15 @@ class ApplicationController < ActionController::Base
 
   def section
     @section = ""
+  end
+
+  def lastfm
+    begin
+      @lastfm_user = Scrobbler::User.new('polymorphic')
+    rescue Exception => e
+      logger.error("MSP error fetch last.fm: #{e}")
+    end
+
+
   end
 end

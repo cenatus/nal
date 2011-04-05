@@ -1,0 +1,15 @@
+#lastfm
+  %hr.divider_medium
+
+  %h6 Lastfm
+  #logo
+    =link_to "Lastfm playlist", "http://last.fm/user/polymorphic", :class => "follow"
+    %a{:href => "http://last.fm/user/polymorphic"}
+      %img{:src => "/images/lastfm_logo.png", :alt => "listen on last.fm"}
+
+  - if !@lastfm_user.blank?
+    - for track in @lastfm_user.recent_tracks
+      .track
+        %p= link_to "#{track.artist} - #{track.name}", track.url
+  - else
+    %p{:style =>"clear:both"} Wot no last.fm tracks?! Looks like Last.fm API is down or something blew up in the grid..

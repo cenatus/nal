@@ -1,5 +1,7 @@
 %h2= "#{Nal::Application::CURRENT_YEAR} Festival_"
 
+%hr.divider_medium
+
 - i = 0
 
 - for strand in @strands do
@@ -18,17 +20,4 @@
     .mosaic-backdrop
       - article_thumb strand
 
-    -#%p= link_to strand.name, "/#{Nal::Application::CURRENT_YEAR}/strand/#{strand.id}"
-    -#:preserve
-    -#  #{strand.summary}
-    - i += 1
-
-
-    -#<a href="http://buildinternet.com/project/mightyicons/" target="_blank" class="mosaic-overlay">
-    -#	<div class="details">
-    -#		<h4>Mighty Social Icons</h4>
-    -#		<p>By Build Internet</p>
-    -#	</div>
-    -#</a>
-    -#<div class="mosaic-backdrop"><img src="http://buildinternet.s3.amazonaws.com/projects/mosaic/mightyicons.jpg"/></div>
-
+%hr.divider_medium

@@ -118,6 +118,9 @@ GEM
       mime-types (>= 1.16)
     ruby_parser (2.0.6)
       sexp_processor (~> 3.0)
+    scrobbler (0.2.3)
+      activesupport (>= 1.4.2)
+      hpricot (>= 0.4.86)
     sequel (3.20.0)
     sexp_processor (3.0.5)
     simple_oauth (0.1.4)
@@ -163,6 +166,7 @@ DEPENDENCIES
   paperclip!
   rails (= 3.0.3)
   ruby_parser
+  scrobbler
   sqlite3-ruby
   taps
   twitter (= 1.2.0)

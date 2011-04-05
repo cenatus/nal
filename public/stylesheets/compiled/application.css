@@ -617,38 +617,52 @@ h6 {
 #sidebar h6 {
   font-weight: bold;
 }
+/* line 130, ../../../app/stylesheets/application.sass */
+#sidebar #search {
+  height: 60px;
+}
 
-/* line 132, ../../../app/stylesheets/application.sass */
+/* line 135, ../../../app/stylesheets/application.sass */
 .article_image {
   width: 620px;
   height: 382px;
 }
 
-/* line 135, ../../../app/stylesheets/application.sass */
+/* line 138, ../../../app/stylesheets/application.sass */
 .thumbnail_image {
   width: 300px;
   height: 185px;
 }
 
-/* line 140, ../../../app/stylesheets/application.sass */
+/* line 143, ../../../app/stylesheets/application.sass */
 .divider {
   background-color: #3d66ac;
   height: 10px;
 }
 
-/* line 144, ../../../app/stylesheets/application.sass */
+/* line 147, ../../../app/stylesheets/application.sass */
+.divider_medium {
+  background-color: #3d66ac;
+  height: 2px;
+}
+
+/* line 151, ../../../app/stylesheets/application.sass */
 #content {
   min-height: 500px;
   height: auto !important;
   height: 500px;
   position: relative;
 }
-/* line 145, ../../../app/stylesheets/application.sass */
+/* line 152, ../../../app/stylesheets/application.sass */
 #content .divider {
   width: 620px;
 }
+/* line 154, ../../../app/stylesheets/application.sass */
+#content .divider_medium {
+  width: 620px;
+}
 
-/* line 151, ../../../app/stylesheets/application.sass */
+/* line 160, ../../../app/stylesheets/application.sass */
 .news_item {
   height: 360px;
   width: 300px;
@@ -657,7 +671,7 @@ h6 {
   margin-bottom: 25px;
   position: relative;
 }
-/* line 160, ../../../app/stylesheets/application.sass */
+/* line 169, ../../../app/stylesheets/application.sass */
 .news_item h3 a {
   color: inherit;
   text-decoration: inherit;
@@ -667,18 +681,18 @@ h6 {
 .news_item h3 a:active, .news_item h3 a:focus {
   outline: none;
 }
-/* line 162, ../../../app/stylesheets/application.sass */
+/* line 171, ../../../app/stylesheets/application.sass */
 .news_item .date {
   margin-bottom: 0px;
   float: right;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 166, ../../../app/stylesheets/application.sass */
+/* line 175, ../../../app/stylesheets/application.sass */
 .news_item p {
   margin-bottom: 5px;
 }
-/* line 169, ../../../app/stylesheets/application.sass */
+/* line 178, ../../../app/stylesheets/application.sass */
 .news_item .read_more {
   color: inherit;
   text-decoration: inherit;
@@ -709,17 +723,17 @@ h6 {
   color: #a7a9ac;
 }
 
-/* line 178, ../../../app/stylesheets/application.sass */
+/* line 187, ../../../app/stylesheets/application.sass */
 .news_item.even {
   margin-left: 20px;
 }
 
-/* line 181, ../../../app/stylesheets/application.sass */
+/* line 190, ../../../app/stylesheets/application.sass */
 .news_item_featured {
   border-bottom: 3px solid #3d66ac;
   margin-bottom: 25px;
 }
-/* line 186, ../../../app/stylesheets/application.sass */
+/* line 195, ../../../app/stylesheets/application.sass */
 .news_item_featured h3 a {
   color: inherit;
   text-decoration: inherit;
@@ -729,7 +743,7 @@ h6 {
 .news_item_featured h3 a:active, .news_item_featured h3 a:focus {
   outline: none;
 }
-/* line 189, ../../../app/stylesheets/application.sass */
+/* line 198, ../../../app/stylesheets/application.sass */
 .news_item_featured .read_more {
   color: inherit;
   text-decoration: inherit;
@@ -757,14 +771,14 @@ h6 {
   color: #a7a9ac;
 }
 
-/* line 198, ../../../app/stylesheets/application.sass */
+/* line 207, ../../../app/stylesheets/application.sass */
 .mosaic_block, .strand {
   border: 1px solid white;
   overflow: hidden;
   position: relative;
 }
 
-/* line 204, ../../../app/stylesheets/application.sass */
+/* line 213, ../../../app/stylesheets/application.sass */
 .mosaic-backdrop {
   display: none;
   position: absolute;
@@ -773,7 +787,7 @@ h6 {
   width: 300px;
 }
 
-/* line 213, ../../../app/stylesheets/application.sass */
+/* line 222, ../../../app/stylesheets/application.sass */
 .mosaic-overlay {
   display: none;
   z-index: 5;
@@ -785,7 +799,7 @@ h6 {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
 }
-/* line 221, ../../../app/stylesheets/application.sass */
+/* line 230, ../../../app/stylesheets/application.sass */
 .mosaic-overlay a {
   color: inherit;
   text-decoration: inherit;
@@ -813,18 +827,18 @@ h6 {
   color: white;
 }
 
-/* line 226, ../../../app/stylesheets/application.sass */
+/* line 235, ../../../app/stylesheets/application.sass */
 .strand .mosaic-overlay {
   top: -230px;
   height: 300px;
 }
 
-/* line 231, ../../../app/stylesheets/application.sass */
+/* line 240, ../../../app/stylesheets/application.sass */
 .strand .mosaic-overlay:hover {
   cursor: hand;
 }
 
-/* line 235, ../../../app/stylesheets/application.sass */
+/* line 244, ../../../app/stylesheets/application.sass */
 .strand {
   color: white;
   height: 300px;
@@ -832,19 +846,19 @@ h6 {
   float: left;
   margin-bottom: 20px;
 }
-/* line 243, ../../../app/stylesheets/application.sass */
+/* line 252, ../../../app/stylesheets/application.sass */
 .strand h3 {
   position: absolute;
   bottom: 0px;
   color: white;
   margin-left: 5px;
 }
-/* line 249, ../../../app/stylesheets/application.sass */
+/* line 258, ../../../app/stylesheets/application.sass */
 .strand p {
   margin: 5px;
   color: white;
 }
-/* line 253, ../../../app/stylesheets/application.sass */
+/* line 262, ../../../app/stylesheets/application.sass */
 .strand a {
   color: inherit;
   text-decoration: inherit;
@@ -872,12 +886,12 @@ h6 {
   color: white;
 }
 
-/* line 259, ../../../app/stylesheets/application.sass */
+/* line 268, ../../../app/stylesheets/application.sass */
 .strand.even {
   margin-left: 20px;
 }
 
-/* line 264, ../../../app/stylesheets/application.sass */
+/* line 273, ../../../app/stylesheets/application.sass */
 #twitter .tweet {
   clear: both;
   border-bottom: 1px solid #3d66ac;
@@ -886,12 +900,13 @@ h6 {
   color: #a7a9ac;
   padding-top: 15px;
   padding-bottom: 10px;
+  margin-bottom: 10px;
 }
-/* line 272, ../../../app/stylesheets/application.sass */
+/* line 282, ../../../app/stylesheets/application.sass */
 #twitter .tweet p {
   margin-bottom: 5px;
 }
-/* line 274, ../../../app/stylesheets/application.sass */
+/* line 284, ../../../app/stylesheets/application.sass */
 #twitter .tweet a {
   text-decoration: none;
   color: #a7a9ac;
@@ -916,11 +931,11 @@ h6 {
 #twitter .tweet a:active {
   color: #a7a9ac;
 }
-/* line 277, ../../../app/stylesheets/application.sass */
+/* line 287, ../../../app/stylesheets/application.sass */
 #twitter .tweet .source {
   color: #cccccc;
 }
-/* line 279, ../../../app/stylesheets/application.sass */
+/* line 289, ../../../app/stylesheets/application.sass */
 #twitter .tweet .source a {
   color: #cccccc;
 }
@@ -941,11 +956,11 @@ h6 {
   color: #cccccc;
 }
 
-/* line 283, ../../../app/stylesheets/application.sass */
+/* line 293, ../../../app/stylesheets/application.sass */
 #twitter .divider {
   margin-bottom: 5px;
 }
-/* line 285, ../../../app/stylesheets/application.sass */
+/* line 295, ../../../app/stylesheets/application.sass */
 #twitter .follow {
   vertical-align: super;
   margin-top: 3px;
@@ -953,30 +968,124 @@ h6 {
   color: #a7a9ac;
   font-weight: bold;
 }
-/* line 291, ../../../app/stylesheets/application.sass */
+/* line 301, ../../../app/stylesheets/application.sass */
 #twitter h6 {
   display: inline;
   float: left;
   width: 40%;
   margin-top: 8px;
 }
-/* line 295, ../../../app/stylesheets/application.sass */
+/* line 305, ../../../app/stylesheets/application.sass */
 #twitter #logo {
   display: inline;
   float: right;
 }
-/* line 297, ../../../app/stylesheets/application.sass */
+/* line 307, ../../../app/stylesheets/application.sass */
 #twitter #logo img {
   width: 30px;
   height: 30px;
 }
 
-/* line 301, ../../../app/stylesheets/application.sass */
-.tags {
-  margin-top: 15px;
-  margin-bottom: 10px;
+/* line 312, ../../../app/stylesheets/application.sass */
+#lastfm .track {
+  clear: both;
+  border-bottom: 1px solid #3d66ac;
+  font-size: 11px;
+  font-weight: bold;
+  color: #a7a9ac;
+  padding-top: 12px;
+  padding-bottom: 7px;
 }
-/* line 304, ../../../app/stylesheets/application.sass */
+/* line 320, ../../../app/stylesheets/application.sass */
+#lastfm .track p {
+  margin-bottom: 5px;
+}
+/* line 322, ../../../app/stylesheets/application.sass */
+#lastfm .track a {
+  text-decoration: none;
+  color: #a7a9ac;
+}
+/* line 4, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_hover-link.scss */
+#lastfm .track a:hover {
+  text-decoration: underline;
+}
+/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#lastfm .track a:visited {
+  color: #a7a9ac;
+}
+/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#lastfm .track a:focus {
+  color: #a7a9ac;
+}
+/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#lastfm .track a:hover {
+  color: #90b3df;
+}
+/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#lastfm .track a:active {
+  color: #a7a9ac;
+}
+/* line 325, ../../../app/stylesheets/application.sass */
+#lastfm .track .source {
+  color: #cccccc;
+}
+/* line 327, ../../../app/stylesheets/application.sass */
+#lastfm .track .source a {
+  color: #cccccc;
+}
+/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#lastfm .track .source a:visited {
+  color: #cccccc;
+}
+/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#lastfm .track .source a:focus {
+  color: #cccccc;
+}
+/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#lastfm .track .source a:hover {
+  color: #90b3df;
+}
+/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#lastfm .track .source a:active {
+  color: #cccccc;
+}
+
+/* line 331, ../../../app/stylesheets/application.sass */
+#lastfm .divider_medium {
+  margin-bottom: 5px;
+}
+/* line 333, ../../../app/stylesheets/application.sass */
+#lastfm .follow {
+  vertical-align: super;
+  margin-top: 3px;
+  margin-right: 10px;
+  color: #a7a9ac;
+  font-weight: bold;
+}
+/* line 339, ../../../app/stylesheets/application.sass */
+#lastfm h6 {
+  display: inline;
+  float: left;
+  width: 40%;
+  margin-top: 8px;
+}
+/* line 343, ../../../app/stylesheets/application.sass */
+#lastfm #logo {
+  display: inline;
+  float: right;
+}
+/* line 345, ../../../app/stylesheets/application.sass */
+#lastfm #logo img {
+  width: 30px;
+  height: 30px;
+}
+
+/* line 349, ../../../app/stylesheets/application.sass */
+.tags {
+  margin-bottom: 10px;
+  border-top: #3d66ac 2px solid;
+}
+/* line 353, ../../../app/stylesheets/application.sass */
 .tags a {
   color: inherit;
   text-decoration: inherit;
@@ -1004,13 +1113,17 @@ h6 {
 .tags a:active {
   color: #a7a9ac;
 }
+/* line 357, ../../../app/stylesheets/application.sass */
+.tags h6 {
+  margin-bottom: 15px;
+}
 
-/* line 311, ../../../app/stylesheets/application.sass */
+/* line 362, ../../../app/stylesheets/application.sass */
 .pagination {
   clear: both;
   color: #3d66ac;
 }
-/* line 314, ../../../app/stylesheets/application.sass */
+/* line 365, ../../../app/stylesheets/application.sass */
 .pagination a {
   color: inherit;
   text-decoration: inherit;
@@ -1037,7 +1150,7 @@ h6 {
 .pagination a:active {
   color: #a7a9ac;
 }
-/* line 318, ../../../app/stylesheets/application.sass */
+/* line 369, ../../../app/stylesheets/application.sass */
 .pagination .previous_page {
   color: #a7a9ac;
 }
