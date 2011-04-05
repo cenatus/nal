@@ -13,7 +13,7 @@ http_path = "/"
 
 
 environment = Compass::AppIntegration::Rails.env
-if environment == 'production'
+if environment == 'Production'
   css_dir = "tmp/stylesheets"
   sass_dir = "app/stylesheets"
 else

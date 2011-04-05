@@ -3,7 +3,7 @@ require 'compass/app_integration/rails'
 
 environment = Compass::AppIntegration::Rails.env
 
-Compass::AppIntegration::Rails.initialize! if environment != "production"
+Compass::AppIntegration::Rails.initialize! if environment != "Production"
 
 
 require 'fileutils'
