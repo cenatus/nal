@@ -96,7 +96,7 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="twitter" version="1.1.2" bound="EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="twitter" version="1.2.0" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>

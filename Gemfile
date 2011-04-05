@@ -15,7 +15,7 @@ gem 'heroku'
 gem 'typus', :git => 'https://github.com/fesplugas/typus.git'
 gem 'compass'
 gem 'aws-s3'
-gem 'twitter', "= 1.1.2"
+gem 'twitter', "= 1.2.0"
 gem "friendly_id", "~> 3.2.1"
 gem 'acts-as-taggable-on'
 
