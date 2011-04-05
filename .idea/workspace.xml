@@ -8,29 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbbae15d-5b71-462f-82f6-77662587ddf7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_lastfm.html.haml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_search.html.haml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/g" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/nal.iml" afterPath="$PROJECT_DIR$/.idea/nal.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators" afterPath="$PROJECT_DIR$/lib/generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/participants_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/participants_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/stylesheets/application.sass" afterPath="$PROJECT_DIR$/app/stylesheets/application.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/events/index.html.haml" afterPath="$PROJECT_DIR$/app/views/events/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/events/show.html.haml" afterPath="$PROJECT_DIR$/app/views/events/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/news_items/_news_items.html.haml" afterPath="$PROJECT_DIR$/app/views/news_items/_news_items.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/news_items/_tag_cloud.html.haml" afterPath="$PROJECT_DIR$/app/views/news_items/_tag_cloud.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/news_items/show.html.haml" afterPath="$PROJECT_DIR$/app/views/news_items/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/dynamic.html.haml" afterPath="$PROJECT_DIR$/app/views/pages/dynamic.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/participants/_participant.html.haml" afterPath="$PROJECT_DIR$/app/views/participants/_participant.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/participants/index.html.haml" afterPath="$PROJECT_DIR$/app/views/participants/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/participants/show.html.haml" afterPath="$PROJECT_DIR$/app/views/participants/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/strands/index.html.haml" afterPath="$PROJECT_DIR$/app/views/strands/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/strands/show.html.haml" afterPath="$PROJECT_DIR$/app/views/strands/show.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/compiled/application.css" afterPath="$PROJECT_DIR$/public/stylesheets/compiled/application.css" />
     </list>
     <ignored path="nal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -842,7 +821,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="50" y="44" width="1870" height="994" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
