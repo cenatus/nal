@@ -1,6 +1,6 @@
 class StrandsController < ApplicationController
   def index
-    @strands = Strand.order("sort_order DESC")
+    @strands = Strand.order("sort_order ASC")
     @section = "festival"
 
     respond_to do |format|

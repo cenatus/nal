@@ -10,12 +10,8 @@
     <list default="true" id="bbbae15d-5b71-462f-82f6-77662587ddf7" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/g" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators" afterPath="$PROJECT_DIR$/lib/generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/compass.rb" afterPath="$PROJECT_DIR$/config/compass.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/compass.rb" afterPath="$PROJECT_DIR$/config/initializers/compass.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/strands_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/strands_controller.rb" />
     </list>
     <ignored path="nal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,19 +44,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="24" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
+            <state line="20" column="14" selection-start="465" selection-end="465" vertical-scroll-proportion="0.44362292">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compass.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="compass.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/compass.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.39926064">
+            <state line="18" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strands_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/strands_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="43" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,15 +93,6 @@
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="timeline.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/gems/twitter-1.1.2/lib/twitter/client/timeline.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="66" selection-start="6908" selection-end="6961" vertical-scroll-proportion="-8.961538">
               <folding />
             </state>
           </provider>
@@ -143,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/strands_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110404185616_add_festival_flag_to_page.rb" />
@@ -154,11 +149,12 @@
         <option value="$PROJECT_DIR$/app/stylesheets/application.sass" />
         <option value="$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/gems/multi_json-0.0.5/lib/multi_json.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_twitter.html.haml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/config/compass.rb" />
         <option value="$PROJECT_DIR$/config/initializers/compass.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/strands_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -536,24 +532,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -859,13 +837,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/gems/multi_json-0.0.5/lib/multi_json.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="6" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/gems/twitter-1.1.2/lib/twitter/client.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -922,13 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="24" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p136@nal/gems/actionpack-3.0.3/lib/action_view/helpers/asset_tag_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="477" column="101" selection-start="27043" selection-end="27132" vertical-scroll-proportion="0.33271718">
@@ -966,7 +930,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/compass.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.39926064">
+        <state line="18" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/strands_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="43" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="14" selection-start="465" selection-end="465" vertical-scroll-proportion="0.44362292">
           <folding />
         </state>
       </provider>

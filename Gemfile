@@ -18,6 +18,7 @@ gem 'aws-s3'
 gem 'twitter', "= 1.2.0"
 gem "friendly_id", "~> 3.2.1"
 gem 'acts-as-taggable-on'
+gem 'scrobbler'
 
 # Use unicorn as the web server
 # gem 'unicorn'
