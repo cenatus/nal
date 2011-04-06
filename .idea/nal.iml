@@ -185,6 +185,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] mysql2 (v0.2.7, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/mysql2-0.2.7)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] twitter (v1.1.2, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/twitter-1.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] babosa (v0.3.2, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/babosa-0.3.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] scrobbler (v0.2.3, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/scrobbler-0.2.3)" level="application" />
   </component>
 </module>
 
