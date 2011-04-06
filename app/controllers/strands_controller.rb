@@ -2,6 +2,7 @@ class StrandsController < ApplicationController
   def index
     @strands = Strand.order("sort_order ASC")
     @section = "festival"
+    @related_events = Event.order("start_time ASC")
 
     respond_to do |format|
       format.html # index.haml
@@ -12,6 +13,7 @@ class StrandsController < ApplicationController
   def show
     @strand = Strand.find(params[:id])
     @section = "festival"
+    @related_events = @strand.events.order("start_time ASC")
     
     respond_to do |format|
       format.html # show.haml

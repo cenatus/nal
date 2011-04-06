@@ -107,21 +107,27 @@
 
       #sidebar
         %hr.divider
+
         = render :partial => "/layouts/search"
-        = render :partial => "/news_items/tag_cloud"
-        = render :partial => "/layouts/lastfm"
-        = render :partial => "/layouts/twitter"
+
+        - if @section.downcase == "festival"
+          = render :partial => "/events/related"        
+          = render :partial => "/participants/related"
+        - else
+          = render :partial => "/news_items/tag_cloud"
+          = render :partial => "/layouts/lastfm"
+          = render :partial => "/layouts/twitter"
 
 
       #footer
         %hr
           
-        #grid_debug{:style => "float:right"}
-          %a#show_grid
-            Show Grid
-          |
-          %a#hide_grid
-            Hide Grid
+        -##grid_debug{:style => "float:right"}
+        -#  %a#show_grid
+        -#    Show Grid
+        -#  |
+        -#  %a#hide_grid
+        -#    Hide Grid
 
         - a = Asset.find(25)
         - if !a.blank?

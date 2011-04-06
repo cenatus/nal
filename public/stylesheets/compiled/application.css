@@ -1080,12 +1080,17 @@ h6 {
   height: 30px;
 }
 
-/* line 349, ../../../app/stylesheets/application.sass */
+/* line 350, ../../../app/stylesheets/application.sass */
+#related_events .divider_medium {
+  margin-bottom: 5px;
+}
+
+/* line 353, ../../../app/stylesheets/application.sass */
 .tags {
   margin-bottom: 10px;
   border-top: #3d66ac 2px solid;
 }
-/* line 353, ../../../app/stylesheets/application.sass */
+/* line 357, ../../../app/stylesheets/application.sass */
 .tags a {
   color: inherit;
   text-decoration: inherit;
@@ -1113,17 +1118,17 @@ h6 {
 .tags a:active {
   color: #a7a9ac;
 }
-/* line 357, ../../../app/stylesheets/application.sass */
+/* line 361, ../../../app/stylesheets/application.sass */
 .tags h6 {
   margin-bottom: 15px;
 }
 
-/* line 362, ../../../app/stylesheets/application.sass */
+/* line 366, ../../../app/stylesheets/application.sass */
 .pagination {
   clear: both;
   color: #3d66ac;
 }
-/* line 365, ../../../app/stylesheets/application.sass */
+/* line 369, ../../../app/stylesheets/application.sass */
 .pagination a {
   color: inherit;
   text-decoration: inherit;
@@ -1150,7 +1155,7 @@ h6 {
 .pagination a:active {
   color: #a7a9ac;
 }
-/* line 369, ../../../app/stylesheets/application.sass */
+/* line 373, ../../../app/stylesheets/application.sass */
 .pagination .previous_page {
   color: #a7a9ac;
 }

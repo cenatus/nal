@@ -10,9 +10,6 @@ class PagesController < ApplicationController
       raise ActiveRecord::RecordNotFound
     end
 
-#    layout_name = @page.blank? ? "home" : @page.name.downcase
-#    @layout = CategoryLayout.get_layout(layout_name)
-
   end
 
 end

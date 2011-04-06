@@ -1,0 +1,11 @@
+- if !@related_events.blank?
+
+  %hr.divider_medium
+
+  %h3 Events
+  #related_events
+    - for event in @related_events do
+      .event
+        %h6= formatted(event.start_time)
+        %h5= link_to(event.name, "/#{Nal::Application::CURRENT_YEAR}/event/#{event.friendly_id}")
+

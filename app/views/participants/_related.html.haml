@@ -1,0 +1,18 @@
+- if !@event.blank?
+
+  %hr.divider_medium
+
+  - if @event.performers.length > 0
+    %h3 Related Performers
+    - for performer in @event.performers do
+      %h6= link_to(performer.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{performer.friendly_id}")
+
+  - if @event.artists.length > 0
+    %h3 Related Artists
+    - for artist in @event.artists do
+      %h6= link_to(artist.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{artist.friendly_id}")
+
+  - if @event.speakers.length > 0
+    %h3 Related Speakers
+    - for speaker in @event.speakers do
+      %h6= link_to(speaker.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{speaker.friendly_id}")
