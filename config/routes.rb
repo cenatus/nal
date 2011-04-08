@@ -1,5 +1,5 @@
-Nal::Application.routes.draw do
-
+Nal::Application.routes.draw do  
+  
   root :to => "strands#index"
 
   match ":year/festival" => "strands#index"
@@ -8,13 +8,22 @@ Nal::Application.routes.draw do
   match "news" => "news_items#index"
   match "news/:id" => "news_items#show", :as => :news_item
 
+  # old site menu redirects  
+  match "/blog/133/archive", :to  => redirect("/#{Nal::Application::CURRENT_YEAR}/archive")
+                                                                                           
+  match "/blog/131/about", :to  => redirect("/#{Nal::Application::CURRENT_YEAR}/about")
+  match "/blog/130/contact", :to  => redirect("/#{Nal::Application::CURRENT_YEAR}/contact")
+  
+  match "/blog", :to  => redirect("/news")
+
   # old blog redirects
   #  e.g. blog/195/listen-to-and-vote-for-the-submissions
   match "/blog/:old_id/:old_slug" => "news_items#show"
 
+
   match "tag/:id" => "news_items#tagged_with"
 
-
+  
   #replicated from Typus. just to give higher precedence than below
   scope "admin", :module => :admin, :as => "admin" do
     match "/" => "dashboard#show", :as => "dashboard"
