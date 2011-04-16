@@ -188,6 +188,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] scrobbler (v0.2.3, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/scrobbler-0.2.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] twitter (v1.2.0, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/twitter-1.2.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] simple_oauth (v0.1.4, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/simple_oauth-0.1.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] taps (v0.3.23, /Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/taps-0.3.23)" level="application" />
   </component>
 </module>
 

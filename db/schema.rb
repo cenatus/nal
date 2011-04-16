@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110404185616) do
+ActiveRecord::Schema.define(:version => 20110416221448) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "first_name",       :default => "",    :null => false
@@ -103,7 +103,7 @@ ActiveRecord::Schema.define(:version => 20110404185616) do
     t.datetime "updated_at"
     t.string   "year"
     t.text     "content"
-    t.string   "section",    :default => "festival"
+    t.string   "section"
   end
 
   create_table "participants", :force => true do |t|
@@ -116,7 +116,7 @@ ActiveRecord::Schema.define(:version => 20110404185616) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "year"
-    t.integer  "sort_order"
+    t.integer  "sort_order",   :default => 0
   end
 
   create_table "slugs", :force => true do |t|
