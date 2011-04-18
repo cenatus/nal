@@ -7,7 +7,7 @@
   - if i == 0
     .news_item_featured
 
-      - article_image news_item, :hover_flag => true, :link_flag =>false
+      - article_image news_item, :hover_flag => true, :link_flag =>true
       %h3= link_to news_item.headline, news_item
       :preserve
         #{news_item.summary}
