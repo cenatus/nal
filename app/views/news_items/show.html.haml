@@ -2,7 +2,7 @@
   %h2= @news_item.headline
   %h3.divider_medium
     
-  - article_image @news_item
+  - article_image @news_item, :hover_flag => true, :link_flag =>false
 
   %p= formatted @news_item.created_at
 

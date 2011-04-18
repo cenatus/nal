@@ -1,7 +1,7 @@
 %h2= "#{@page.name}_"
 %h3.divider_medium
 
-- article_image @page
+- article_image @page, :hover_flag => true, :link_flag =>false
 
 :preserve
   #{@page.content}

@@ -1,8 +1,15 @@
 %h2= @participant.name
 %h3.divider_medium
 
-- article_image @participant
+- article_image @participant, :hover_flag => true, :link_flag =>false
+
+%p= formatted @participant.created_at
+%p= @participant.name
 
 :preserve
   #{@participant.biography}
-%p= auto_link @participant.homepage
+%p
+  = auto_link @participant.homepage if !@participant.homepage.blank?
+  %span.pipe= "|" if !@participant.twitter_name.blank? and !@participant.homepage.blank?
+  = link_to "@#{@participant.twitter_name}", "http://twitter.com/#{@participant.twitter_name}" if !@participant.twitter_name.blank?
+

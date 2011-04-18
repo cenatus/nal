@@ -1,7 +1,7 @@
 %h2= @strand.name
 %h3.divider_medium
   
-- article_image @strand
+- article_image @strand, :hover_flag => true, :link_flag =>false
 :preserve
   #{@strand.detail}
 

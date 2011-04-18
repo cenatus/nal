@@ -40,7 +40,14 @@
           $('#container').css("background", "white");
         });
 
-      });        
+       //sliding boxes script
+       //Full Caption Sliding (Hidden to Visible)
+        $('.boxgrid.captionfull').hover(function(){
+          $(".cover", this).stop().animate({top:'322px'},{queue:false,duration:160});
+        }, function() {
+          $(".cover", this).stop().animate({top:'382px'},{queue:false,duration:160});
+        }
+      )});
       
       
 

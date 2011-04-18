@@ -23,6 +23,9 @@ $light_grey = #CCC
 $content_width = 620px
 $content_height = 500px
 
+$article_image_width = 620px
+$article_image_height = 382px
+
 // HTML
 
 body
@@ -135,11 +138,39 @@ h6
 
 // images
 .article_image
-  width: 620px
-  height: 382px
+  width: $article_image_width
+  height: $article_image_height
 .thumbnail_image
   width: 300px
   height: 185px
+
+//sliding boxes plugin
+.boxgrid
+  width: $article_image_width
+  height: $article_image_height
+  margin: 0 0 5px 0
+  float: left
+  overflow: hidden
+  position: relative
+  img
+    position: absolute
+    top: 0
+    left: 0
+    border: 0
+  p
+    padding: 20px 15px
+    font-size: 8pt
+
+.boxcaption
+  top: $article_image_height
+  float: left
+  position: absolute
+  background: $dark_blue
+  height: 60px
+  width: 100%
+  +opacity(0.8)
+  h6
+    color: #fff
 
 // common
 .divider
@@ -201,7 +232,7 @@ h6
     +unstyled-link
     +link-colors($dark_grey, $sky_blue, $dark_grey, $dark_grey, $dark_grey)
 
-    
+
 
 
 // festival

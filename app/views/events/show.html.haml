@@ -1,7 +1,7 @@
 %h2= "#{@event.name}"
 %h3.divider_medium
   
-- article_image @event
+- article_image @event, :hover_flag => true, :link_flag =>false
 
 :preserve
   #{@event.detail}
