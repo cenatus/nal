@@ -41,6 +41,11 @@ h1, h2, h3, h4, h5
 h6
   +header-text
 
+// link mixin
+=less-styled-link
+  :text-decoration none
+
+
 
 // layout
 #header
@@ -111,7 +116,7 @@ h6
       margin-bottom: 40px
       line-height: 40px
     a
-      +unstyled-link
+      +less-styled_link
 
   #picture
     float: right
@@ -200,7 +205,7 @@ h6
 
   h3
     a
-      +unstyled-link
+      +less-styled-link
   .date
     margin-bottom: 0px
     float: right
@@ -209,7 +214,7 @@ h6
     margin-bottom: 5px
 
   .read_more
-    +unstyled-link
+    +less-styled-link
     +link-colors($dark_grey, $sky_blue, $dark_grey, $dark_grey, $dark_grey)
     position: absolute
     bottom: 0px
@@ -226,10 +231,10 @@ h6
 
   h3
     a
-      +unstyled-link
+      +less-styled-link
 
   .read_more
-    +unstyled-link
+    +less-styled-link
     +link-colors($dark_grey, $sky_blue, $dark_grey, $dark_grey, $dark_grey)
 
 
@@ -293,7 +298,7 @@ h6
     color: white
 
   a
-    +unstyled-link
+    +less-styled-link
     +link-colors(white, $sky_blue, white, white, white)
   
 
@@ -388,7 +393,7 @@ h6
   border-top: $dark_blue 2px solid
 
   a
-    +unstyled-link
+    +less-styled-link
     +link-colors($dark_grey, $sky_blue, $dark_grey, $dark_grey, $dark_grey)
     font-weight: bold
   h6
@@ -400,7 +405,7 @@ h6
   clear: both
   color: $dark_blue
   a
-    +unstyled-link
+    +less-styled-link
     +link-colors($dark_grey, $sky_blue, $dark_grey, $dark_grey, $dark_grey)
 
   .previous_page
