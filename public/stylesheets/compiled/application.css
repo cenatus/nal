@@ -642,8 +642,7 @@ h6 {
 .boxgrid {
   width: 620px;
   height: 382px;
-  margin: 0 0 5px 0;
-  float: left;
+  margin: 0 0 15px 0;
   overflow: hidden;
   position: relative;
 }
