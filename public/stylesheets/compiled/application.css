@@ -638,7 +638,7 @@ h6 {
   height: 185px;
 }
 
-/* line 153, ../../../app/stylesheets/application.sass */
+/* line 154, ../../../app/stylesheets/application.sass */
 .boxgrid {
   width: 620px;
   height: 382px;
@@ -646,20 +646,20 @@ h6 {
   overflow: hidden;
   position: relative;
 }
-/* line 160, ../../../app/stylesheets/application.sass */
+/* line 161, ../../../app/stylesheets/application.sass */
 .boxgrid img {
   position: absolute;
   top: 0;
   left: 0;
   border: 0;
 }
-/* line 165, ../../../app/stylesheets/application.sass */
+/* line 166, ../../../app/stylesheets/application.sass */
 .boxgrid p {
   padding: 20px 15px;
   font-size: 8pt;
 }
 
-/* line 169, ../../../app/stylesheets/application.sass */
+/* line 170, ../../../app/stylesheets/application.sass */
 .boxcaption {
   top: 382px;
   float: left;
@@ -671,40 +671,69 @@ h6 {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
 }
-/* line 177, ../../../app/stylesheets/application.sass */
+/* line 178, ../../../app/stylesheets/application.sass */
 .boxcaption h6 {
   color: white;
 }
 
-/* line 181, ../../../app/stylesheets/application.sass */
+/* line 184, ../../../app/stylesheets/application.sass */
+.slider ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 186, ../../../app/stylesheets/application.sass */
+.slider li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  white-space: nowrap;
+  width: 620px;
+  height: 382px;
+  overflow: hidden;
+}
+/* line 7, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.slider li {
+  *display: inline;
+}
+
+/* line 194, ../../../app/stylesheets/application.sass */
 .divider {
   background-color: #3d66ac;
   height: 10px;
 }
 
-/* line 185, ../../../app/stylesheets/application.sass */
+/* line 198, ../../../app/stylesheets/application.sass */
 .divider_medium {
   background-color: #3d66ac;
   height: 2px;
 }
 
-/* line 189, ../../../app/stylesheets/application.sass */
+/* line 202, ../../../app/stylesheets/application.sass */
 #content {
   min-height: 500px;
   height: auto !important;
   height: 500px;
   position: relative;
 }
-/* line 190, ../../../app/stylesheets/application.sass */
+/* line 203, ../../../app/stylesheets/application.sass */
 #content .divider {
   width: 620px;
 }
-/* line 192, ../../../app/stylesheets/application.sass */
+/* line 205, ../../../app/stylesheets/application.sass */
 #content .divider_medium {
   width: 620px;
 }
 
-/* line 198, ../../../app/stylesheets/application.sass */
+/* line 211, ../../../app/stylesheets/application.sass */
 .news_item {
   height: 360px;
   width: 300px;
@@ -713,22 +742,22 @@ h6 {
   margin-bottom: 25px;
   position: relative;
 }
-/* line 207, ../../../app/stylesheets/application.sass */
+/* line 220, ../../../app/stylesheets/application.sass */
 .news_item h3 a {
   text-decoration: none;
 }
-/* line 209, ../../../app/stylesheets/application.sass */
+/* line 223, ../../../app/stylesheets/application.sass */
 .news_item .date {
   margin-bottom: 0px;
   float: right;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 213, ../../../app/stylesheets/application.sass */
+/* line 227, ../../../app/stylesheets/application.sass */
 .news_item p {
   margin-bottom: 5px;
 }
-/* line 216, ../../../app/stylesheets/application.sass */
+/* line 230, ../../../app/stylesheets/application.sass */
 .news_item .read_more {
   text-decoration: none;
   color: #a7a9ac;
@@ -753,21 +782,25 @@ h6 {
   color: #a7a9ac;
 }
 
-/* line 225, ../../../app/stylesheets/application.sass */
+/* line 239, ../../../app/stylesheets/application.sass */
 .news_item.even {
   margin-left: 20px;
 }
 
-/* line 228, ../../../app/stylesheets/application.sass */
+/* line 242, ../../../app/stylesheets/application.sass */
 .news_item_featured {
   border-bottom: 3px solid #3d66ac;
   margin-bottom: 25px;
 }
-/* line 233, ../../../app/stylesheets/application.sass */
+/* line 246, ../../../app/stylesheets/application.sass */
+.news_item_featured h3 {
+  margin: 15px 0 0 0;
+}
+/* line 248, ../../../app/stylesheets/application.sass */
 .news_item_featured h3 a {
   text-decoration: none;
 }
-/* line 236, ../../../app/stylesheets/application.sass */
+/* line 251, ../../../app/stylesheets/application.sass */
 .news_item_featured .read_more {
   text-decoration: none;
   color: #a7a9ac;
@@ -789,14 +822,14 @@ h6 {
   color: #a7a9ac;
 }
 
-/* line 245, ../../../app/stylesheets/application.sass */
+/* line 260, ../../../app/stylesheets/application.sass */
 .mosaic_block, .strand {
   border: 1px solid white;
   overflow: hidden;
   position: relative;
 }
 
-/* line 251, ../../../app/stylesheets/application.sass */
+/* line 266, ../../../app/stylesheets/application.sass */
 .mosaic-backdrop {
   display: none;
   position: absolute;
@@ -805,7 +838,7 @@ h6 {
   width: 300px;
 }
 
-/* line 260, ../../../app/stylesheets/application.sass */
+/* line 275, ../../../app/stylesheets/application.sass */
 .mosaic-overlay {
   display: none;
   z-index: 5;
@@ -817,7 +850,7 @@ h6 {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
 }
-/* line 268, ../../../app/stylesheets/application.sass */
+/* line 283, ../../../app/stylesheets/application.sass */
 .mosaic-overlay a {
   color: inherit;
   text-decoration: inherit;
@@ -845,18 +878,18 @@ h6 {
   color: white;
 }
 
-/* line 273, ../../../app/stylesheets/application.sass */
+/* line 288, ../../../app/stylesheets/application.sass */
 .strand .mosaic-overlay {
   top: -230px;
   height: 300px;
 }
 
-/* line 278, ../../../app/stylesheets/application.sass */
+/* line 293, ../../../app/stylesheets/application.sass */
 .strand .mosaic-overlay:hover {
   cursor: hand;
 }
 
-/* line 282, ../../../app/stylesheets/application.sass */
+/* line 297, ../../../app/stylesheets/application.sass */
 .strand {
   color: white;
   height: 300px;
@@ -864,19 +897,19 @@ h6 {
   float: left;
   margin-bottom: 20px;
 }
-/* line 290, ../../../app/stylesheets/application.sass */
+/* line 305, ../../../app/stylesheets/application.sass */
 .strand h3 {
   position: absolute;
   bottom: 0px;
   color: white;
   margin-left: 5px;
 }
-/* line 296, ../../../app/stylesheets/application.sass */
+/* line 311, ../../../app/stylesheets/application.sass */
 .strand p {
   margin: 5px;
   color: white;
 }
-/* line 300, ../../../app/stylesheets/application.sass */
+/* line 315, ../../../app/stylesheets/application.sass */
 .strand a {
   text-decoration: none;
   color: white;
@@ -898,12 +931,12 @@ h6 {
   color: white;
 }
 
-/* line 306, ../../../app/stylesheets/application.sass */
+/* line 321, ../../../app/stylesheets/application.sass */
 .strand.even {
   margin-left: 20px;
 }
 
-/* line 311, ../../../app/stylesheets/application.sass */
+/* line 326, ../../../app/stylesheets/application.sass */
 #twitter .tweet {
   clear: both;
   border-bottom: 1px solid #3d66ac;
@@ -914,11 +947,11 @@ h6 {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-/* line 320, ../../../app/stylesheets/application.sass */
+/* line 335, ../../../app/stylesheets/application.sass */
 #twitter .tweet p {
   margin-bottom: 5px;
 }
-/* line 322, ../../../app/stylesheets/application.sass */
+/* line 337, ../../../app/stylesheets/application.sass */
 #twitter .tweet a {
   text-decoration: none;
   color: #a7a9ac;
@@ -943,11 +976,11 @@ h6 {
 #twitter .tweet a:active {
   color: #a7a9ac;
 }
-/* line 325, ../../../app/stylesheets/application.sass */
+/* line 340, ../../../app/stylesheets/application.sass */
 #twitter .tweet .source {
   color: #cccccc;
 }
-/* line 327, ../../../app/stylesheets/application.sass */
+/* line 342, ../../../app/stylesheets/application.sass */
 #twitter .tweet .source a {
   color: #cccccc;
 }
@@ -968,11 +1001,11 @@ h6 {
   color: #cccccc;
 }
 
-/* line 331, ../../../app/stylesheets/application.sass */
+/* line 346, ../../../app/stylesheets/application.sass */
 #twitter .divider {
   margin-bottom: 5px;
 }
-/* line 333, ../../../app/stylesheets/application.sass */
+/* line 348, ../../../app/stylesheets/application.sass */
 #twitter .follow {
   vertical-align: super;
   margin-top: 3px;
@@ -980,25 +1013,25 @@ h6 {
   color: #a7a9ac;
   font-weight: bold;
 }
-/* line 339, ../../../app/stylesheets/application.sass */
+/* line 354, ../../../app/stylesheets/application.sass */
 #twitter h6 {
   display: inline;
   float: left;
   width: 40%;
   margin-top: 8px;
 }
-/* line 343, ../../../app/stylesheets/application.sass */
+/* line 358, ../../../app/stylesheets/application.sass */
 #twitter #logo {
   display: inline;
   float: right;
 }
-/* line 345, ../../../app/stylesheets/application.sass */
+/* line 360, ../../../app/stylesheets/application.sass */
 #twitter #logo img {
   width: 30px;
   height: 30px;
 }
 
-/* line 350, ../../../app/stylesheets/application.sass */
+/* line 365, ../../../app/stylesheets/application.sass */
 #lastfm .track {
   clear: both;
   border-bottom: 1px solid #3d66ac;
@@ -1008,11 +1041,11 @@ h6 {
   padding-top: 12px;
   padding-bottom: 7px;
 }
-/* line 358, ../../../app/stylesheets/application.sass */
+/* line 373, ../../../app/stylesheets/application.sass */
 #lastfm .track p {
   margin-bottom: 5px;
 }
-/* line 360, ../../../app/stylesheets/application.sass */
+/* line 375, ../../../app/stylesheets/application.sass */
 #lastfm .track a {
   text-decoration: none;
   color: #a7a9ac;
@@ -1037,11 +1070,11 @@ h6 {
 #lastfm .track a:active {
   color: #a7a9ac;
 }
-/* line 363, ../../../app/stylesheets/application.sass */
+/* line 378, ../../../app/stylesheets/application.sass */
 #lastfm .track .source {
   color: #cccccc;
 }
-/* line 365, ../../../app/stylesheets/application.sass */
+/* line 380, ../../../app/stylesheets/application.sass */
 #lastfm .track .source a {
   color: #cccccc;
 }
@@ -1062,11 +1095,11 @@ h6 {
   color: #cccccc;
 }
 
-/* line 369, ../../../app/stylesheets/application.sass */
+/* line 384, ../../../app/stylesheets/application.sass */
 #lastfm .divider_medium {
   margin-bottom: 5px;
 }
-/* line 371, ../../../app/stylesheets/application.sass */
+/* line 386, ../../../app/stylesheets/application.sass */
 #lastfm .follow {
   vertical-align: super;
   margin-top: 3px;
@@ -1074,35 +1107,35 @@ h6 {
   color: #a7a9ac;
   font-weight: bold;
 }
-/* line 377, ../../../app/stylesheets/application.sass */
+/* line 392, ../../../app/stylesheets/application.sass */
 #lastfm h6 {
   display: inline;
   float: left;
   width: 40%;
   margin-top: 8px;
 }
-/* line 381, ../../../app/stylesheets/application.sass */
+/* line 396, ../../../app/stylesheets/application.sass */
 #lastfm #logo {
   display: inline;
   float: right;
 }
-/* line 383, ../../../app/stylesheets/application.sass */
+/* line 398, ../../../app/stylesheets/application.sass */
 #lastfm #logo img {
   width: 30px;
   height: 30px;
 }
 
-/* line 388, ../../../app/stylesheets/application.sass */
+/* line 403, ../../../app/stylesheets/application.sass */
 #related_events .divider_medium {
   margin-bottom: 5px;
 }
 
-/* line 391, ../../../app/stylesheets/application.sass */
+/* line 406, ../../../app/stylesheets/application.sass */
 .tags {
   margin-bottom: 10px;
   border-top: #3d66ac 2px solid;
 }
-/* line 395, ../../../app/stylesheets/application.sass */
+/* line 410, ../../../app/stylesheets/application.sass */
 .tags a {
   text-decoration: none;
   color: #a7a9ac;
@@ -1124,17 +1157,17 @@ h6 {
 .tags a:active {
   color: #a7a9ac;
 }
-/* line 399, ../../../app/stylesheets/application.sass */
+/* line 414, ../../../app/stylesheets/application.sass */
 .tags h6 {
   margin-bottom: 15px;
 }
 
-/* line 404, ../../../app/stylesheets/application.sass */
+/* line 419, ../../../app/stylesheets/application.sass */
 .pagination {
   clear: both;
   color: #3d66ac;
 }
-/* line 407, ../../../app/stylesheets/application.sass */
+/* line 422, ../../../app/stylesheets/application.sass */
 .pagination a {
   text-decoration: none;
   color: #a7a9ac;
@@ -1155,7 +1188,7 @@ h6 {
 .pagination a:active {
   color: #a7a9ac;
 }
-/* line 411, ../../../app/stylesheets/application.sass */
+/* line 426, ../../../app/stylesheets/application.sass */
 .pagination .previous_page {
   color: #a7a9ac;
 }

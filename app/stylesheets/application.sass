@@ -177,6 +177,18 @@ h6
   h6
     color: #fff
 
+
+//easy slider plugin
+.slider
+  ul
+    +inline-block-list-container
+  li
+    +inline-block-list-item
+    width: $article_image_width
+    height: $article_image_height
+    overflow: hidden
+
+
 // common
 .divider
   background-color: $dark_blue
@@ -206,6 +218,7 @@ h6
   h3
     a
       +less-styled-link
+
   .date
     margin-bottom: 0px
     float: right
@@ -230,6 +243,7 @@ h6
   margin-bottom: 25px
 
   h3
+    margin: 15px 0 0 0
     a
       +less-styled-link
 

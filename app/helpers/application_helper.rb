@@ -22,24 +22,41 @@ module ApplicationHelper
 
   def article_image(klass, options={:hover_flag => false, :link_flag =>true})
     return "" if (!klass.respond_to?(:assets) || klass.assets.blank?)
+
+
+    if klass.assets.length >1
+      haml_tag "div.slider" do
+        haml_tag :ul do
+          for asset in klass.assets
+            haml_tag :li do
+            display_hovtex_img(klass, asset, options)
+            end
+          end
+        end
+      end
+    else
+      display_hovtex_img(klass, klass.assets.first, options)
+    end
+  end
+
+  def display_hovtex_img(klass, asset, options)
     class_slug = klass.class.to_s == "NewsItem" ? "News" : klass.class.to_s
     year = klass.class.to_s == "NewsItem" ? "" : "#{Nal::Application::CURRENT_YEAR}/"
-
     if options[:hover_flag] == true
       #sliding boxes plugin
       haml_tag "div.boxgrid.captionfull" do
         if options[:link_flag] == true
           haml_tag "a", {:href => "/#{year}#{class_slug.downcase}/#{klass.friendly_id}"} do
-            display_img klass
+            display_img asset
           end
         else
-          display_img klass
+          display_img asset
         end
 
-        if !klass.assets.first.description.blank?
+        if !asset.description.blank?
           haml_tag "div.cover.boxcaption" do
             haml_tag "h6" do
-              haml_tag "p", klass.assets.first.description
+              haml_tag "p", asset.description
             end
           end
         end
@@ -47,17 +64,18 @@ module ApplicationHelper
     else
       if options[:link_flag] == true
         haml_tag "a", {:href => "/#{year}#{class_slug.downcase}/#{klass.friendly_id}"} do
-          display_img klass
+          display_img asset
         end
       else
-        display_img klass
+        display_img asset
       end
     end
   end
 
-  def display_img (klass)
-    haml_tag "IMG.article_image", :src => klass.assets.first.asset.url
+  def display_img (asset)
+    haml_tag "IMG.article_image", :src => asset.asset.url
   end
+
   def article_thumb(klass)
     return "" if (!klass.respond_to?(:assets) || klass.assets.blank?)
     class_slug = klass.class.to_s == "NewsItem" ? "News" : klass.class.to_s
