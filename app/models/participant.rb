@@ -8,5 +8,5 @@ class Participant < ActiveRecord::Base
 
   has_friendly_id :name, :use_slug => true
 
-  acts_as_indexed :fields => [:name]
+  acts_as_indexed :fields => [:name, :year]
 end

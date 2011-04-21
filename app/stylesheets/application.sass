@@ -163,6 +163,25 @@ h6
       cursor: blinking
       input:focus
 
+
+#search_results
+  h4
+    margin: 20px 0 5px 0
+  a
+    +less-styled-link
+    color: $light_grey
+    font-weight: bold
+  .a_artist
+    color: $dark_blue
+  p
+    margin: 0
+
+.highlight
+  color: $sky_blue
+  font-style: italic
+  font-size: larger
+
+
 // images
 .article_image
   width: $article_image_width
@@ -336,7 +355,7 @@ h6
   a
     +less-styled-link
     +link-colors(white, $sky_blue, white, white, white)
-  
+
 
 
 .strand.even
@@ -434,8 +453,8 @@ h6
     font-weight: bold
   h6
     margin-bottom: 15px
-    
-    
+
+
 
 .pagination
   clear: both

@@ -1,35 +1,46 @@
-%h2= "results"
-%h3.divider_medium
+#search_results
+  %h2= "results"
+  %h3.divider_medium
 
-- if  @results_strands.length<=0 && @results_news.length<=0 && @results_events.length<=0 && @results_parts.length<=0
-  %h4= "Sorry, your search term '#{params[:query]}' was not found."
 
-- else
-  - if @results_strands.length > 0
-    %h3= "Strands"
-    - for strand in @results_strands
-      %p
-        =link_to strand.name, "/#{Nal::Application::CURRENT_YEAR}/strand/#{strand.friendly_id}"
-    %hr
+  - if  @results_strands.length<=0 && @results_news.length<=0 && @results_events.length<=0 && @results_parts.length<=0
+    %h4= "Sorry, your search term '#{params[:query]}' was not found."
 
-  - if @results_news.length > 0
-    %h3= "News"
-    - for news in @results_news
-      %p
-        =link_to news.headline, news, :class => "read_more"
-    %hr
+  - else
+    - if @results_strands.length > 0
+      %h3= "Strands"
+      - for strand in @results_strands
+        %h4= strand.name
+        %p
+          :preserve
+            #{highlight(strand.summary, params[:query], :highlighter => '<span class=highlight>\1</span>')}
+          =link_to "read more...", "/#{Nal::Application::CURRENT_YEAR}/strand/#{strand.friendly_id}"
+      %hr
 
-  - if @results_events.length > 0
-    %h3= "Events"
-    - for event in @results_events
-      %p
-        =link_to event.name, "/#{Nal::Application::CURRENT_YEAR}/event/#{event.friendly_id}"
-    %hr
+    - if @results_news.length > 0
+      %h3= "News"
+      - for news in @results_news
+        %h4= news.headline
+        %p
+          :preserve
+            #{highlight(news.summary, params[:query], :highlighter => '<span class=highlight>\1</span>')}
+          = link_to "read more...", news
+      %hr
 
-  - if @results_parts.length > 0
-    %h3= "Participants"
-    - for parts in @results_parts
-      %p
-        =link_to parts.name,  "/#{Nal::Application::CURRENT_YEAR}/participant/#{parts.friendly_id}"
-    %hr
+    - if @results_events.length > 0
+      %h3= "Events"
+      - for event in @results_events
+        %h4= event.name
+        %p
+          //- article_thumb event
+          :preserve
+            #{highlight(event.summary, params[:query], :highlighter => '<span class=highlight>\1</span>')}
+          = link_to "read more...", "/#{Nal::Application::CURRENT_YEAR}/event/#{event.friendly_id}"
+      %hr
+
+    - if @results_parts.length > 0
+      %h3= "Participants"
+      - for part in @results_parts
+        %p= link_to part.name,  "/#{Nal::Application::CURRENT_YEAR}/participant/#{part.friendly_id}", :class => "a_artist"
+      %hr
 

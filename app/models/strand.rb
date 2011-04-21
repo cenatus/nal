@@ -7,7 +7,7 @@ class Strand < ActiveRecord::Base
 
   has_friendly_id :name, :use_slug => true
 
-  acts_as_indexed :fields => [:name]
+  acts_as_indexed :fields => [:name, :summary, :detail, :year]
 
 #  def year_and_name
 #    "#{Nal::Application::CURRENT_YEAR}\/#{name}"

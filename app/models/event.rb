@@ -11,7 +11,7 @@ class Event < ActiveRecord::Base
 
   has_friendly_id :name, :use_slug => true
 
-  acts_as_indexed :fields => [:name, :year]
+  acts_as_indexed :fields => [:name, :summary, :detail, :year]
 
   def strapline
     "#{self.timing} @ #{self.venue}"
