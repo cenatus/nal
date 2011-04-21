@@ -52,6 +52,8 @@ Nal::Application.routes.draw do
 
   end
 
+  match "/search" => "search#search"
+
   match ":year/participants" => "participants#index", :as => :participants
   match ":year/participant/:id" => "participants#show", :as => :participant
 

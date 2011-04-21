@@ -7,4 +7,6 @@ class Participant < ActiveRecord::Base
   belongs_to :event
 
   has_friendly_id :name, :use_slug => true
+
+  acts_as_indexed :fields => [:name]
 end

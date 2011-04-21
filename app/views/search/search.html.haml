@@ -1,0 +1,35 @@
+%h2= "results"
+%h3.divider_medium
+
+- if  @results_strands.length<=0 && @results_news.length<=0 && @results_events.length<=0 && @results_parts.length<=0
+  %h4= "Sorry, your search term '#{params[:query]}' was not found."
+
+- else
+  - if @results_strands.length > 0
+    %h3= "Strands"
+    - for strand in @results_strands
+      %p
+        =link_to strand.name, "/#{Nal::Application::CURRENT_YEAR}/strand/#{strand.friendly_id}"
+    %hr
+
+  - if @results_news.length > 0
+    %h3= "News"
+    - for news in @results_news
+      %p
+        =link_to news.headline, news, :class => "read_more"
+    %hr
+
+  - if @results_events.length > 0
+    %h3= "Events"
+    - for event in @results_events
+      %p
+        =link_to event.name, "/#{Nal::Application::CURRENT_YEAR}/event/#{event.friendly_id}"
+    %hr
+
+  - if @results_parts.length > 0
+    %h3= "Participants"
+    - for parts in @results_parts
+      %p
+        =link_to parts.name,  "/#{Nal::Application::CURRENT_YEAR}/participant/#{parts.friendly_id}"
+    %hr
+

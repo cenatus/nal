@@ -34,9 +34,14 @@ body
     text-decoration: underline
     +link-colors($dark_blue, $sky_blue, $dark_blue, $dark_blue, $dark_blue)
 
-h1, h2, h3, h4, h5
+h1, h3, h4, h5
   +header-text
   text-transform: uppercase
+
+h2
+  +header-text
+  text-transform: uppercase
+  min-height: 30px
 
 h6
   +header-text
@@ -138,8 +143,25 @@ h6
     font-weight: bold
 
   #search
-    height: 60px
+    height: 20px
+    background-color: $dark_blue
+    margin: 0 0 34px 0
+    #search_symbol
+      float: left
+      padding: 2px 3px 0 3px
+      height: 16px
+      width: 16px
 
+    #query
+      height: 15px
+      background-color: $dark_blue
+      width: 200px
+      padding: 1px
+      color: white
+      border: none
+      float: left
+      cursor: blinking
+      input:focus
 
 // images
 .article_image

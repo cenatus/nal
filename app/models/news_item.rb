@@ -5,5 +5,7 @@ class NewsItem < ActiveRecord::Base
 
   has_friendly_id :headline, :use_slug => true
 
+  acts_as_indexed :fields => [:headline]
+
   acts_as_taggable_on :tags
 end
