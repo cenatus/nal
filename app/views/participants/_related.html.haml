@@ -1,7 +1,5 @@
 - if !@event.blank?
 
-  %hr.divider_medium
-
   - if @event.performers.length > 0
     %h3 Related Performers
     - for performer in @event.performers.sort{|a,b| a.sort_order <=> b.sort_order} do
