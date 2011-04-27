@@ -1,0 +1,14 @@
+
+- if !@participant.event.blank?
+  - if @participant.type == "Performer"
+    - title = "performs at"
+  - elsif @participant.type == "Artist"
+    - title = "exhibits at"
+  - elsif @participant.type == "Speaker"
+    - title = "speaks at"
+
+
+
+= render :partial => "/events/related", :locals => {:related_events => @related_artist_events, :title => title}
+= render :partial => "/events/related", :locals => {:related_events => @related_events, :title =>"Other events"}
+

@@ -1191,7 +1191,7 @@ h6 {
   border-bottom: #3d66ac 2px solid;
   padding-bottom: 5px;
 }
-/* line 452, ../../../app/stylesheets/application.sass */
+/* line 451, ../../../app/stylesheets/application.sass */
 .tags a {
   text-decoration: none;
   color: #a7a9ac;
@@ -1213,17 +1213,17 @@ h6 {
 .tags a:active {
   color: #a7a9ac;
 }
-/* line 456, ../../../app/stylesheets/application.sass */
+/* line 455, ../../../app/stylesheets/application.sass */
 .tags h6 {
   margin-bottom: 15px;
 }
 
-/* line 461, ../../../app/stylesheets/application.sass */
+/* line 460, ../../../app/stylesheets/application.sass */
 .pagination {
   clear: both;
   color: #3d66ac;
 }
-/* line 464, ../../../app/stylesheets/application.sass */
+/* line 463, ../../../app/stylesheets/application.sass */
 .pagination a {
   text-decoration: none;
   color: #a7a9ac;
@@ -1244,7 +1244,7 @@ h6 {
 .pagination a:active {
   color: #a7a9ac;
 }
-/* line 468, ../../../app/stylesheets/application.sass */
+/* line 467, ../../../app/stylesheets/application.sass */
 .pagination .previous_page {
   color: #a7a9ac;
 }

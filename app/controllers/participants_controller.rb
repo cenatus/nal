@@ -13,7 +13,11 @@ class ParticipantsController < ApplicationController
 
   def show
     @participant = Participant.find(params[:id])
-    @section = "festival"
+    @section = "participant"
+
+    @related_events = Event.order("start_time ASC")
+    @related_events = @related_events.reject {|event| event.id == @participant.event.id}
+    @related_artist_events = [@participant.event]
     
     respond_to do |format|
       format.html # show.haml

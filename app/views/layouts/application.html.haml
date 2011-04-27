@@ -104,7 +104,7 @@
 
 
         #sub_menu_wrapper
-          - if @section.downcase == "festival"
+          - if @section.downcase == "festival" || @section.downcase == "participant"
             %ul.sub_menu
               %li=nav_link("Live Music_", "/#{Nal::Application::CURRENT_YEAR}/strand/live-music")
               %li=nav_link("Conference_", "/#{Nal::Application::CURRENT_YEAR}/strand/conference")
@@ -138,8 +138,10 @@
         = render :partial => "/layouts/search"
 
         - if @section.downcase == "festival"
-          = render :partial => "/events/related"        
+          = render :partial => "/events/related", :locals => {:related_events => @related_events, :title =>"events"}
           = render :partial => "/participants/related"
+        - elsif @section.downcase == "participant"
+          = render :partial => "/participants/related_events"
         - else
           = render :partial => "/news_items/tag_cloud"
           = render :partial => "/layouts/lastfm"
