@@ -32,7 +32,6 @@
       - for event in @results_events
         %h4= event.name
         %p
-          //- article_thumb event
           :preserve
             #{highlight(event.summary, params[:query], :highlighter => '<span class=highlight>\1</span>')}
           = link_to "read more...", "/#{Nal::Application::CURRENT_YEAR}/event/#{event.friendly_id}"
@@ -42,5 +41,11 @@
       %h3= "Participants"
       - for part in @results_parts
         %p= link_to part.name,  "/#{Nal::Application::CURRENT_YEAR}/participant/#{part.friendly_id}", :class => "a_artist"
+      %hr
+
+    - if @results_pages.length > 0
+      %h3= "Pages"
+      - for page in @results_pages
+        %p= link_to page.name,  "/#{Nal::Application::CURRENT_YEAR}/#{page.slug}", :class => "a_page"
       %hr
 

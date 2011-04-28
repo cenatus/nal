@@ -16,9 +16,12 @@ class ParticipantsController < ApplicationController
     @section = "participant"
 
     @related_events = Event.order("start_time ASC")
-    @related_events = @related_events.reject {|event| event.id == @participant.event.id}
-    @related_artist_events = [@participant.event]
-    
+
+    if !@participant.event.blank?
+      @related_events = @related_events.reject {|event| event.id == @participant.event.id}
+      @related_artist_events = [@participant.event]
+    end
+
     respond_to do |format|
       format.html # show.haml
       format.xml  { render :xml => @participant.to_xml }
