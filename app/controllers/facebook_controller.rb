@@ -1,7 +1,8 @@
 class FacebookController < ApplicationController
-  #ensure_authenticated_to_facebook
 
   layout 'application_facebook'
+
+  skip_before_filter :verify_authenticity_token
 
   def index
     @strands = Strand.order("sort_order ASC")
