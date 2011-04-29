@@ -361,8 +361,6 @@ h6
     +less-styled-link
     +link-colors(white, $sky_blue, white, white, white)
 
-
-
 .strand.even
   margin-left: 20px
 
@@ -478,56 +476,52 @@ h6
 #container_facebook
   width: $content_facebook_width
 
-#header_facebook
-  height: 80px
+  #header_facebook
+    height: 80px
 
-  #logo
-    float: left
-    clear: both
-    margin-top: 5px
-    p#date
-      font-size: 20px
+    #logo
+      float: left
+      clear: both
+      margin-top: 5px
+      p#date
+        font-size: 20px
+        font-weight: bold
+        margin-bottom: 0px
+      p#heading
+        font-weight: bold
+        font-size: 60px
+        margin-bottom: 25px
+        line-height: 25px
+      a
+        +less-styled_link
+
+  #sidebar_facebook
+    h6
       font-weight: bold
-      margin-bottom: 0px
-    p#heading
-      font-weight: bold
-      font-size: 60px
-      margin-bottom: 25px
-      line-height: 25px
-    a
-      +less-styled_link
 
-#sidebar_facebook
-  h6
-    font-weight: bold
+  #content_facebook
+    .divider
+      width: $content_facebook_width
+    .divider_medium
+      width: $content_facebook_width
 
+    .mosaic-backdrop
+      height: 250px
+      width: 250px
 
-#content_facebook
-  .divider
-    width: $content_facebook_width
-  .divider_medium
-    width: $content_facebook_width
+    .mosaic-overlay
+      width: 250px
+      height: 250px
 
-.mosaic-backdrop
-  height: 250px
-  width: 250px
+    .strand .mosaic-overlay
+      top: -180px
+      height: 250px
 
-.mosaic-overlay
-  width: 250px
-  height: 250px
-
-.strand .mosaic-overlay
-  top: -180px
-  height: 250px
-
-.strand
-  @extend .mosaic_block
-  height: 250px
-  width: 250px
-  margin-bottom: 1px
-
-.strand.even
-  margin-left: 1px
+    .strand
+      @extend .mosaic_block
+      height: 250px
+      width: 250px
+      margin-bottom: 1px
 
 
 
