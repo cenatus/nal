@@ -1,0 +1,97 @@
+!!!
+%html
+  %head
+    %title= @page_title or "Netaudio London"
+
+    %link{:href => "http://feeds.feedburner.com/netaudiolondon-blog", :rel => "alternate", :title => "RSS", :type => "application/rss+xml"}/
+
+    = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/print.css', :media => 'print'
+    = stylesheet_link_tag 'compiled/application.css'
+    /[if lt IE 8]
+      = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
+
+    -#= javascript_include_tag :defaults
+    = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"
+    = javascript_include_tag "/javascripts/mosaic/js/mosaic.1.0.1.min.js"
+    = javascript_include_tag "/javascripts/easySlider1.7/js/easySlider1.7.js"
+
+    = javascript_include_tag "cufon-yui.js"
+    = javascript_include_tag "BM_bug_400.font"
+
+    :javascript
+      Cufon.replace('#date'); // Works without a selector engine
+      Cufon.replace('#heading'); // Works without a selector engine
+      Cufon.replace('h1'); // Works without a selector engine
+      Cufon.replace('h2'); // Works without a selector engine
+      Cufon.replace('h3'); // Works without a selector engine
+      //Cufon.replace('#sub1'); // Requires a selector engine for IE 6-7, see above
+
+      jQuery(function($){
+
+        $('.strand').mosaic({
+            animation	:	'slide'		//fade or slide
+            , anchor_y	:	'top'
+        });
+
+
+        $('#show_grid').click(function(){
+          $('#container').css("background", "url('/images/grid.png?1301508934')");
+        });
+
+          $('#hide_grid').click(function(){
+          $('#container').css("background", "white");
+        });
+
+        //sliding boxes script
+        //Full Caption Sliding (Hidden to Visible)
+        $('.boxgrid.captionfull').hover(function(){
+          $(".cover", this).stop().animate({top:'322px'},{queue:false,duration:160});
+        }, function() {
+          $(".cover", this).stop().animate({top:'382px'},{queue:false,duration:160});
+        }
+      )
+        //easy slider plugin
+        $(".slider").easySlider({
+          auto: true,
+          continuous: true,
+          controlsShow: false,
+          pause: 6000
+        });
+      });
+
+
+
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2601863-4']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+
+    = csrf_meta_tag
+    %meta{:name => "google-site-verification", :content => "Lhs2nVNXWNoVHG4mK4Sm5SPtQrFI3dWkB4hnTBGYnRo"}
+
+
+  %body.two-col-nal
+    #container_facebook
+      #header_facebook
+        #logo
+          %p#date
+            13-15TH MAY
+          %p#heading= link_to "NETAUDIO", "/"
+
+      #content_facebook
+        %hr.divider
+        = yield
+
+      #sidebar_facebook
+        %hr.divider
+
+
+        = render :partial => "/events/related", :locals => {:related_events => @related_events, :title =>"events"}

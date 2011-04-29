@@ -1,6 +1,9 @@
-Nal::Application.routes.draw do  
+Nal::Application.routes.draw do
   
   root :to => "strands#index"
+
+  #reroute for facebook iframe
+  match "/facebook" => "facebook#index"
 
   match ":year/festival" => "strands#index"
   match ":year/programme" => "events#index"
