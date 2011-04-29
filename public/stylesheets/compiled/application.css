@@ -1,4 +1,4 @@
-/* line 14, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 14, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,42 +18,42 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 17, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
   color: black;
   background: white;
 }
 
-/* line 19, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 19, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 23, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 23, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 25, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: "" "";
 }
-/* line 96, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 96, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
 }
 
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
@@ -73,7 +73,7 @@ body.two-col-nal #header, body.two-col-nal #footer {
   margin-right: 10px;
   width: 950px;
 }
-/* line 138, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 138, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col-nal #header, * html body.two-col-nal #footer {
   overflow-x: hidden;
 }
@@ -84,7 +84,7 @@ body.two-col-nal #content {
   margin-right: 10px;
   width: 630px;
 }
-/* line 138, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 138, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col-nal #content {
   overflow-x: hidden;
 }
@@ -96,12 +96,12 @@ body.two-col-nal #content {
   margin-right: 0;
   width: 310px;
 }
-/* line 138, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+/* line 138, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #sidebar {
   overflow-x: hidden;
 }
 
-/* line 39, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 39, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 body {
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -109,68 +109,68 @@ body {
   font-size: 75%;
 }
 
-/* line 65, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 65, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   color: #222222;
 }
-/* line 66, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 66, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
   margin: 0;
 }
 
-/* line 67, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 67, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 h1 {
   font-size: 3em;
   line-height: 1;
   margin-bottom: 0.50em;
 }
 
-/* line 68, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 68, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 h2 {
   font-size: 2em;
   margin-bottom: 0.75em;
 }
 
-/* line 69, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 69, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 h3 {
   font-size: 1.5em;
   line-height: 1;
   margin-bottom: 1.00em;
 }
 
-/* line 70, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 70, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 h4 {
   font-size: 1.2em;
   line-height: 1.25;
   margin-bottom: 1.25em;
 }
 
-/* line 71, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 71, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 h5 {
   font-size: 1em;
   font-weight: bold;
   margin-bottom: 1.50em;
 }
 
-/* line 72, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 72, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 h6 {
   font-size: 1em;
   font-weight: bold;
 }
 
-/* line 73, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 73, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 p {
   margin: 0 0 1.5em;
 }
-/* line 74, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 74, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 p img.left {
   display: inline;
   float: left;
   margin: 1.5em 1.5em 1.5em 0;
   padding: 0;
 }
-/* line 75, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 75, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 p img.right {
   display: inline;
   float: right;
@@ -178,187 +178,187 @@ p img.right {
   padding: 0;
 }
 
-/* line 77, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 77, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 a {
   text-decoration: underline;
   color: #000099;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:visited {
   color: #000066;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:focus {
   color: black;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:hover {
   color: black;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 a:active {
   color: #cc0099;
 }
 
-/* line 78, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 78, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 blockquote {
   margin: 1.5em;
   color: #666666;
   font-style: italic;
 }
 
-/* line 79, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 79, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 80, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 80, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 81, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 81, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 dfn {
   font-style: italic;
   font-weight: bold;
 }
 
-/* line 82, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 82, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 sup, sub {
   line-height: 0;
 }
 
-/* line 83, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 83, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 abbr, acronym {
   border-bottom: 1px dotted #666666;
 }
 
-/* line 84, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 84, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 address {
   margin: 0 0 1.5em;
   font-style: italic;
 }
 
-/* line 85, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 85, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 del {
   color: #666666;
 }
 
-/* line 86, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 86, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 pre {
   margin: 1.5em 0;
   white-space: pre;
 }
 
-/* line 87, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 87, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 pre, code, tt {
   font: 1em "andale mono", "lucida console", monospace;
   line-height: 1.5;
 }
 
-/* line 88, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 88, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 li ul, li ol {
   margin: 0;
 }
 
-/* line 89, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 89, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 ul, ol {
   margin: 0 1.5em 1.5em 0;
   padding-left: 3.333em;
 }
 
-/* line 90, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 90, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 ul {
   list-style-type: disc;
 }
 
-/* line 91, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 91, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 ol {
   list-style-type: decimal;
 }
 
-/* line 92, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 92, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 dl {
   margin: 0 0 1.5em 0;
 }
-/* line 93, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 93, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 dl dt {
   font-weight: bold;
 }
 
-/* line 94, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 94, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 dd {
   margin-left: 1.5em;
 }
 
-/* line 95, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 95, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 table {
   margin-bottom: 1.4em;
   width: 100%;
 }
 
-/* line 96, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 96, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 th {
   font-weight: bold;
 }
 
-/* line 97, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 97, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 thead th {
   background: #c3d9ff;
 }
 
-/* line 98, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 98, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 th, td, caption {
   padding: 4px 10px 4px 5px;
 }
 
-/* line 99, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 99, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 tr.even td {
   background: #e5ecf9;
 }
 
-/* line 100, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 100, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 tfoot {
   font-style: italic;
 }
 
-/* line 101, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 101, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 caption {
   background: #eeeeee;
 }
 
-/* line 102, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 102, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .quiet {
   color: #666666;
 }
 
-/* line 103, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
+/* line 103, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_typography.scss */
 .loud {
   color: #111111;
 }
 
-/* line 41, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+/* line 41, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 .box {
   padding: 1.5em;
   margin-bottom: 1.5em;
   background: #e5ecf9;
 }
 
-/* line 44, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+/* line 44, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 div.border {
   padding-right: 4px;
   margin-right: 5px;
   border-right: 1px solid #eeeeee;
 }
 
-/* line 47, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+/* line 47, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 div.colborder {
   padding-right: 24px;
   margin-right: 25px;
   border-right: 1px solid #eeeeee;
 }
 
-/* line 49, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+/* line 49, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 hr {
   background: #dddddd;
   color: #dddddd;
@@ -370,7 +370,7 @@ hr {
   border: none;
 }
 
-/* line 51, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+/* line 51, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 hr.space {
   background: #dddddd;
   color: #dddddd;
@@ -385,11 +385,11 @@ hr.space {
   visibility: hidden;
 }
 
-/* line 53, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
+/* line 53, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_scaffolding.scss */
 form.inline {
   line-height: 3;
 }
-/* line 6, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+/* line 6, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
 form.inline p {
   margin-bottom: 0;
 }
@@ -403,19 +403,19 @@ body a {
   text-decoration: underline;
   color: #3d66ac;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 body a:visited {
   color: #3d66ac;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 body a:focus {
   color: #3d66ac;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 body a:hover {
   color: #90b3df;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 body a:active {
   color: #3d66ac;
 }
@@ -476,7 +476,7 @@ h6 {
   *vertical-align: auto;
   white-space: nowrap;
 }
-/* line 7, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+/* line 7, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 #header .menu_base li, #header .menu li, #header .social li {
   *display: inline;
 }
@@ -485,23 +485,23 @@ h6 {
   text-decoration: none;
   color: #3d66ac;
 }
-/* line 4, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_hover-link.scss */
+/* line 4, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_hover-link.scss */
 #header .menu_base li a:hover, #header .menu li a:hover, #header .social li a:hover {
   text-decoration: underline;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #header .menu_base li a:visited, #header .menu li a:visited, #header .social li a:visited {
   color: #3d66ac;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #header .menu_base li a:focus, #header .menu li a:focus, #header .social li a:focus {
   color: #3d66ac;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #header .menu_base li a:hover, #header .menu li a:hover, #header .social li a:hover {
   color: #90b3df;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #header .menu_base li a:active, #header .menu li a:active, #header .social li a:active {
   color: #3d66ac;
 }
@@ -555,7 +555,7 @@ h6 {
   white-space: nowrap;
   margin-right: 20px;
 }
-/* line 7, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+/* line 7, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 #header .sub_menu li {
   *display: inline;
 }
@@ -564,23 +564,23 @@ h6 {
   text-decoration: none;
   color: #a7a9ac;
 }
-/* line 4, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_hover-link.scss */
+/* line 4, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_hover-link.scss */
 #header .sub_menu li a:hover {
   text-decoration: underline;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #header .sub_menu li a:visited {
   color: #a7a9ac;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #header .sub_menu li a:focus {
   color: #a7a9ac;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #header .sub_menu li a:hover {
   color: #90b3df;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #header .sub_menu li a:active {
   color: #a7a9ac;
 }
@@ -758,7 +758,7 @@ h6 {
   height: 382px;
   overflow: hidden;
 }
-/* line 7, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+/* line 7, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
 .slider li {
   *display: inline;
 }
@@ -823,19 +823,19 @@ h6 {
   bottom: 0px;
   left: 0px;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .news_item .read_more:visited {
   color: #a7a9ac;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .news_item .read_more:focus {
   color: #a7a9ac;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .news_item .read_more:hover {
   color: #90b3df;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .news_item .read_more:active {
   color: #a7a9ac;
 }
@@ -864,19 +864,19 @@ h6 {
   text-decoration: none;
   color: #a7a9ac;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .news_item_featured .read_more:visited {
   color: #a7a9ac;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .news_item_featured .read_more:focus {
   color: #a7a9ac;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .news_item_featured .read_more:hover {
   color: #90b3df;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .news_item_featured .read_more:active {
   color: #a7a9ac;
 }
@@ -915,23 +915,23 @@ h6 {
   cursor: inherit;
   color: white;
 }
-/* line 6, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_unstyled-link.scss */
+/* line 6, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_unstyled-link.scss */
 .mosaic-overlay a:active, .mosaic-overlay a:focus {
   outline: none;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .mosaic-overlay a:visited {
   color: white;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .mosaic-overlay a:focus {
   color: white;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .mosaic-overlay a:hover {
   color: #90b3df;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .mosaic-overlay a:active {
   color: white;
 }
@@ -972,19 +972,19 @@ h6 {
   text-decoration: none;
   color: white;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .strand a:visited {
   color: white;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .strand a:focus {
   color: white;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .strand a:hover {
   color: #90b3df;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .strand a:active {
   color: white;
 }
@@ -1014,23 +1014,23 @@ h6 {
   text-decoration: none;
   color: #a7a9ac;
 }
-/* line 4, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_hover-link.scss */
+/* line 4, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_hover-link.scss */
 #twitter .tweet a:hover {
   text-decoration: underline;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #twitter .tweet a:visited {
   color: #a7a9ac;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #twitter .tweet a:focus {
   color: #a7a9ac;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #twitter .tweet a:hover {
   color: #90b3df;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #twitter .tweet a:active {
   color: #a7a9ac;
 }
@@ -1042,19 +1042,19 @@ h6 {
 #twitter .tweet .source a {
   color: #cccccc;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #twitter .tweet .source a:visited {
   color: #cccccc;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #twitter .tweet .source a:focus {
   color: #cccccc;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #twitter .tweet .source a:hover {
   color: #90b3df;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #twitter .tweet .source a:active {
   color: #cccccc;
 }
@@ -1108,23 +1108,23 @@ h6 {
   text-decoration: none;
   color: #a7a9ac;
 }
-/* line 4, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_hover-link.scss */
+/* line 4, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_hover-link.scss */
 #lastfm .track a:hover {
   text-decoration: underline;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #lastfm .track a:visited {
   color: #a7a9ac;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #lastfm .track a:focus {
   color: #a7a9ac;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #lastfm .track a:hover {
   color: #90b3df;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #lastfm .track a:active {
   color: #a7a9ac;
 }
@@ -1136,19 +1136,19 @@ h6 {
 #lastfm .track .source a {
   color: #cccccc;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #lastfm .track .source a:visited {
   color: #cccccc;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #lastfm .track .source a:focus {
   color: #cccccc;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #lastfm .track .source a:hover {
   color: #90b3df;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 #lastfm .track .source a:active {
   color: #cccccc;
 }
@@ -1200,19 +1200,19 @@ h6 {
   color: #a7a9ac;
   font-weight: bold;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .tags a:visited {
   color: #a7a9ac;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .tags a:focus {
   color: #a7a9ac;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .tags a:hover {
   color: #90b3df;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .tags a:active {
   color: #a7a9ac;
 }
@@ -1231,19 +1231,19 @@ h6 {
   text-decoration: none;
   color: #a7a9ac;
 }
-/* line 18, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 18, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .pagination a:visited {
   color: #a7a9ac;
 }
-/* line 21, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 21, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .pagination a:focus {
   color: #a7a9ac;
 }
-/* line 24, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 24, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .pagination a:hover {
   color: #90b3df;
 }
-/* line 27, ../../../../../../../Users/matt/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+/* line 27, ../../../../../../../Users/andi/.rvm/gems/ruby-1.9.2-p136@nal/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
 .pagination a:active {
   color: #a7a9ac;
 }
@@ -1284,35 +1284,31 @@ h6 {
   text-decoration: none;
 }
 /* line 494, ../../../app/stylesheets/application.sass */
-#container_facebook #sidebar_facebook h6 {
-  font-weight: bold;
-}
-/* line 498, ../../../app/stylesheets/application.sass */
 #container_facebook #content_facebook .divider {
   width: 520px;
 }
-/* line 500, ../../../app/stylesheets/application.sass */
+/* line 496, ../../../app/stylesheets/application.sass */
 #container_facebook #content_facebook .divider_medium {
   width: 520px;
 }
-/* line 503, ../../../app/stylesheets/application.sass */
+/* line 499, ../../../app/stylesheets/application.sass */
 #container_facebook #content_facebook .mosaic-backdrop {
   height: 250px;
   width: 250px;
 }
-/* line 507, ../../../app/stylesheets/application.sass */
+/* line 503, ../../../app/stylesheets/application.sass */
 #container_facebook #content_facebook .mosaic-overlay {
   width: 250px;
   height: 250px;
 }
-/* line 511, ../../../app/stylesheets/application.sass */
+/* line 507, ../../../app/stylesheets/application.sass */
 #container_facebook #content_facebook .strand .mosaic-overlay {
   top: -180px;
   height: 250px;
 }
-/* line 515, ../../../app/stylesheets/application.sass */
+/* line 511, ../../../app/stylesheets/application.sass */
 #container_facebook #content_facebook .strand {
   height: 250px;
   width: 250px;
-  margin-bottom: 1px;
+  margin-bottom: 20px;
 }

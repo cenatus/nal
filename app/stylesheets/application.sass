@@ -24,6 +24,7 @@ $content_width = 620px
 $content_height = 500px
 
 $content_facebook_width = 520px
+$content_facebook_height = 800px
 
 $article_image_width = 620px
 $article_image_height = 382px
@@ -470,6 +471,7 @@ h6
 
 #container_facebook
   width: $content_facebook_width
+  height: $content_facebook_height
 
   #header_facebook
     height: 80px
@@ -489,10 +491,6 @@ h6
         line-height: 25px
       a
         +less-styled_link
-
-  #sidebar_facebook
-    h6
-      font-weight: bold
 
   #content_facebook
     .divider
@@ -516,5 +514,5 @@ h6
       @extend .mosaic_block
       height: 250px
       width: 250px
-      margin-bottom: 1px
+      margin-bottom: 20px
 
