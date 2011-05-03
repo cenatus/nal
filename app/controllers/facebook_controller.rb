@@ -14,4 +14,13 @@ class FacebookController < ApplicationController
       format.xml { render :xml => @strands.to_xml }
     end
   end
+
+    def privacy
+
+    end
+
+    def terms
+
+  end
+
 end

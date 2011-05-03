@@ -5,9 +5,8 @@
 
 
 :preserve
-  #{@participant.biography}
+  #{highlight(@participant.biography, params[:query], :highlighter => '<span class=highlight>\1</span>')}
 %p
   = auto_link @participant.homepage if !@participant.homepage.blank?
   %span.pipe= "|" if !@participant.twitter_name.blank? and !@participant.homepage.blank?
   = link_to "@#{@participant.twitter_name}", "http://twitter.com/#{@participant.twitter_name}" if !@participant.twitter_name.blank?
-

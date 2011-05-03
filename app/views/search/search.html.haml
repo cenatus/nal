@@ -14,7 +14,7 @@
         %p
           :preserve
             #{highlight(strand.summary, params[:query], :highlighter => '<span class=highlight>\1</span>')}
-          =link_to "read more...", "/#{Nal::Application::CURRENT_YEAR}/strand/#{strand.friendly_id}"
+          =link_to "read more...", "/#{Nal::Application::CURRENT_YEAR}/strand/#{strand.friendly_id}?query=#{params[:query]}"
       %hr
 
     - if @results_news.length > 0
@@ -24,7 +24,7 @@
         %p
           :preserve
             #{highlight(news.summary, params[:query], :highlighter => '<span class=highlight>\1</span>')}
-          = link_to "read more...", news
+          = link_to "read more...", "/news/#{news.friendly_id}?query=#{params[:query]}"
       %hr
 
     - if @results_events.length > 0
@@ -34,18 +34,18 @@
         %p
           :preserve
             #{highlight(event.summary, params[:query], :highlighter => '<span class=highlight>\1</span>')}
-          = link_to "read more...", "/#{Nal::Application::CURRENT_YEAR}/event/#{event.friendly_id}"
+          = link_to "read more...", "/#{Nal::Application::CURRENT_YEAR}/event/#{event.friendly_id}?query=#{params[:query]}"
       %hr
 
     - if @results_parts.length > 0
       %h3= "Participants"
       - for part in @results_parts
-        %p= link_to part.name,  "/#{Nal::Application::CURRENT_YEAR}/participant/#{part.friendly_id}", :class => "a_artist"
+        %p= link_to part.name,  "/#{Nal::Application::CURRENT_YEAR}/participant/#{part.friendly_id}?query=#{params[:query]}", :class => "a_artist"
       %hr
 
     - if @results_pages.length > 0
       %h3= "Pages"
       - for page in @results_pages
-        %p= link_to page.name,  "/#{Nal::Application::CURRENT_YEAR}/#{page.slug}", :class => "a_page"
+        %p= link_to page.name,  "/#{Nal::Application::CURRENT_YEAR}/#{page.slug}?query=#{params[:query]}", :class => "a_page"
       %hr
 

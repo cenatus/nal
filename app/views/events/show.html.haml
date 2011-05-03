@@ -4,7 +4,7 @@
 - article_image @event, :hover_flag => true, :link_flag =>false
 
 :preserve
-  #{@event.detail}
+  #{highlight(@event.detail, params[:query], :highlighter => '<span class=highlight>\1</span>')}
 
 - if @event.performers.length > 0
   %h3 Related Performers

@@ -2,9 +2,6 @@ Nal::Application.routes.draw do
   
   root :to => "strands#index"
 
-  #reroute for facebook iframe
-  match "/facebook" => "facebook#index"
-
   match ":year/festival" => "strands#index"
   match ":year/programme" => "events#index"
 
@@ -67,6 +64,11 @@ Nal::Application.routes.draw do
   match ":year/event/:id" => "events#show", :as => :event
 
   match "sitemap.xml" => "sitemap#sitemap"
+
+  match "/facebook" => "facebook#index"
+
+  match "/privacy" => "facebook#privacy"
+  match "/terms" => "facebook#terms"
 
   #keep as lowest precedence
   match ":year/:slug" => "pages#dynamic", :as => :pages
