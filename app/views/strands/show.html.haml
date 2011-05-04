@@ -3,8 +3,7 @@
   
 - article_image @strand, :hover_flag => true, :link_flag =>false
 :preserve
-  #{highlight(@strand.detail, params[:query], :highlighter => '<span class=highlight>\1</span>')}
-
+  #{highlight_search_term(@strand.detail, params[:query])}
 - if @strand.events.length > 0
 
   %h3 Event Details

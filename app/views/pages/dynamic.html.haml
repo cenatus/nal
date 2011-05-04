@@ -4,4 +4,4 @@
 - article_image @page, :hover_flag => true, :link_flag =>false
 
 :preserve
-  #{highlight(@page.content, params[:query], :highlighter => '<span class=highlight>\1</span>')}
+  #{highlight_search_term(@page.content, params[:query])}

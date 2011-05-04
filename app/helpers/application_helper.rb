@@ -1,4 +1,4 @@
-module ApplicationHelper
+ module ApplicationHelper
 
   def nav_link(name, options = {}, html_options = {}, &block)
     if current_page?(options)
@@ -83,6 +83,10 @@ module ApplicationHelper
     haml_tag "a", {:href => "/#{year}#{class_slug.downcase}/#{klass.friendly_id}"} do
       haml_tag "IMG.thumb_image", :src => klass.assets.first.thumb.url
     end
+  end
+
+  def highlight_search_term (text, query)
+    highlight(text, query, :highlighter => '<span class=highlight>\1</span>', :sanitize => false)
   end
 
   def formatted(date)
