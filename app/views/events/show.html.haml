@@ -5,28 +5,28 @@
 
 :preserve
   #{highlight_search_term(@event.detail, params[:query])}
+#related_participants
+  - if @event.performers.length > 0
+    %h3 Related Performers
+    = comma = ""
+    - for performer in @event.performers do
+      = comma
+      = link_to(performer.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{performer.friendly_id}")
+      - comma = "|"
 
-- if @event.performers.length > 0
-  %h3 Related Performers
-  = comma = ""
-  - for performer in @event.performers do
-    = comma
-    = link_to(performer.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{performer.friendly_id}")
-    - comma = "|"
+  - if @event.artists.length > 0
+    %h3 Related Artists
+    = comma = ""
+    - for artist in @event.artists do
+      = comma
+      = link_to(artist.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{artist.friendly_id}")
+      - comma = "|"
 
-- if @event.artists.length > 0
-  %h3 Related Artists
-  = comma = ""
-  - for artist in @event.artists do
-    = comma
-    = link_to(artist.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{artist.friendly_id}")
-    - comma = "|"
-
-- if @event.speakers.length > 0
-  %h3 Related Speakers
-  = comma = ""
-  - for speaker in @event.speakers do
-    = comma
-    = link_to(speaker.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{speaker.friendly_id}")
-    - comma = "|"
+  - if @event.speakers.length > 0
+    %h3 Related Speakers
+    = comma = ""
+    - for speaker in @event.speakers do
+      = comma
+      = link_to(speaker.name, "/#{Nal::Application::CURRENT_YEAR}/participant/#{speaker.friendly_id}")
+      - comma = "|"
 
