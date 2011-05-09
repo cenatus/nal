@@ -117,14 +117,20 @@
         <p>Your change was rejected, maybe you tried to change something you didn't have access to? Drop us a <a href="/2011/contact">line</a> if this seems wrong..</p>
 
     </div>
+
     <div id='sidebar'>
         <hr class='divider'>
-        <div id='search'></div>
-
-
-        <hr class='divider_medium'>
-
+        <div id='search'>
+            <form action='/search' id='search_form' name='searchform'>
+                <div>
+                    <img alt='search_symbol' id='search_symbol' src='/images/search_symbol.png'>
+                    <input id='query' name='query' onblur="value='Search...'" onfocus="value=''" type='text' value='Search...'>
+                </div>
+            </form>
+        </div>
     </div>
+
+
     <div id='footer'>
         <hr>
         <img alt="Original" src="http://s3.amazonaws.com/nal.s3.amazonaws.com/assets/25/original.jpg?1302796264"/>

@@ -115,12 +115,20 @@
 
         <h3 class='divider_medium'></h3>
         <p>The page you were looking for doesn't exist.</p>
-        <p>You may have mistyped the address or the page may have moved. Drop us a <a href="/2011/contact">line</a> if this seems wrong..</p>
-
+        <p>You may have mistyped the address or the page may have moved. Drop us a <a href="/2011/contact">line</a> if this seems wrong</p>
+        <p>or use the search function at the right...</p>
     </div>
     <div id='sidebar'>
         <hr class='divider'>
-        <div id='search'></div>
+        <div id='search'>
+            <form action='/search' id='search_form' name='searchform'>
+                <div>
+                    <img alt='search_symbol' id='search_symbol' src='/images/search_symbol.png'>
+                    <input id='query' name='query' onblur="value='Search...'" onfocus="value=''" type='text' value='Search...'>
+                </div>
+            </form>
+        </div>
+    </div>
 
 
         <hr class='divider_medium'>
