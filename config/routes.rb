@@ -1,6 +1,6 @@
 Nal::Application.routes.draw do
   
-  root :to => "strands#index"
+  root :to => "news_items#index"
 
   match ":year/festival" => "strands#index"
   match ":year/programme" => "events#index"
