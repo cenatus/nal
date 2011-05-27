@@ -121,7 +121,7 @@
         #picture
           - a = Asset.find(30)
           - if !a.blank?
-            =link_to image_tag(a.asset.url), :controller => :pages, :action => :dynamic, :slug => "tickets", :year => Nal::Application::CURRENT_YEAR
+            =link_to image_tag(a.asset.url), a.description
         #logo
           %p#date
             13-15TH MAY
