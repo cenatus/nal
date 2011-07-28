@@ -14,6 +14,7 @@ gem 'RedCloth'
 gem 'heroku'
 gem 'typus', :git => 'https://github.com/typus/typus.git'
 gem 'compass'
+gem 'sass'
 gem 'aws-s3'
 gem 'twitter', "= 1.2.0"
 gem "friendly_id", "~> 3.2.1"
