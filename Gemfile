@@ -1,18 +1,18 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.3'
+gem 'rails', '3.0.9'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
-gem 'haml'
+gem 'haml', "~> 3.1.2"
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem 'hpricot'
 gem 'ruby_parser'
 gem 'RedCloth'
 gem 'heroku'
-gem 'typus', :git => 'https://github.com/fesplugas/typus.git'
+gem 'typus', :git => 'https://github.com/typus/typus.git'
 gem 'compass'
 gem 'aws-s3'
 gem 'twitter', "= 1.2.0"
