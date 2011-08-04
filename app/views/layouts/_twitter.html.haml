@@ -10,10 +10,10 @@
   - if !@tweets.blank?
     - for tweet in @tweets
       .tweet
-        %p= auto_link tweet.text
+        %p= sanitize(auto_link(tweet.text).html_safe)
         %span.source
           = link_to "#{time_ago_in_words(tweet.created_at)} ago", "http://twitter.com/netaudioldn/status/#{tweet.id_str}"
           from
-          = auto_link tweet.source
+          = sanitize(auto_link(tweet.source).html_safe)
   - else
     %p{:style =>"clear:both"} Wot no Tweets! Looks like Twitter is down or something blew up in the grid..

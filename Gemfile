@@ -46,4 +46,5 @@ group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'mysql2'
 #  gem 'webrat'
+  gem "heroku_plus"
 end
