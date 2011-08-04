@@ -7,6 +7,6 @@
   %p= formatted @news_item.created_at
 
   :preserve
-  #{highlight_search_term(@news_item.content, params[:query])}
+    #{highlight_search_term(@news_item.content, params[:query])}
 - else
   %p Sorry, we were unable to find that news item. Please try searching instead.
