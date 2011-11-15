@@ -21,6 +21,7 @@ gem "friendly_id", "~> 3.2.1"
 gem 'acts-as-taggable-on'
 gem 'scrobbler'
 gem 'acts_as_indexed'
+gem 'dalli'
 
 # Use unicorn as the web server
 # gem 'unicorn'

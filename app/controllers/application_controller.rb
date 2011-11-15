@@ -6,7 +6,9 @@ class ApplicationController < ActionController::Base
   def twitter
     require "twitter"
     begin
-      @tweets = Twitter.user_timeline("netaudioldn", {:count => 5})
+      @tweets = Rails.cache.fetch(:tweets, :expires_in => 10.minutes) do
+        @tweets = Twitter.user_timeline("netaudioldn", {:count => 5})
+      end
     rescue Exception => e
       logger.error("MSP error fetch tweets: #{e}")
     end
@@ -22,7 +24,9 @@ class ApplicationController < ActionController::Base
 
   def lastfm
     begin
-      @lastfm_user = Scrobbler::User.new('polymorphic')
+      @lastfm_user_tracks = Rails.cache.fetch(:tracks, :expires_in => 10.minutes) do
+        @lastfm_user_tracks = Scrobbler::User.new('polymorphic').recent_tracks
+      end
     rescue Exception => e
       logger.error("MSP error fetch last.fm: #{e}")
     end
