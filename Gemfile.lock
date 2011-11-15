@@ -6,17 +6,6 @@ GIT
       activerecord
       activesupport
 
-GIT
-  remote: https://github.com/typus/typus.git
-  revision: 4ce814b8ee1e1f3bca7d400fa7787ccc35ad5a96
-  specs:
-    typus (3.0.11.rc5)
-      bcrypt-ruby
-      fastercsv (~> 1.5)
-      rails (~> 3.0.8)
-      render_inheritable
-      will_paginate (~> 3.0.pre2)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -57,7 +46,7 @@ GEM
       mime-types
       xml-simple
     babosa (0.3.2)
-    bcrypt-ruby (2.1.4)
+    bcrypt-ruby (3.0.1)
     builder (2.1.2)
     compass (0.10.6)
       haml (>= 3.0.4)
@@ -156,8 +145,14 @@ GEM
       multi_json (~> 0.0.5)
       multi_xml (~> 0.2.0)
       simple_oauth (~> 0.1.4)
+    typus (3.0.12)
+      bcrypt-ruby
+      fastercsv (~> 1.5)
+      rails (~> 3.0.9)
+      render_inheritable
+      will_paginate (~> 3.0.0)
     tzinfo (0.3.29)
-    will_paginate (3.0.pre4)
+    will_paginate (3.0.2)
     xml-simple (1.0.15)
 
 PLATFORMS
@@ -184,4 +179,4 @@ DEPENDENCIES
   sqlite3-ruby
   taps
   twitter (= 1.2.0)
-  typus!
+  typus
