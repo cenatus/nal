@@ -1,19 +1,19 @@
 #twitter
   %hr.divider
-    
+
   %h6 Twitter
   #logo
     =link_to "Follow us", "http://twitter.com/netaudioldn", :class => "follow"
     %a{:href => "http://twitter.com/netaudioldn"}
       %img{:src => "/images/th_twitter_logo_300x300.jpg", :alt => "following on twitter"}
 
-  - if !@tweets.blank?
-    - for tweet in @tweets
-      .tweet
-        %p= sanitize(auto_link(tweet.text).html_safe)
-        %span.source
-          = link_to "#{time_ago_in_words(tweet.created_at)} ago", "http://twitter.com/netaudioldn/status/#{tweet.id_str}"
-          from
-          = sanitize(auto_link(tweet.source).html_safe)
-  - else
-    %p{:style =>"clear:both"} Wot no Tweets! Looks like Twitter is down or something blew up in the grid..
+  -#- if !@tweets.blank?
+  -#  - for tweet in @tweets
+  -#    .tweet
+  -#      %p= sanitize(auto_link(tweet.text).html_safe)
+  -#      %span.source
+  -#        = link_to "#{time_ago_in_words(tweet.created_at)} ago", "http://twitter.com/netaudioldn/status/#{tweet.id_str}"
+  -#        from
+  -#        = sanitize(auto_link(tweet.source).html_safe)
+  -#- else
+  %p{:style =>"clear:both"} Wot no Tweets! Looks like Twitter is down or something blew up in the grid..
