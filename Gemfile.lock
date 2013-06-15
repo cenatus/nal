@@ -53,6 +53,8 @@ GEM
     dalli (1.1.3)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    faraday (0.8.7)
+      multipart-post (~> 1.1)
     fastercsv (1.5.4)
     friendly_id (3.2.1.1)
       babosa (~> 0.3.0)
@@ -75,6 +77,8 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    multi_json (1.7.7)
+    multipart-post (1.2.0)
     mysql2 (0.2.7)
     polyglot (0.3.2)
     rack (1.2.3)
@@ -110,6 +114,7 @@ GEM
       hpricot (>= 0.4.86)
     sequel (3.20.0)
     sexp_processor (3.0.5)
+    simple_oauth (0.2.0)
     sinatra (1.0)
       rack (>= 1.0)
     sqlite3 (1.3.3)
@@ -126,6 +131,10 @@ GEM
     treetop (1.4.10)
       polyglot
       polyglot (>= 0.3.1)
+    twitter (4.8.1)
+      faraday (~> 0.8, < 0.10)
+      multi_json (~> 1.0)
+      simple_oauth (~> 0.2)
     typus (3.0.12)
       bcrypt-ruby
       fastercsv (~> 1.5)
@@ -159,4 +168,5 @@ DEPENDENCIES
   scrobbler
   sqlite3-ruby
   taps
+  twitter (~> 4.8.0)
   typus

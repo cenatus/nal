@@ -17,7 +17,7 @@ gem 'typus'
 gem 'compass'
 gem 'sass'
 gem 'aws-s3'
-#gem "twitter", "~> 4.8.0"
+gem "twitter", "~> 4.8.0"
 gem "friendly_id", "~> 3.2.1"
 gem 'acts-as-taggable-on'
 gem 'scrobbler'
