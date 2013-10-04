@@ -23,6 +23,7 @@ gem 'acts-as-taggable-on'
 gem 'scrobbler'
 gem 'acts_as_indexed'
 gem 'dalli'
+gem 'memcachier'
 
 # Use unicorn as the web server
 # gem 'unicorn'
