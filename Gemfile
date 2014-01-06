@@ -24,6 +24,7 @@ gem 'scrobbler'
 gem 'acts_as_indexed'
 gem 'dalli'
 gem 'memcachier'
+gem 'newrelic_rpm'
 
 # Use unicorn as the web server
 # gem 'unicorn'
