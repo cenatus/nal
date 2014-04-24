@@ -1,14 +1,14 @@
 development:
-  access_key_id: "AKIAJDT7QLBNBTMDHJBA"
-  secret_access_key: "i3tNFFdbtCIz80XYfbtRy6Itg4d+evCBWTQ6zqT7"
+  access_key_id: <%= ENV["AWS_ACCESS_KEY_ID"] || "dummy_key" %>
+  secret_access_key: <%= ENV["AWS_SECRET_ACCESS_KEY"] || "dummy_secret" %>
   url: "nal.s3.amazonaws.com"
 test:
-  access_key_id: "AKIAJDT7QLBNBTMDHJBA"
-  secret_access_key: "i3tNFFdbtCIz80XYfbtRy6Itg4d+evCBWTQ6zqT7"
+  access_key_id: <%= ENV["AWS_ACCESS_KEY_ID"] || "dummy_key" %>
+  secret_access_key: <%= ENV["AWS_SECRET_ACCESS_KEY"] || "dummy_secret" %>
   url: "nal.s3.amazonaws.com"
 production:
-  access_key_id: "AKIAJDT7QLBNBTMDHJBA"
-  secret_access_key: "i3tNFFdbtCIz80XYfbtRy6Itg4d+evCBWTQ6zqT7"
+  access_key_id: <%= ENV["AWS_ACCESS_KEY_ID"] || "dummy_key" %>
+  secret_access_key: <%= ENV["AWS_SECRET_ACCESS_KEY"] || "dummy_secret" %>
   url: "nal.s3.amazonaws.com"
 
 
