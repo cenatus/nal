@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
+ruby "1.9.3"
 
-gem 'rails', '3.0.9'
+gem 'rails', '~> 3.0.20'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -11,7 +12,7 @@ gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem 'hpricot'
 gem 'ruby_parser'
 gem 'RedCloth'
-gem 'heroku'
+# gem 'heroku'
 #gem 'typus', :git => 'https://github.com/typus/typus.git'
 gem 'typus'
 gem 'compass'
@@ -50,5 +51,5 @@ group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'mysql2'
 #  gem 'webrat'
-  gem "heroku_plus"
+  # gem "heroku_plus"
 end
