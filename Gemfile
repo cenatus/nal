@@ -3,16 +3,11 @@ ruby "1.9.3"
 
 gem 'rails', '~> 3.0.20'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-
 gem 'haml', "~> 3.1.2"
 gem 'paperclip', :git => 'git://github.com/thoughtbot/paperclip.git'
 gem 'hpricot'
 gem 'ruby_parser'
 gem 'RedCloth'
-# gem 'heroku'
 #gem 'typus', :git => 'https://github.com/typus/typus.git'
 gem 'typus'
 gem 'compass'
@@ -26,6 +21,7 @@ gem 'acts_as_indexed'
 gem 'dalli'
 gem 'memcachier'
 gem 'newrelic_rpm'
+gem 'pg'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -48,8 +44,4 @@ gem 'newrelic_rpm'
 # and rake tasks are available in development mode:
 group :development, :test do
   gem 'taps'
-  gem 'sqlite3-ruby', :require => 'sqlite3'
-  gem 'mysql2'
-#  gem 'webrat'
-  # gem "heroku_plus"
 end
