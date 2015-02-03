@@ -119,7 +119,7 @@
 
 
         #picture
-          - a = Asset.find(30)
+          - a = Asset.find_by_id(30)
           - if !a.blank?
             =link_to image_tag(a.asset.url), a.description
         #logo
@@ -158,6 +158,6 @@
         -#  %a#hide_grid
         -#    Hide Grid
 
-        - a = Asset.find(25)
+        - a = Asset.find_by_id(25)
         - if !a.blank?
           =image_tag a.asset.url
