@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+  document.getElementById('search_form').addEventListener("submit", function(event){
+      var query = document.getElementById('search_form').query.value;
+      window.open("https://www.google.co.uk/search?q=site:netaudiolondon.org+" + query, '_blank');
+      event.preventDefault();
+  }, false);
+});
+
 /*
  * Copyright (c) 2009 Simo Kinnunen.
  * Licensed under the MIT license.
