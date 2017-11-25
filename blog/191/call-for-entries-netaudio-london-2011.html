@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"405bbfb032","applicationID":"5321932","transactionName":"e10PRERaClxQEx0LU09BPllCUAtDGhJaCkE=","queueTime":4,"applicationTime":182,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<title>Netaudio London</title>
+<link href='http://feeds.feedburner.com/netaudiolondon-blog' rel='alternate' title='RSS' type='application/rss+xml'>
+<link href="../../stylesheets/compiled/screen.css%3F1489938800.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="../../stylesheets/compiled/print.css%3F1489938800.css" media="print" rel="stylesheet" type="text/css" />
+<link href="../../stylesheets/compiled/application.css%3F1489938800.css" media="screen" rel="stylesheet" type="text/css" />
+<!--[if lt IE 8]>
+<link href="/stylesheets/compiled/ie.css?1489938800" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+<script src="../../javascripts/mosaic/js/mosaic.1.0.1.min.js%3F1489938800" type="text/javascript"></script>
+<script src="http://www.netaudiolondon.org/javascripts/easySlider1.7/js/easySlider1.7.js" type="text/javascript"></script>
+<script src="../../javascripts/cufon-yui.js%3F1489938800" type="text/javascript"></script>
+<script src="../../javascripts/BM_bug_400.font.js%3F1489938800" type="text/javascript"></script>
+<script>
+  //<![CDATA[
+    Cufon.replace('#date'); // Works without a selector engine
+    Cufon.replace('#heading'); // Works without a selector engine
+    Cufon.replace('h1'); // Works without a selector engine
+    Cufon.replace('h2'); // Works without a selector engine
+    Cufon.replace('h3'); // Works without a selector engine
+    //Cufon.replace('#sub1'); // Requires a selector engine for IE 6-7, see above
+    
+    jQuery(function($){
+    
+      $('.strand').mosaic({
+          animation	:	'slide'		//fade or slide
+          , anchor_y	:	'top'
+      });
+    
+    
+      $('#show_grid').click(function(){
+        $('#container').css("background", "url('/images/grid.png?1301508934')");
+      });
+    
+        $('#hide_grid').click(function(){
+        $('#container').css("background", "white");
+      });
+    
+      //sliding boxes script
+      //Full Caption Sliding (Hidden to Visible)
+      $('.boxgrid.captionfull').hover(function(){
+        $(".cover", this).stop().animate({top:'322px'},{queue:false,duration:160});
+      }, function() {
+        $(".cover", this).stop().animate({top:'382px'},{queue:false,duration:160});
+      }
+    )
+      //easy slider plugin
+      $(".slider").easySlider({
+        auto: true,
+        continuous: true,
+        controlsShow: false,
+        pause: 6000
+      });
+    });
+    
+    
+    
+    
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2601863-4']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  //]]>
+</script>
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="0aZ1J4Jsg5IUjXrWqvQQZh1jwCKgrRhK2&#47;sA&#47;qDFEdA="/>
+<meta content='Lhs2nVNXWNoVHG4mK4Sm5SPtQrFI3dWkB4hnTBGYnRo' name='google-site-verification'>
+</head>
+<body class='two-col-nal'>
+<div id='container'>
+<div id='header'>
+<hr>
+<ul class='menu'>
+<li><a href="../../news.1.html">News_</a></li>
+<li><a href="../../2011/festival.html">Festival_</a></li>
+<li><a href="../../2011/about.html">About_</a></li>
+<li><a href="../130/contact.html">Contact_</a></li>
+<li><a href="../../2011/archive.html">Archive_</a></li>
+</ul>
+<ul class='social'>
+<li><a href="http://facebook.com/netaudioldn">Facebook</a></li>
+<li><a href="http://www.last.fm/group/Netaudio+London">Last FM</a></li>
+<li><a href="http://twitter.com/netaudioldn">Twitter</a></li>
+<li><a href="http://feeds.feedburner.com/netaudiolondon-blog">RSS</a></li>
+<li><a href="http://madmimi.com/signups/join/27129">Newsletter</a></li>
+</ul>
+<div id='sub_menu_wrapper'>
+</div>
+<div id='picture'>
+<a href="http://bit.ly/NAL11-media"><img alt="Original" src="http://s3.amazonaws.com/nal.s3.amazonaws.com/assets/30/original.jpg?1306496389" /></a>
+</div>
+<div id='logo'>
+<p id='date'>
+13-15TH MAY
+</p>
+<p id='heading'><a href="../../index.html">NETAUDIO</a></p>
+</div>
+</div>
+<div id='content'>
+<hr class='divider'>
+<h2>CLOSED Call for Entries - NAL11</h2>
+<h3 class='divider_medium'></h3>
+<div class='boxgrid captionfull'>
+<IMG class='article_image' src='http://s3.amazonaws.com/nal.s3.amazonaws.com/assets/15/original.jpg?1301649461'></IMG>
+<div class='cover boxcaption'>
+<h6>
+<p>By Freya</p>
+</h6>
+</div>
+</div>
+<p>14-02-2011</p>
+<p>&#x000A;	The Netaudio London festival promotes the work of artists who use digital and network technologies to explore new boundaries in music and sonic art.<br />&#x000A;	It is spread across two venues in Camden: the Roundhouse by day, and <span class="caps">KOKO</span> by night.</p>&#x000A;<p>&#x000A;	The packed and varied day time programme inspires participation in all forms: interactive sound art installations, conferences, workshops, collaborative online broadcasting and live showcases.</p>&#x000A;<p>&#x000A;	The evening programme presents performances by Nurse With Wound, Mika Vanio (ex-Pan-Sonic) &amp; Bruce Gilbert (ex-<span class="caps">WIRE</span>), and Radian.</p>&#x000A;<p>&#x000A;	This call for entries encourages you to submit work for inclusion in different strands of the festival.</p>&#x000A;<h3>&#x000A;	Strands</h3>&#x000A;<p>&#x000A;	We welcome submissions for 3 distinct areas of the programme:</p>&#x000A;<ul>&#x000A;	<li>&#x000A;		Sonic Maze &ndash; sound art exhibition</li>&#x000A;	<li>&#x000A;		Open Platform &ndash; new talent music stage</li>&#x000A;	<li>&#x000A;		Netaudio Online &ndash; broadcasting</li>&#x000A;</ul>&#x000A;<p>&#x000A;	All scheduled to take place between 1pm &ndash; 6pm at the Roundhouse on Sunday 15th of May 2011. All strands will run simultaneously with the conference.</p>&#x000A;<p>&#x000A;	The call for entries is open from 14th February to 11th March 2011.</p>&#x000A;<h3>&#x000A;	Sonic Maze</h3>&#x000A;<p>&#x000A;	The Sonic Maze is a sound art exhibition located in the Roundhouse Studios, where Netaudio will present a selection of interactive audio-visual installations for visitors to explore. The Sonic Maze is programmed via this open call along with the curatorial input from Martin Bricelj Baraga, Director of MoTA &ndash; Museum of Transitory Art and Slovenia&rsquo;s leading sound &amp; transitory art festival Sonica.</p>&#x000A;<p>&#x000A;	The layout of the maze is a long corridor with a number of small studio spaces off to either side. Each studio space is approx 2.5m by 3.5m and soundproofed and without windows. It can be equipped with speakers, screens, computers, mixing desk or anything you can think of.</p>&#x000A;<p>&#x000A;	Although we will consider any audio or visual based work, we will favour work that engages with collaborative practice, encourages user interaction and/or explores the issue of emerging/reapproriated technologies.</p>&#x000A;<p>&#x000A;	Both remote submissions as works which require your presence to set up/man/operate, will be accepted.</p>&#x000A;<h3>&#x000A;	Open Platform</h3>&#x000A;<p>&#x000A;	The Netaudio Open Platform will take place in Torquil&rsquo;s Bar, located in the upstairs foyer of the Roundhouse, featuring emerging musicians throughout the afternoon. The stage is hosted by Tony Nwachukwu former member of Attica Blues and producer of the long running <span class="caps">CDR</span> club night at Plastic People. The Open Platform will be programmed by the Netaudio community which will vote on submissions received through this call, the voting is facilitated via a customised SoundCloud service.</p>&#x000A;<p>&#x000A;	We are happy to consider music of any genre for this stage, as long as it&rsquo;s yours!</p>&#x000A;<p>&#x000A;	As part of this call we also offer an extensive artist mentor programme to 4 acts. This includes professional advice on your music, on how you can find audiences and how to make the best with available digital tools. Please indicated in the submission form if you would like to be consider for this.</p>&#x000A;<h3>&#x000A;	Netaudio Online</h3>&#x000A;<p>&#x000A;	Netaudio Online is an interactive, live broadcast from the Roundhouse Studios. Using the format of a live webzine, we will explore the future of broadcasting with a series of TV and radio features in partnership with Resonance104.4fm. Netaudio Online also offers live cuts of the conference and features webinars and dedicated interactive workshops for our online audience.</p>&#x000A;<p>&#x000A;	We will consider pre-recorded or generative sonic/radio art pieces and self contained digital audio visual art that can be broadcast via the Roundhouse Radio (A/V streaming platform) and partner websites to accompany the live webzine. Maximum lenght for all material is 10mins.</p>&#x000A;<p>&#x000A;	As part of this call we also commission 2 pieces of new work. Please fill in the relevant box in the provided form if you would like to submit towards a new commission as well as existing works.</p>&#x000A;<p>&#x000A;	Note: for this strand we accept remote submissions only. We won&rsquo;t support travel and accommodation costs, but you are welcome to join us at the venues.</p>&#x000A;<h3>&#x000A;	Submission Procedure</h3>&#x000A;<p>&#x000A;	<span class="caps">THIS</span> <span class="caps">CALL</span> <span class="caps">HAS</span> <span class="caps">CLOSED</span>. We will published accepted entries beginning of April 2011.</p>&#x000A;<p>&#x000A;	<del>Successful entries to all strands must carefully complete the form located at</del></p>&#x000A;<p>&#x000A;	<del>http://netaudiolondon-cfe.heroku.com/2011</del></p>&#x000A;<p>&#x000A;	<del>We expect entries to be submitted with as much contextual and factual information as possible to enable us to accuratly assess the work. Good luck.</del></p>&#x000A;<h3>&#x000A;	Conditions Of Entry</h3>&#x000A;<ul>&#x000A;	<li>&#x000A;		All submitted works are to be fully realised &ndash; no demo versions please!</li>&#x000A;	<li>&#x000A;		You must hold full permission to perform / broadcast the works</li>&#x000A;	<li>&#x000A;		Artists must be available over the weekend 14th/15th May 2011 to install/perform their work (Not applicable for remote submission Sonic Maze and Online)</li>&#x000A;	<li>&#x000A;		We will announce selected entries via http://netaudiolondon.org on 31st March 2011. We won&rsquo;t be able to give individual feedback to non selected entries.</li>&#x000A;</ul>&#x000A;<h3>&#x000A;	Jury / Advisors</h3>&#x000A;<p>&#x000A;	Andi Studer (Cenatus <span class="caps">CIC</span> / Netaudio London)<br />&#x000A;	Matt Spendlove (Cenatus <span class="caps">CIC</span> / Netaudio London)<br />&#x000A;	Ed Baxter (Resonance104.4fm)<br />&#x000A;	Martin Bricelj (MoTA / Sonica Ljubljana)<br />&#x000A;	Tony Nwachukwu (<span class="caps">CDR</span> / burntprogress)<br />&#x000A;	Dave Gaydon (Roundhouse)<br />&#x000A;	Alexandra Albert (Netaudio London)<br />&#x000A;	Chris Box (Netaudio London / Runsounds)<br />&#x000A;	Tim Cowie (Netaudio London / Light Surgeons)<br />&#x000A;	Alexandre Didierjean (Netaudio London)<br />&#x000A;	Hanna Box-Inberg (Netaudio London / Runsounds)<br />&#x000A;	Nina Kehagia (Netaudio London / Nomad)<br />&#x000A;	Sarah Ladkani (Netaudio London)<br />&#x000A;	Dimitris Mylonas (Netaudio London / Seratonin)</p>&#x000A;<p>&#x000A;	Not all members mentioned will provide input to each strand</p>&#x000A;<h3>&#x000A;	Fees</h3>&#x000A;<p>&#x000A;	Successful applicants are being awarded with a small fee</p>&#x000A;<ul>&#x000A;	<li>&#x000A;		&pound;100 per Sonic Maze installation</li>&#x000A;	<li>&#x000A;		&pound;50 (solo) &pound;100 (bands) per Open Platform performance</li>&#x000A;	<li>&#x000A;		&pound;50 per Online Broadcast, and &pound;500 for new commissions</li>&#x000A;</ul>&#x000A;<p>&#x000A;	In addition, we will cover transport and accommodation cost as required and provide technical infrastructure needed to show your work.</p>&#x000A;<h3>&#x000A;	Further information</h3>&#x000A;<p>&#x000A;	please contact us via info@netaudiolondon.org<br />&#x000A;	Note: We will not advise you on the content of your submission, but are happy to assist you with questions about the submission process.</p>&#x000A;<p>&#x000A;	The Netaudio London festival promotes the work of artists who use digital and network technologies to explore new boundaries in music and sonic art.<br />&#x000A;	It is spread across two venues in Camden: the Roundhouse by day, and <span class="caps">KOKO</span> by night.</p>&#x000A;
+
+</div>
+<div id='sidebar'>
+<hr class='divider'>
+<div id='search'>
+<form action='http://www.netaudiolondon.org/search' id='search_form' name='searchform'>
+<div>
+<img alt='search_symbol' id='search_symbol' src='../../images/search_symbol.png'>
+<input id='query' name='query' onblur="value='Search...'" onfocus="value=''" type='text' value='Search...'>
+</div>
+</form>
+</div>
+<hr class='divider_medium'>
+
+<div class='tags'>
+<h6>Search by</h6>
+<a href="../../tag/free.html" class="css1">free</a>
+<a href="../../tag/futureeverything.html" class="css1">futureeverything</a>
+<a href="../../tag/internship.html" class="css1">internship</a>
+<a href="../../tag/events.html" class="css3">events</a>
+<a href="../../tag/vote.html" class="css1">vote</a>
+<a href="../../tag/roundhouse.html" class="css1">roundhouse</a>
+<a href="../../tag/after-hours.html" class="css1">after-hours</a>
+<a href="../../../netaudiolondon.org/tag/NAL11-conf.html" class="css1">NAL11-conf</a>
+<a href="../../tag/compilation.html" class="css1">compilation</a>
+<a href="../../tag/download.html" class="css1">download</a>
+<a href="../../tag/ping-pong.html" class="css2">ping-pong</a>
+<a href="../../tag/festival.html" class="css4">festival</a>
+<a href="../../tag/raffle.html" class="css1">raffle</a>
+<a href="../../tag/placard.html" class="css1">placard</a>
+<a href="../../tag/call-for-entries.html" class="css1">call-for-entries</a>
+<a href="../../tag/pictures.html" class="css1">pictures</a>
+<a href="../../tag/CafeOTO.html" class="css1">CafeOTO</a>
+<a href="../../tag/research.html" class="css1">research</a>
+<a href="../../tag/discussion.html" class="css2">discussion</a>
+<a href="../../tag/history.html" class="css1">history</a>
+<a href="../../tag/NAL11.html" class="css1">NAL11</a>
+<a href="../../tag/tickets.html" class="css1">tickets</a>
+<a href="../../tag/KOKO.html" class="css1">KOKO</a>
+<a href="../../tag/programme.html" class="css1">programme</a>
+<a href="../../tag/workshop.html" class="css1">workshop</a>
+<a href="../../tag/video.html" class="css1">video</a>
+<a href="../../tag/dates.html" class="css2">dates</a>
+<a href="../../tag/your-music.html" class="css1">your-music</a>
+<a href="../../tag/Club&#32;Transmediale.html" class="css1">Club Transmediale</a>
+<a href="../../tag/t-shirts.html" class="css1">t-shirts</a>
+<a href="../../tag/photos.html" class="css1">photos</a>
+<a href="../../tag/Zurich.html" class="css1">Zurich</a>
+<a href="../../tag/venue.html" class="css1">venue</a>
+<a href="../../tag/lineup.html" class="css2">lineup</a>
+<a href="../../tag/manchester.html" class="css1">manchester</a>
+<a href="../../tag/berlin.html" class="css2">berlin</a>
+<a href="../../tag/futuresonic.html" class="css1">futuresonic</a>
+<a href="../../tag/Ljubljana.html" class="css1">Ljubljana</a>
+</div>
+
+<div id='lastfm'>
+<h6>Lastfm</h6>
+<div id='logo'>
+<a href="http://last.fm/user/polymorphic" class="follow">Lastfm playlist</a>
+<a href='http://last.fm/user/polymorphic'>
+<img alt='listen on last.fm' src='../../images/lastfm_logo.png'>
+</a>
+</div>
+<p style='clear:both'>Wot no last.fm tracks?! Looks like Last.fm API is down or something blew up in the grid..</p>
+</div>
+
+<div id='twitter'>
+<hr class='divider'>
+<h6>Twitter</h6>
+<div id='logo'>
+<a href="http://twitter.com/netaudioldn" class="follow">Follow us</a>
+<a href='http://twitter.com/netaudioldn'>
+<img alt='following on twitter' src='../../images/th_twitter_logo_300x300.jpg'>
+</a>
+</div>
+<div class='tweet'>
+<p>RT @andistuder: LFT #OffThePage a literary festival on music by @thewiremagazine @Qujunktions &amp; @ArnolfiniArts <a href="http://t.co/0OpkTIxZQn">http://t.co/0OpkTIxZQn</a></p>
+<span class='source'>
+<a href="http://twitter.com/netaudioldn/status/514819064146178049">about 3 years ago</a>
+from
+<a href="http://www.hootsuite.com">Hootsuite</a>
+</span>
+</div>
+<div class='tweet'>
+<p>RT @tweetsatthehub: 5 days until the #OneDayer - The Future of Independent Live Music, Tech &amp; Finance. 12 Sept <a href="http://t.co/tCo9Ykhr2J">http://t.co/tCo9Ykhr2J</a></p>
+<span class='source'>
+<a href="http://twitter.com/netaudioldn/status/508985987377401857">about 3 years ago</a>
+from
+<a href="http://www.hootsuite.com">Hootsuite</a>
+</span>
+</div>
+<div class='tweet'>
+<p>Big ups to PoolLoop, festival for experimental instruments in Zurich 1-7 Jul  <a href="http://t.co/INA9xFOzVE">http://t.co/INA9xFOzVE</a></p>
+<span class='source'>
+<a href="http://twitter.com/netaudioldn/status/351805334354018306">over 4 years ago</a>
+from
+<a href="http://www.hootsuite.com">Hootsuite</a>
+</span>
+</div>
+<div class='tweet'>
+<p>RT @prsfoundation: #BeyondBorders -apply for up to £15k to co-commission, collaborate with another artist or tour UK <a href="http://t.co/PNOaCR67lg">http://t.co/PNOaCR67lg</a></p>
+<span class='source'>
+<a href="http://twitter.com/netaudioldn/status/345246563548946432">over 4 years ago</a>
+from
+<a href="http://www.hootsuite.com">Hootsuite</a>
+</span>
+</div>
+<div class='tweet'>
+<p>R. Andrew Lee: Minimalism in 12 Parts feat Johnson's November +++ 8-9 March 2013 @Cafeoto <a href="http://t.co/XhmCkf2oK8">http://t.co/XhmCkf2oK8</a></p>
+<span class='source'>
+<a href="http://twitter.com/netaudioldn/status/304953632749658112">almost 5 years ago</a>
+from
+<a href="http://www.hootsuite.com">Hootsuite</a>
+</span>
+</div>
+</div>
+
+</div>
+<div id='footer'>
+<hr>
+<img alt="Original" src="http://s3.amazonaws.com/nal.s3.amazonaws.com/assets/25/original.jpg?1308238036" />
+</div>
+</div>
+</body>
+</html>

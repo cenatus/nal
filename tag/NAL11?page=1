@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"405bbfb032","applicationID":"5321932","transactionName":"e10PRERaClxQEx0LU09BPllCUAtDGghcAVNA","queueTime":2,"applicationTime":374,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"405bbfb032","applicationID":"5321932","transactionName":"e10PRERaClxQEx0LU09BPllCUAtDGhVTAlFdVj5HX0EO","queueTime":2,"applicationTime":283,"agent":""}</script>
 <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
 <title>Netaudio London</title>
 <link href='http://feeds.feedburner.com/netaudiolondon-blog' rel='alternate' title='RSS' type='application/rss+xml'>
-<link href="stylesheets/compiled/screen.css%3F1489938800.css" media="screen, projection" rel="stylesheet" type="text/css" />
-<link href="stylesheets/compiled/print.css%3F1489938800.css" media="print" rel="stylesheet" type="text/css" />
-<link href="stylesheets/compiled/application.css%3F1489938800.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../stylesheets/compiled/screen.css?1489938800" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="../stylesheets/compiled/print.css?1489938800" media="print" rel="stylesheet" type="text/css" />
+<link href="../stylesheets/compiled/application.css?1489938800" media="screen" rel="stylesheet" type="text/css" />
 <!--[if lt IE 8]>
 <link href="/stylesheets/compiled/ie.css?1489938800" media="screen, projection" rel="stylesheet" type="text/css" />
 <![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
-<script src="javascripts/mosaic/js/mosaic.1.0.1.min.js%3F1489938800" type="text/javascript"></script>
+<script src="../javascripts/mosaic/js/mosaic.1.0.1.min.js?1489938800" type="text/javascript"></script>
 <script src="http://www.netaudiolondon.org/javascripts/easySlider1.7/js/easySlider1.7.js" type="text/javascript"></script>
-<script src="javascripts/cufon-yui.js%3F1489938800" type="text/javascript"></script>
-<script src="javascripts/BM_bug_400.font.js%3F1489938800" type="text/javascript"></script>
+<script src="../javascripts/cufon-yui.js?1489938800" type="text/javascript"></script>
+<script src="../javascripts/BM_bug_400.font.js?1489938800" type="text/javascript"></script>
 <script>
   //<![CDATA[
     Cufon.replace('#date'); // Works without a selector engine
@@ -73,7 +73,7 @@
   //]]>
 </script>
 <meta name="csrf-param" content="authenticity_token"/>
-<meta name="csrf-token" content="0aZ1J4Jsg5IUjXrWqvQQZh1jwCKgrRhK2&#47;sA&#47;qDFEdA="/>
+<meta name="csrf-token" content="pwwr7x1FRAHpWxMXZLHu&#47;BHYox4pvCMg7U9ADrS7Ztg="/>
 <meta content='Lhs2nVNXWNoVHG4mK4Sm5SPtQrFI3dWkB4hnTBGYnRo' name='google-site-verification'>
 </head>
 <body class='two-col-nal'>
@@ -81,11 +81,11 @@
 <div id='header'>
 <hr>
 <ul class='menu'>
-<li><a href="news.1.html">News_</a></li>
-<li><a href="2011/festival.html">Festival_</a></li>
-<li><a href="2011/about.html">About_</a></li>
-<li><a href="blog/130/contact.html">Contact_</a></li>
-<li><a href="2011/archive.html">Archive_</a></li>
+<li><a href="../news">News_</a></li>
+<li><a href="../2011/festival">Festival_</a></li>
+<li><a href="../2011/about">About_</a></li>
+<li><a href="../blog/130/contact">Contact_</a></li>
+<li><a href="../2011/archive">Archive_</a></li>
 </ul>
 <ul class='social'>
 <li><a href="http://facebook.com/netaudioldn">Facebook</a></li>
@@ -103,61 +103,57 @@
 <p id='date'>
 13-15TH MAY
 </p>
-<p id='heading'><a href="http://www.netaudiolondon.org/index.html">NETAUDIO</a></p>
+<p id='heading'><a href="../index.html">NETAUDIO</a></p>
 </div>
 </div>
 <div id='content'>
 <hr class='divider'>
-<h2>News</h2>
+<h1>News</h1>
+<h4>Tagged with &quot;NAL11&quot; </h4>
 <hr class='divider_medium'>
 <div class='news_item_featured'>
 <div class='boxgrid captionfull'>
-<a href='news/jerome-noetinger-antoine-chessex-at-kings-place-on-11-feb-2013.html'>
-<IMG class='article_image' src='http://s3.amazonaws.com/nal.s3.amazonaws.com/assets/106/original.jpg?1355428578'></IMG>
+<a href='../news/cecilia-wee'>
+<IMG class='article_image' src='http://s3.amazonaws.com/nal.s3.amazonaws.com/assets/98/original.png?1305118017'></IMG>
 </a>
-<div class='cover boxcaption'>
-<h6>
-<p>Jerome Noetinger (photo by Mat Ranson)</p>
-</h6>
 </div>
-</div>
-<h3><a href="news/jerome-noetinger-antoine-chessex-at-kings-place-on-11-feb-2013.html">Jerome Noetinger + Antoine Chessex at Kings Place on 11 Feb 2013</a></h3>
-<p>&#x000A;	At Kings Place, we present the French sound artist, composer, improviser and director at Metamkine, J&eacute;r&ocirc;me Noetinger. He is accompanied by Swiss composer and musician Antoine Chessex on saxophone. The two will present their own solo sets, followed by a duet.</p>&#x000A;&#x000A;
-<a href="news/jerome-noetinger-antoine-chessex-at-kings-place-on-11-feb-2013.html" class="read_more">Read more_</a>
+<h3><a href="../news/cecilia-wee">Cecilia Wee</a></h3>
+<p>&#x000A;	Some thoughts from others for our next post compiled by <a href="http://ceciliawee.com/ ">Cecilia Wee</a>,&nbsp;London-based artist writer, broadcaster and curator.&nbsp;</p>&#x000A;&#x000A;
+<a href="../news/cecilia-wee" class="read_more">Read more_</a>
 </div>
 <div class='news_item odd'>
-<a href='news/robin-fox-sally-golding-tom-james-scott-at-cafe-oto-on-16-sep-2012.html'>
-<IMG class='thumb_image' src='http://s3.amazonaws.com/nal.s3.amazonaws.com/thumbs/105/original.jpg?1343764048'></IMG>
-</a>
-<h3><a href="news/robin-fox-sally-golding-tom-james-scott-at-cafe-oto-on-16-sep-2012.html">Robin Fox + Sally Golding + Tom James Scott at Cafe OTO on 16 Sep 2012</a></h3>
-<p>&#x000A;	With Synaesthesia we present Robin Fox&#39;s laser-light and sound extravaganza alongside a film/sound performance from Sally Golding and Tom James Scott&#39;s reimagining of song through the lens of contemporary composition.&nbsp;</p>&#x000A;&#x000A;
-<a href="news/robin-fox-sally-golding-tom-james-scott-at-cafe-oto-on-16-sep-2012.html" class="read_more">Read more_</a>
-</div>
-<div class='even news_item'>
-<a href='news/terre-thaemlitz-at-cafe-oto-on-27-nov-2011.html'>
-<IMG class='thumb_image' src='http://s3.amazonaws.com/nal.s3.amazonaws.com/thumbs/103/original.jpg?1320241303'></IMG>
-</a>
-<h3><a href="news/terre-thaemlitz-at-cafe-oto-on-27-nov-2011.html">Terre Thaemlitz at Cafe OTO on 27 Nov 2011</a></h3>
-<p>&#x000A;	We are very pleased to present the multi-media producer, writer, public speaker, educator, audio remixer, DJ and label owner&nbsp;</p>&#x000A;&#x000A;
-<a href="news/terre-thaemlitz-at-cafe-oto-on-27-nov-2011.html" class="read_more">Read more_</a>
-</div>
-<div class='news_item odd'>
-<a href='news/festival-impressions-and-closing-credits.html'>
-<IMG class='thumb_image' src='http://s3.amazonaws.com/nal.s3.amazonaws.com/thumbs/100/original.jpg?1306496669'></IMG>
-</a>
-<h3><a href="news/festival-impressions-and-closing-credits.html">Festival impressions and closing credits</a></h3>
-<p>&#x000A;	A big and heartfelt thank you to all who contributed to Netaudio London 2011!</p>&#x000A;&#x000A;
-<a href="news/festival-impressions-and-closing-credits.html" class="read_more">Read more_</a>
-</div>
-<div class='even news_item'>
-<a href='news/jeremy-gilbert.html'>
+<a href='../news/anthony-iles'>
 <IMG class='thumb_image' src='http://s3.amazonaws.com/nal.s3.amazonaws.com/thumbs/99/original.png?1305118061'></IMG>
 </a>
-<h3><a href="news/jeremy-gilbert.html">Jeremy Gilbert</a></h3>
-<p>&#x000A;	Jeremy Gilbert provides a brief introduction to Sonic Militancy ahead of his talk with Mark Fisher on the Politics, protest and sound panel.</p>&#x000A;&#x000A;
-<a href="news/jeremy-gilbert.html" class="read_more">Read more_</a>
+<h3><a href="../news/anthony-iles">Anthony Iles</a></h3>
+<p>&#x000A;	In the lead up to the&nbsp;<a href="http://netaudiolondon.org/2011/event/conference">NAL11 Conference</a>&nbsp;this&nbsp;<strong>Sunday</strong>&nbsp;we present a series of thought provoking blog posts from the participating speakers. First in the series is by&nbsp;<a href="http://netaudiolondon.org/2011/participant/anthony-iles">Antony Iles</a>&nbsp;from Mute, an excerpt from the&nbsp;<a href="http://www.harsmedia.com/SoundBlog/Archief/00753.php">Noise and Capitalism</a>&nbsp;book that he co-edited.</p>&#x000A;&#x000A;
+<a href="../news/anthony-iles" class="read_more">Read more_</a>
 </div>
-<div class="pagination"><span class="previous_page disabled">&#8592; Previous</span> <em class="current">1</em> <a rel="next" href="http://www.netaudiolondon.org/index.html?page=2">2</a> <a href="http://www.netaudiolondon.org/index.html?page=3">3</a> <a href="http://www.netaudiolondon.org/index.html?page=4">4</a> <a href="http://www.netaudiolondon.org/index.html?page=5">5</a> <a href="http://www.netaudiolondon.org/index.html?page=6">6</a> <a href="http://www.netaudiolondon.org/index.html?page=7">7</a> <a href="http://www.netaudiolondon.org/index.html?page=8">8</a> <a href="http://www.netaudiolondon.org/index.html?page=9">9</a> <span class="gap">&hellip;</span> <a href="http://www.netaudiolondon.org/index.html?page=13">13</a> <a href="http://www.netaudiolondon.org/index.html?page=14">14</a> <a class="next_page" rel="next" href="http://www.netaudiolondon.org/index.html?page=2">Next &#8594;</a></div>
+<div class='even news_item'>
+<a href='../news/liliane-lijn'>
+<IMG class='thumb_image' src='http://s3.amazonaws.com/nal.s3.amazonaws.com/thumbs/98/original.png?1305118017'></IMG>
+</a>
+<h3><a href="../news/liliane-lijn">Liliane Lijn</a></h3>
+<p>&#x000A;	Liliane Lijn offers some thoughts on the origins of Power Game ahead of her keynote on the Digial futures and analogue survivals strand of our conference.</p>&#x000A;<p>&#x000A;	&nbsp;</p>&#x000A;<p>&#x000A;	&nbsp;</p>&#x000A;&#x000A;
+<a href="../news/liliane-lijn" class="read_more">Read more_</a>
+</div>
+<div class='news_item odd'>
+<a href='../news/michel-bauwens'>
+<IMG class='thumb_image' src='http://s3.amazonaws.com/nal.s3.amazonaws.com/thumbs/97/original.png?1305117947'></IMG>
+</a>
+<h3><a href="../news/michel-bauwens">Michel Bauwens</a></h3>
+<p>&#x000A;	The second in our series of blog posts from participating speakers is from Michel Bauwens,&nbsp;founder of the Foundation for <a href="http://p2pfoundation.net/">P2P Alternatives</a>.&nbsp;</p>&#x000A;<p>&#x000A;	&nbsp;</p>&#x000A;&#x000A;
+<a href="../news/michel-bauwens" class="read_more">Read more_</a>
+</div>
+<div class='even news_item'>
+<a href='../news/jeremy-gilbert'>
+<IMG class='thumb_image' src='http://s3.amazonaws.com/nal.s3.amazonaws.com/thumbs/99/original.png?1305118061'></IMG>
+</a>
+<h3><a href="../news/jeremy-gilbert">Jeremy Gilbert</a></h3>
+<p>&#x000A;	Jeremy Gilbert provides a brief introduction to Sonic Militancy ahead of his talk with Mark Fisher on the Politics, protest and sound panel.</p>&#x000A;&#x000A;
+<a href="../news/jeremy-gilbert" class="read_more">Read more_</a>
+</div>
+<div class="pagination"><span class="previous_page disabled">&#8592; Previous</span> <em class="current">1</em> <a rel="next" href="NAL11?page=2">2</a> <a class="next_page" rel="next" href="NAL11?page=2">Next &#8594;</a></div>
 
 
 </div>
@@ -166,7 +162,7 @@
 <div id='search'>
 <form action='http://www.netaudiolondon.org/search' id='search_form' name='searchform'>
 <div>
-<img alt='search_symbol' id='search_symbol' src='images/search_symbol.png'>
+<img alt='search_symbol' id='search_symbol' src='../images/search_symbol.png'>
 <input id='query' name='query' onblur="value='Search...'" onfocus="value=''" type='text' value='Search...'>
 </div>
 </form>
@@ -175,44 +171,44 @@
 
 <div class='tags'>
 <h6>Search by</h6>
-<a href="tag/free.html" class="css1">free</a>
-<a href="tag/futureeverything.html" class="css1">futureeverything</a>
-<a href="tag/internship.html" class="css1">internship</a>
-<a href="tag/events.html" class="css3">events</a>
-<a href="tag/vote.html" class="css1">vote</a>
-<a href="tag/roundhouse.html" class="css1">roundhouse</a>
-<a href="tag/after-hours.html" class="css1">after-hours</a>
-<a href="../netaudiolondon.org/tag/NAL11-conf.html" class="css1">NAL11-conf</a>
-<a href="tag/compilation.html" class="css1">compilation</a>
-<a href="tag/download.html" class="css1">download</a>
-<a href="tag/ping-pong.html" class="css2">ping-pong</a>
-<a href="tag/festival.html" class="css4">festival</a>
-<a href="tag/raffle.html" class="css1">raffle</a>
-<a href="tag/placard.html" class="css1">placard</a>
-<a href="tag/call-for-entries.html" class="css1">call-for-entries</a>
-<a href="tag/pictures.html" class="css1">pictures</a>
-<a href="tag/CafeOTO.html" class="css1">CafeOTO</a>
-<a href="tag/research.html" class="css1">research</a>
-<a href="tag/discussion.html" class="css2">discussion</a>
-<a href="tag/history.html" class="css1">history</a>
-<a href="tag/NAL11.html" class="css1">NAL11</a>
-<a href="tag/tickets.html" class="css1">tickets</a>
-<a href="tag/KOKO.html" class="css1">KOKO</a>
-<a href="tag/programme.html" class="css1">programme</a>
-<a href="tag/workshop.html" class="css1">workshop</a>
-<a href="tag/video.html" class="css1">video</a>
-<a href="tag/dates.html" class="css2">dates</a>
-<a href="tag/your-music.html" class="css1">your-music</a>
-<a href="tag/Club&#32;Transmediale.html" class="css1">Club Transmediale</a>
-<a href="tag/t-shirts.html" class="css1">t-shirts</a>
-<a href="tag/photos.html" class="css1">photos</a>
-<a href="tag/Zurich.html" class="css1">Zurich</a>
-<a href="tag/venue.html" class="css1">venue</a>
-<a href="tag/lineup.html" class="css2">lineup</a>
-<a href="tag/manchester.html" class="css1">manchester</a>
-<a href="tag/berlin.html" class="css2">berlin</a>
-<a href="tag/futuresonic.html" class="css1">futuresonic</a>
-<a href="tag/Ljubljana.html" class="css1">Ljubljana</a>
+<a href="free" class="css1">free</a>
+<a href="futureeverything" class="css1">futureeverything</a>
+<a href="internship" class="css1">internship</a>
+<a href="events" class="css3">events</a>
+<a href="vote" class="css1">vote</a>
+<a href="roundhouse" class="css1">roundhouse</a>
+<a href="after-hours" class="css1">after-hours</a>
+<a href="NAL11-conf" class="css1">NAL11-conf</a>
+<a href="compilation" class="css1">compilation</a>
+<a href="download" class="css1">download</a>
+<a href="ping-pong" class="css2">ping-pong</a>
+<a href="festival" class="css4">festival</a>
+<a href="raffle" class="css1">raffle</a>
+<a href="placard" class="css1">placard</a>
+<a href="call-for-entries" class="css1">call-for-entries</a>
+<a href="pictures" class="css1">pictures</a>
+<a href="CafeOTO" class="css1">CafeOTO</a>
+<a href="research" class="css1">research</a>
+<a href="discussion" class="css2">discussion</a>
+<a href="history" class="css1">history</a>
+<a href="NAL11" class="css1">NAL11</a>
+<a href="tickets" class="css1">tickets</a>
+<a href="KOKO" class="css1">KOKO</a>
+<a href="programme" class="css1">programme</a>
+<a href="workshop" class="css1">workshop</a>
+<a href="video" class="css1">video</a>
+<a href="dates" class="css2">dates</a>
+<a href="your-music" class="css1">your-music</a>
+<a href="Club&#32;Transmediale" class="css1">Club Transmediale</a>
+<a href="t-shirts" class="css1">t-shirts</a>
+<a href="photos" class="css1">photos</a>
+<a href="Zurich" class="css1">Zurich</a>
+<a href="venue" class="css1">venue</a>
+<a href="lineup" class="css2">lineup</a>
+<a href="manchester" class="css1">manchester</a>
+<a href="berlin" class="css2">berlin</a>
+<a href="futuresonic" class="css1">futuresonic</a>
+<a href="Ljubljana" class="css1">Ljubljana</a>
 </div>
 
 <div id='lastfm'>
@@ -220,7 +216,7 @@
 <div id='logo'>
 <a href="http://last.fm/user/polymorphic" class="follow">Lastfm playlist</a>
 <a href='http://last.fm/user/polymorphic'>
-<img alt='listen on last.fm' src='images/lastfm_logo.png'>
+<img alt='listen on last.fm' src='../images/lastfm_logo.png'>
 </a>
 </div>
 <p style='clear:both'>Wot no last.fm tracks?! Looks like Last.fm API is down or something blew up in the grid..</p>
@@ -232,7 +228,7 @@
 <div id='logo'>
 <a href="http://twitter.com/netaudioldn" class="follow">Follow us</a>
 <a href='http://twitter.com/netaudioldn'>
-<img alt='following on twitter' src='images/th_twitter_logo_300x300.jpg'>
+<img alt='following on twitter' src='../images/th_twitter_logo_300x300.jpg'>
 </a>
 </div>
 <div class='tweet'>

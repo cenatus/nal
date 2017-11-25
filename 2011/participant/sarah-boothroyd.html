@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"405bbfb032","applicationID":"5321932","transactionName":"e10PRERaClxQEx0VV0pGCFNfRQdeQRIdFl5XRQ==","queueTime":4,"applicationTime":253,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<title>Netaudio London</title>
+<link href='http://feeds.feedburner.com/netaudiolondon-blog' rel='alternate' title='RSS' type='application/rss+xml'>
+<link href="../../stylesheets/compiled/screen.css%3F1489938800.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<link href="../../stylesheets/compiled/print.css%3F1489938800.css" media="print" rel="stylesheet" type="text/css" />
+<link href="../../stylesheets/compiled/application.css%3F1489938800.css" media="screen" rel="stylesheet" type="text/css" />
+<!--[if lt IE 8]>
+<link href="/stylesheets/compiled/ie.css?1489938800" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"></script>
+<script src="../../javascripts/mosaic/js/mosaic.1.0.1.min.js%3F1489938800" type="text/javascript"></script>
+<script src="http://www.netaudiolondon.org/javascripts/easySlider1.7/js/easySlider1.7.js" type="text/javascript"></script>
+<script src="../../javascripts/cufon-yui.js%3F1489938800" type="text/javascript"></script>
+<script src="../../javascripts/BM_bug_400.font.js%3F1489938800" type="text/javascript"></script>
+<script>
+  //<![CDATA[
+    Cufon.replace('#date'); // Works without a selector engine
+    Cufon.replace('#heading'); // Works without a selector engine
+    Cufon.replace('h1'); // Works without a selector engine
+    Cufon.replace('h2'); // Works without a selector engine
+    Cufon.replace('h3'); // Works without a selector engine
+    //Cufon.replace('#sub1'); // Requires a selector engine for IE 6-7, see above
+    
+    jQuery(function($){
+    
+      $('.strand').mosaic({
+          animation	:	'slide'		//fade or slide
+          , anchor_y	:	'top'
+      });
+    
+    
+      $('#show_grid').click(function(){
+        $('#container').css("background", "url('/images/grid.png?1301508934')");
+      });
+    
+        $('#hide_grid').click(function(){
+        $('#container').css("background", "white");
+      });
+    
+      //sliding boxes script
+      //Full Caption Sliding (Hidden to Visible)
+      $('.boxgrid.captionfull').hover(function(){
+        $(".cover", this).stop().animate({top:'322px'},{queue:false,duration:160});
+      }, function() {
+        $(".cover", this).stop().animate({top:'382px'},{queue:false,duration:160});
+      }
+    )
+      //easy slider plugin
+      $(".slider").easySlider({
+        auto: true,
+        continuous: true,
+        controlsShow: false,
+        pause: 6000
+      });
+    });
+    
+    
+    
+    
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2601863-4']);
+    _gaq.push(['_trackPageview']);
+    
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  //]]>
+</script>
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="0aZ1J4Jsg5IUjXrWqvQQZh1jwCKgrRhK2&#47;sA&#47;qDFEdA="/>
+<meta content='Lhs2nVNXWNoVHG4mK4Sm5SPtQrFI3dWkB4hnTBGYnRo' name='google-site-verification'>
+</head>
+<body class='two-col-nal'>
+<div id='container'>
+<div id='header'>
+<hr>
+<ul class='menu'>
+<li><a href="../../news.1.html">News_</a></li>
+<li><a href="../festival.html">Festival_</a></li>
+<li><a href="../about.html">About_</a></li>
+<li><a href="../../blog/130/contact.html">Contact_</a></li>
+<li><a href="../archive.html">Archive_</a></li>
+</ul>
+<ul class='social'>
+<li><a href="http://facebook.com/netaudioldn">Facebook</a></li>
+<li><a href="http://www.last.fm/group/Netaudio+London">Last FM</a></li>
+<li><a href="http://twitter.com/netaudioldn">Twitter</a></li>
+<li><a href="http://feeds.feedburner.com/netaudiolondon-blog">RSS</a></li>
+<li><a href="http://madmimi.com/signups/join/27129">Newsletter</a></li>
+</ul>
+<div id='sub_menu_wrapper'>
+<ul class='sub_menu'>
+<li><a href="../strand/live-music.html">Live Music_</a></li>
+<li><a href="../strand/conference.html">Conference_</a></li>
+<li><a href="../strand/sound-art.html">Sound Art_</a></li>
+<li><a href="../strand/broadcast.html">Broadcast_</a></li>
+</ul>
+<ul class='sub_menu' style='margin-top: 5px;'>
+<li><a href="../programme.html">Programme_</a></li>
+<li><a href="../participants.html">Artists_</a></li>
+<li><a href="../press.html">Press_</a></li>
+<li><a href="../../../netaudiolondon.org/2011/tickets.html">Tickets_</a></li>
+<li><a href="../venues.html">Venues_</a></li>
+</ul>
+</div>
+<div id='picture'>
+<a href="http://bit.ly/NAL11-media"><img alt="Original" src="http://s3.amazonaws.com/nal.s3.amazonaws.com/assets/30/original.jpg?1306496389" /></a>
+</div>
+<div id='logo'>
+<p id='date'>
+13-15TH MAY
+</p>
+<p id='heading'><a href="../../index.html">NETAUDIO</a></p>
+</div>
+</div>
+<div id='content'>
+<hr class='divider'>
+<h2>Sarah Boothroyd</h2>
+<h3 class='divider_medium'></h3>
+<div class='boxgrid captionfull'>
+<IMG class='article_image' src='http://s3.amazonaws.com/nal.s3.amazonaws.com/assets/74/original.jpg?1303252891'></IMG>
+<div class='cover boxcaption'>
+<h6>
+<p>Sarah Boothroyd</p>
+</h6>
+</div>
+</div>
+<p>&#x000A;	Sarah Boothroyd&#39;s audio work is frequently heard on CBC Radio in Canada, and has been broadcast on BBC Radio 4, on Resonance FM in London, on Chicago Public Radio, on WFMU in New York, on free103point9 | Transmission Arts, on Deutschlandradio Kultur in Germany, on Radio Suisse Romande in Switzerland, and on many other stations.</p>&#x000A;<p>&#x000A;	Her audio work has also been presented at the Archipel Contemporary Music Festival in Geneva, Switzerland; at the International Features Conference in Denmark, Bulgaria, and Ireland; at the Radio Without Boundaries Festival, Gallery 1313, Beaver Hall Gallery and Labspace Studio in Toronto; at the Oscar Peterson Hall, FOFA Gallery, and Fringe Festival in Montreal; at Medianoche Gallery and the AC Institute in New York; at Nashville Soundcrawl in Tennessee; at the True/False Film Festival in Missouri; at the EcoFocus Film Festival in Georgia; at Sonic Vigil V in Ireland; at Gallery Rudolfinum in the Czech Republic; at Madrid Abierto in Spain; at the RadiaLX International Radio Art Festival and the Future Places Digital Media Festival in Portugal; at the Yeosu Art Festival in South Korea; at Digital Art Weeks in Switzerland; at the Association of Women in Radio and Television Conference in Kenya; as well as on five Deep Wireless CD compilations, on two 60x60 CD compilations, on the 2011 CD of Luc Ferrari Commissions, and on &quot;<a href="http://modistilabel.bandcamp.com/track/you">Out of Silence&quot;</a> (released on Modisti Netlabel).<br />&#x000A;	<br />&#x000A;	In 2008 she completed her first film, &quot;Down and Derby,&quot; which is a short profile of Ottawa&#39;s roller derby queen. The work was broadcast nationally on CBC Television, and was featured at Ladyfest Toronto; the Continental Drift International Short Film Festival; the Baltimore Women&rsquo;s Film Festival; Ladyfest Manchester; the National Screen Institute Online Film Festival; the St. John&rsquo;s International Women&rsquo;s Film Festival; the Silver Wave Film Festival; the Dawson City International Short Film Festival; the San Francisco Women&rsquo;s Film Festival; the Board Shorts film festival in Queensland, Australia; the Montenegro Canadian Film Festival in Podgorica; and the Film Femina Screening in Ottawa.</p>&#x000A;<p>&#x000A;	Sarah&#39;s talents have been recognized in competitions held by Ontario Arts Council, New York Festivals, La Muse en Circuit, San Francisco Women&rsquo;s Film Festival, the National Screen Institute, Third Coast International Audio Festival, New Adventures in Sound Art, the National Film Board of Canada, the Canadian Association of Broadcasters, the Canadian Association of Journalists, and the European Broadcasting Union.</p>&#x000A;
+<p>
+<a href="http://www.prx.org/user/SBoothroyd/">http://www.prx.org/user/SBoothroyd/</a>
+<span class='pipe'></span>
+
+</p>
+
+</div>
+<div id='sidebar'>
+<hr class='divider'>
+<div id='search'>
+<form action='http://www.netaudiolondon.org/search' id='search_form' name='searchform'>
+<div>
+<img alt='search_symbol' id='search_symbol' src='../../images/search_symbol.png'>
+<input id='query' name='query' onblur="value='Search...'" onfocus="value=''" type='text' value='Search...'>
+</div>
+</form>
+</div>
+<hr class='divider_medium'>
+
+<h3>exhibits at</h3>
+<div id='related_events'>
+<div class='event'>
+<h6>15-05-2011</h6>
+<h5><a href="../event/8-channel-audio-programme.html">8 Channel Audio Programme</a></h5>
+</div>
+</div>
+
+<h3>Other events</h3>
+<div id='related_events'>
+<div class='event'>
+<h6>13-05-2011</h6>
+<h5><a href="../event/robert-piotrowicz-and-valerio-tricoli.html">Robert Piotrowicz and Valerio Tricoli  </a></h5>
+</div>
+<div class='event'>
+<h6>13-05-2011</h6>
+<h5><a href="../event/netaudio-opening-party.html">Netaudio Opening Party</a></h5>
+</div>
+<div class='event'>
+<h6>14-05-2011</h6>
+<h5><a href="../event/sonic-maze.html">Sonic Maze</a></h5>
+</div>
+<div class='event'>
+<h6>15-05-2011</h6>
+<h5><a href="../../../netaudiolondon.org/2011/event/conference.html">Conference</a></h5>
+</div>
+<div class='event'>
+<h6>15-05-2011</h6>
+<h5><a href="../event/procedural-audio-workshop.html">Procedural Audio workshop</a></h5>
+</div>
+<div class='event'>
+<h6>15-05-2011</h6>
+<h5><a href="../../../netaudiolondon.org/2011/event/open-platform.html">Open Platform</a></h5>
+</div>
+<div class='event'>
+<h6>15-05-2011</h6>
+<h5><a href="../../../netaudiolondon.org/2011/event/festival-broadcast-from-the-roundhouse.html">Festival Broadcast from the Roundhouse</a></h5>
+</div>
+<div class='event'>
+<h6>15-05-2011</h6>
+<h5><a href="../event/ios-apps-workshop-with-rjdj.html">iOS apps workshop with RjDj </a></h5>
+</div>
+<div class='event'>
+<h6>15-05-2011</h6>
+<h5><a href="../../../netaudiolondon.org/2011/event/power-game-online.html">Power Game Online</a></h5>
+</div>
+<div class='event'>
+<h6>15-05-2011</h6>
+<h5><a href="../event/soundcloud-workshop-giving-the-web-a-voice.html">Soundcloud workshop: Giving the web a voice</a></h5>
+</div>
+<div class='event'>
+<h6>15-05-2011</h6>
+<h5><a href="../event/making-waves-workshop.html">Making Waves Workshop</a></h5>
+</div>
+<div class='event'>
+<h6>15-05-2011</h6>
+<h5><a href="../event/netaudio-main-show.html">Netaudio Main Show</a></h5>
+</div>
+</div>
+
+
+</div>
+<div id='footer'>
+<hr>
+<img alt="Original" src="http://s3.amazonaws.com/nal.s3.amazonaws.com/assets/25/original.jpg?1308238036" />
+</div>
+</div>
+</body>
+</html>
